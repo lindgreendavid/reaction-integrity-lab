@@ -1,5 +1,11 @@
 # Reaction Integrity Lab
 
+**[Open the interactive laboratory →](https://lindgreendavid.github.io/reaction-integrity-lab/)**
+
+[Read the Lab Notes article](https://blog-interactive.lindgreendavid.workers.dev/posts/reaction-integrity-lab-cleaning-leakage) ·
+[View the v0.1.0 release](https://github.com/lindgreendavid/reaction-integrity-lab/releases/tag/v0.1.0) ·
+[Read the research report](docs/research-report.md)
+
 An inspectable reproduction and data-integrity audit for reaction-condition prediction benchmarks.
 The project asks a narrow question: **does the large accuracy change reported by ORDerly survive an
 exact, version-pinned reproduction, and which data decisions make the benchmark easier?**
@@ -64,7 +70,7 @@ Figshare file IDs, byte sizes, MD5 checksums, DOI, version, and license are comm
 | `docs/research-report.md` | Living report that separates completed and pending evidence |
 | `reports/v0.1-source-audit.json` | Machine-readable published reference registry |
 | `src/reaction_integrity_lab/` | Small, tested split-audit package |
-| `site/` | Accessible interactive explanation of the 2 × 2 benchmark |
+| [`site/`](https://lindgreendavid.github.io/reaction-integrity-lab/) | Live, accessible interactive explanation of the 2 × 2 benchmark |
 
 ## Primary sources
 

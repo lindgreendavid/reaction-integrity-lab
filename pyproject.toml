@@ -19,6 +19,12 @@ classifiers = [
 ]
 dependencies = []
 
+[project.urls]
+Homepage = "https://lindgreendavid.github.io/reaction-integrity-lab/"
+Repository = "https://github.com/lindgreendavid/reaction-integrity-lab"
+Documentation = "https://github.com/lindgreendavid/reaction-integrity-lab/blob/main/docs/research-report.md"
+"Lab Notes" = "https://blog-interactive.lindgreendavid.workers.dev/posts/reaction-integrity-lab-cleaning-leakage"
+
 [project.optional-dependencies]
 data = ["pyarrow>=17,<24"]
 dev = [
