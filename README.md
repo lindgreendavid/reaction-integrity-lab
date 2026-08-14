@@ -6,10 +6,11 @@ exact, version-pinned reproduction, and which data decisions make the benchmark 
 
 ## Status
 
-**Protocol v0.1.0 — source and data audit in progress.** The public paper, official code, Figshare
-identities, published cleaning logs, and endpoints are frozen here. The figures currently shown in
-the interactive site are explicitly labelled as *published reference results*. They are not claimed
-as independently reproduced until the model run and its environment are archived.
+**Research product v0.1.0 — source and released-data split audit complete; model reproduction
+pending.** The public paper, official code, Figshare identities, published cleaning logs, endpoints,
+and two released split-file checksums are frozen here. The figures currently shown in the
+interactive site are explicitly labelled as *published reference results*. They are not claimed as
+independently reproduced until the model run and its environment are archived.
 
 ## Fixed primary endpoint
 
@@ -78,4 +79,3 @@ Figshare file IDs, byte sizes, MD5 checksums, DOI, version, and license are comm
 
 Code and original prose are MIT-licensed. Upstream ORDerly datasets are CC BY 4.0 and are not
 redistributed in this repository.
-
