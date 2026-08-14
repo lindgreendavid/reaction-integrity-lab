@@ -16,12 +16,21 @@ reproduced from the authors' released data, code, and configuration?
 
 | Role assignment | Rare-component policy | Published baseline | Published model |
 | --- | --- | ---: | ---: |
-| Trust ORD labels | Map rare to `other` | 31% | 44% |
-| Trust ORD labels | Delete reaction | 33% | 47% |
-| Parse reaction string | Map rare to `other` | 4% | 21% |
-| Parse reaction string | Delete reaction | 5% | 24% |
+| Trust ORD labels | Map rare to `other` | 52% | 67% |
+| Trust ORD labels | Delete reaction | 52% | 68% |
+| Parse reaction string | Map rare to `other` | 20% | 35% |
+| Parse reaction string | Delete reaction | 20% | 36% |
 
-These are reference targets from the publication and official repository, not local results.
+These are the final peer-reviewed Table 3 reference targets, not local model results.
+
+### Source correction recorded before model inspection
+
+The first protocol draft transcribed 31/44, 33/47, 4/21, and 5/24 from the upstream repository
+README. A subsequent direct audit of the final peer-reviewed article found that those values are
+not its combined solvent-and-agent Table 3 cells. The table above was corrected on 2026-08-14,
+before any local model training or inspection. The endpoint, tolerance, analysis order, and
+prohibited interpretations are unchanged. The repository records both the discrepancy and its
+resolution rather than silently treating the older values as final evidence.
 
 ## Primary endpoint and success rule
 
@@ -61,4 +70,3 @@ degrees of freedom. No similarity threshold will be selected after viewing model
 - “Chemical logic is always better” outside the tested ORD/USPTO construction.
 - “The model does not work” based solely on a harder benchmark score.
 - performance claims about prospective laboratory reactions.
-

@@ -5,6 +5,9 @@
 Wigh, Arrowsmith, Pomberger, Felton, and Lapkin (2024), *Journal of Chemical Information and
 Modeling* 64(9), 3790–3798, DOI `10.1021/acs.jcim.4c00292`. The paper describes ORDerly, its
 cleaning pipeline, condition benchmark, baseline, neural model, and the reported performance gap.
+Its final Table 3 combined solvent-and-agent baseline/model pairs are 52/67, 52/68, 20/35, and
+20/36 percent. The upstream repository README still reports older 31/44, 33/47, 4/21, and 5/24
+pairs; this project treats the peer-reviewed table as authoritative and records the discrepancy.
 
 ## Data identities
 
@@ -44,4 +47,3 @@ registry marks that distinction explicitly.
   author-based and harder chemistry splits than on ordinary reaction splits.
 - These studies support investigating split realism. They do not independently validate ORDerly's
   exact role-assignment result, which must be reproduced on its own terms.
-

@@ -1,18 +1,18 @@
 const cells = {
   "labels-other": {
-    cell: "A", baseline: 31, model: 44, aib: 19,
+    cell: "A", baseline: 52, model: 67, aib: 32,
     interpretation: "Trusting stored labels produces a comparatively easy combined condition target. The score cannot be read as prospective laboratory performance.",
   },
   "labels-delete": {
-    cell: "B", baseline: 33, model: 47, aib: 21,
+    cell: "B", baseline: 52, model: 68, aib: 33,
     interpretation: "Removing reactions with rare components raises both the baseline and model score. It also narrows the population to common recorded conditions.",
   },
   "reaction-string-other": {
-    cell: "C", baseline: 4, model: 21, aib: 18,
+    cell: "C", baseline: 20, model: 35, aib: 19,
     interpretation: "Chemically informed role assignment makes the combined target much harder. Mapping rare labels to ‘other’ keeps more reactions but coarsens the task.",
   },
   "reaction-string-delete": {
-    cell: "D", baseline: 5, model: 24, aib: 21,
+    cell: "D", baseline: 20, model: 36, aib: 19,
     interpretation: "This is the authors’ preferred benchmark construction: chemically informed roles with rare-component reactions removed.",
   },
 };
@@ -79,4 +79,3 @@ document.querySelectorAll("[data-stage]").forEach((button) => button.addEventLis
 
 renderCell();
 renderStage("source");
-
