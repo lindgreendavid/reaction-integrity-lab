@@ -9,14 +9,14 @@ def test_site_exposes_interaction_evidence_status_and_boundaries():
     styles = (ROOT / "site" / "styles.css").read_text(encoding="utf-8")
 
     assert "The accuracy inflation microscope" in html
-    assert "The released split passes its exact-identity audit" in html
-    assert "independent model training remains pending" in html
+    assert "All four frequency baselines reproduce" in html
+    assert "model training is still pending" in html
     assert "zero exact train/test input collisions" in html
     assert "What this study can—and cannot—say" in html
     assert 'aria-live="polite"' in html
     assert 'aria-pressed="true"' in html
-    assert "44%" in html and "47%" in html and "21%" in html and "24%" in html
-    assert "independently reproduced" not in html.lower()
+    assert "67%" in html and "68%" in html and "35%" in html and "36%" in html
+    assert "Reproduced baseline · published model" in html
     assert "renderCell" in script
     assert "renderStage" in script
     assert "prefers-reduced-motion" in styles

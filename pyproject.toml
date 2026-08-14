@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "reaction-integrity-lab"
-version = "0.1.0"
+version = "0.2.0"
 description = "A reproducible audit of cleaning, leakage, and apparent accuracy in reaction-condition prediction"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -26,7 +26,7 @@ Documentation = "https://github.com/lindgreendavid/reaction-integrity-lab/blob/m
 "Lab Notes" = "https://blog-interactive.lindgreendavid.workers.dev/posts/reaction-integrity-lab-cleaning-leakage"
 
 [project.optional-dependencies]
-data = ["pyarrow>=17,<24"]
+data = ["numpy>=1.24,<2", "pyarrow>=17,<24"]
 dev = [
   "build>=1.2",
   "hatchling>=1.27",

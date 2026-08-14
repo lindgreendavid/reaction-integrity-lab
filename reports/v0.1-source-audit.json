@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "status": "source-and-protocol audit; model reproduction not yet run",
+  "status": "source, protocol, split, and four-cell baseline audit complete; neural-model reproduction not yet run",
   "source": {
     "paper_doi": "10.1021/acs.jcim.4c00292",
     "benchmark_doi": "10.6084/m9.figshare.23298467.v4",
@@ -8,11 +8,12 @@
   },
   "published_reference_results_percent": {
     "measure": "top-3 exact-match accuracy for the combined solvents-and-agents target",
-    "trusted_labels_rare_to_other": 44,
-    "trusted_labels_delete_rare_reaction": 47,
-    "reaction_string_rare_to_other": 21,
-    "reaction_string_delete_rare_reaction": 24,
-    "provenance": "Wigh et al. (2024), ORDerly paper and official repository README",
+    "trusted_labels_rare_to_other": 67,
+    "trusted_labels_delete_rare_reaction": 68,
+    "reaction_string_rare_to_other": 35,
+    "reaction_string_delete_rare_reaction": 36,
+    "provenance": "Wigh et al. (2024), final peer-reviewed article, Table 3, S + A row",
+    "source_discrepancy": "The upstream repository README reports older 44/47/21/24 model cells; these are not the final article's combined solvent-and-agent Table 3 values.",
     "independently_reproduced_here": false
   },
   "published_pipeline_audit": {
@@ -35,6 +36,12 @@
     "exact_train_test_input_collisions": 0,
     "exact_cross_split_full_record_duplicates": 0,
     "interpretation": "Confirms exact declared-key separation only; chemical similarity, patent-family overlap, and temporal separation remain untested."
+  },
+  "local_frequency_baseline_reproduction": {
+    "artifact": "reports/v0.2-baselines.json",
+    "all_four_cells_complete": true,
+    "all_within_prespecified_one_percentage_point_tolerance": true,
+    "maximum_absolute_deviation_percentage_points": 0.45480835696249144
   },
   "interpretation_boundary": "A lower score after chemical role reassignment is evidence that the earlier benchmark task was easier under those labels; it is not by itself proof of deliberate leakage, model uselessness, or general failure of reaction prediction."
 }

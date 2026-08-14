@@ -1,0 +1,184 @@
+{
+  "schema_version": "0.2.0",
+  "generated_utc": "2026-08-14T08:49:25.100604+00:00",
+  "study_type": "known-result computational reproduction",
+  "upstream_commit": "77d0d900e369f3b512a44d47c740bd4bcb98fcb6",
+  "reference_implementation": "condition_prediction.run.ConditionPrediction.get_frequency_informed_guess",
+  "split": {
+    "seed": 12345,
+    "train_val_split": 0.8,
+    "train_fraction": 1.0
+  },
+  "endpoint": "top-3 exact-match combined solvent-and-agent frequency baseline",
+  "results": {
+    "reaction_string_delete_rare": {
+      "train_rows": 500557,
+      "test_rows": 65445,
+      "top_n": 3,
+      "correct_test_rows": 13246,
+      "accuracy": 0.20239896095958437,
+      "most_common": [
+        {
+          "combination": [
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+          ],
+          "train_count": 80331
+        },
+        {
+          "combination": [
+            "Cl",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+          ],
+          "train_count": 10053
+        },
+        {
+          "combination": [
+            "ClCCl",
+            "NULL",
+            "NULL",
+            "NULL",
+            "O=C(O)C(F)(F)F"
+          ],
+          "train_count": 7139
+        }
+      ],
+      "local_percent": 20.239896095958436,
+      "published_percent": 20.0,
+      "absolute_deviation_percentage_points": 0.23989609595843575
+    },
+    "reaction_string_rare_to_other": {
+      "train_rows": 545236,
+      "test_rows": 70887,
+      "top_n": 3,
+      "correct_test_rows": 13855,
+      "accuracy": 0.1954519164303751,
+      "most_common": [
+        {
+          "combination": [
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+          ],
+          "train_count": 80269
+        },
+        {
+          "combination": [
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "other"
+          ],
+          "train_count": 12120
+        },
+        {
+          "combination": [
+            "Cl",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+          ],
+          "train_count": 10115
+        }
+      ],
+      "local_percent": 19.54519164303751,
+      "published_percent": 20.0,
+      "absolute_deviation_percentage_points": 0.45480835696249144
+    },
+    "trusted_labels_delete_rare": {
+      "train_rows": 186388,
+      "test_rows": 25287,
+      "top_n": 3,
+      "correct_test_rows": 13206,
+      "accuracy": 0.5222446316289002,
+      "most_common": [
+        {
+          "combination": [
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+          ],
+          "train_count": 81258
+        },
+        {
+          "combination": [
+            "ClCCl",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+          ],
+          "train_count": 10411
+        },
+        {
+          "combination": [
+            "CCO",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+          ],
+          "train_count": 5152
+        }
+      ],
+      "local_percent": 52.224463162890025,
+      "published_percent": 52.0,
+      "absolute_deviation_percentage_points": 0.2244631628900251
+    },
+    "trusted_labels_rare_to_other": {
+      "train_rows": 191132,
+      "test_rows": 25905,
+      "top_n": 3,
+      "correct_test_rows": 13360,
+      "accuracy": 0.5157305539471144,
+      "most_common": [
+        {
+          "combination": [
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+          ],
+          "train_count": 80993
+        },
+        {
+          "combination": [
+            "ClCCl",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+          ],
+          "train_count": 10323
+        },
+        {
+          "combination": [
+            "CCO",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+          ],
+          "train_count": 5200
+        }
+      ],
+      "local_percent": 51.573055394711446,
+      "published_percent": 52.0,
+      "absolute_deviation_percentage_points": 0.42694460528855416
+    }
+  },
+  "complete": true
+}

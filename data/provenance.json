@@ -20,6 +20,16 @@
       "download_url": "https://ndownloader.figshare.com/files/44413040"
     }
   ],
-  "boundary": "These two files use chemically informed reaction-string role assignment and the rare-component deletion rule. They cannot by themselves reproduce the trusted-label contrast."
+  "supplement": {
+    "doi": "10.6084/m9.figshare.23502372.v3",
+    "version": 3,
+    "license": "CC BY 4.0",
+    "archive_name": "condition_prediction_datasets.zip",
+    "figshare_file_id": 44412797,
+    "size_bytes": 1463558231,
+    "md5": "4a99b6e3678e4ac312678e26fd3caec2",
+    "download_url": "https://ndownloader.figshare.com/files/44412797",
+    "purpose": "All four role-assignment and rare-component variants used by the frequency-baseline reproduction."
+  },
+  "boundary": "The data reproduce the four frequency baselines. Independent neural-model training and similarity-based leakage audits remain separate evidence tasks."
 }
-

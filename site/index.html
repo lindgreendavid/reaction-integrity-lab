@@ -41,8 +41,8 @@
           </div>
           <dl class="hero__facts">
             <div><dt>Source reactions</dt><dd>1,771,032</dd></div>
-            <div><dt>Published score range</dt><dd>21–47%</dd></div>
-            <div><dt>Current evidence</dt><dd>Data audit</dd></div>
+            <div><dt>Published score range</dt><dd>35–68%</dd></div>
+            <div><dt>Current evidence</dt><dd>Data + baseline audit</dd></div>
           </dl>
         </div>
 
@@ -64,12 +64,13 @@
       </section>
 
       <section class="status-note" aria-labelledby="status-title">
-        <p class="eyebrow">Evidence status · protocol v0.1.0</p>
-        <h2 id="status-title">The released split passes its exact-identity audit.</h2>
+        <p class="eyebrow">Evidence status · research product v0.2.0</p>
+        <h2 id="status-title">All four frequency baselines reproduce.</h2>
         <p>
-          Both checksum-pinned files reproduce the official final count of 691,142 reactions, with
-          zero exact train/test input collisions and zero exact cross-split records. The four model
-          scores below still come from Wigh et al.; independent model training remains pending.
+          The checksum-pinned four-variant archive reproduces every peer-reviewed baseline within
+          0.46 percentage points. The released split also has zero exact train/test input collisions
+          and zero exact cross-split records. Model scores remain published references; independent
+          model training is still pending.
         </p>
       </section>
 
@@ -107,15 +108,15 @@
           </div>
 
           <article class="score-panel" aria-live="polite">
-            <div class="score-panel__status"><span>Published reference result</span><b id="cell-label">A</b></div>
+            <div class="score-panel__status"><span>Reproduced baseline · published model</span><b id="cell-label">A</b></div>
             <div class="score-comparison">
               <div>
                 <span>Frequency baseline</span>
-                <strong id="baseline-score">31%</strong>
+                <strong id="baseline-score">52%</strong>
               </div>
               <div class="score-comparison__model">
                 <span>Model top-3 exact match</span>
-                <strong id="model-score">44%</strong>
+                <strong id="model-score">67%</strong>
               </div>
             </div>
             <div class="score-bar" aria-hidden="true">
@@ -123,8 +124,8 @@
               <span id="model-bar" class="score-bar__model"></span>
             </div>
             <dl class="score-meta">
-              <div><dt>Gain over baseline</dt><dd id="gain-score">+13 pp</dd></div>
-              <div><dt>Normalized improvement</dt><dd id="aib-score">19%</dd></div>
+              <div><dt>Gain over baseline</dt><dd id="gain-score">+15 pp</dd></div>
+              <div><dt>Normalized improvement</dt><dd id="aib-score">32%</dd></div>
               <div><dt>Evidence owner</dt><dd>Wigh et al. (2024)</dd></div>
             </dl>
             <p id="interpretation">
@@ -135,10 +136,10 @@
         </div>
 
         <div class="four-cell" aria-label="All four published reference cells">
-          <button type="button" data-cell="labels-other"><span>A</span><strong>44%</strong><small>labels · other</small></button>
-          <button type="button" data-cell="labels-delete"><span>B</span><strong>47%</strong><small>labels · delete</small></button>
-          <button type="button" data-cell="reaction-string-other"><span>C</span><strong>21%</strong><small>string · other</small></button>
-          <button type="button" data-cell="reaction-string-delete"><span>D</span><strong>24%</strong><small>string · delete</small></button>
+          <button type="button" data-cell="labels-other"><span>A</span><strong>67%</strong><small>labels · other</small></button>
+          <button type="button" data-cell="labels-delete"><span>B</span><strong>68%</strong><small>labels · delete</small></button>
+          <button type="button" data-cell="reaction-string-other"><span>C</span><strong>35%</strong><small>string · other</small></button>
+          <button type="button" data-cell="reaction-string-delete"><span>D</span><strong>36%</strong><small>string · delete</small></button>
         </div>
       </section>
 
@@ -187,7 +188,7 @@
           <h2 id="boundaries-title">What this study can—and cannot—say.</h2>
         </div>
         <div class="boundary-grid">
-          <article class="supports"><h3>Supported now</h3><ul><li>The two released files match their official checksums and contain 691,142 reactions.</li><li>No exact declared input key or exact full record crosses from training into test.</li><li>The authors report a large performance change across role assignments.</li></ul></article>
+          <article class="supports"><h3>Supported now</h3><ul><li>The complete four-variant archive matches its official checksum.</li><li>All four frequency baselines reproduce within 0.46 percentage points.</li><li>No exact declared input key or exact full record crosses from training into test.</li><li>The authors report a large model-performance change across role assignments.</li></ul></article>
           <article><h3>Not supported yet</h3><ul><li>That the four model cells reproduce locally.</li><li>That every train/test similarity pathway is eliminated.</li><li>That any score represents prospective wet-lab success.</li><li>That observed benchmark ease implies research misconduct.</li></ul></article>
         </div>
       </section>

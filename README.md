@@ -3,7 +3,7 @@
 **[Open the interactive laboratory →](https://lindgreendavid.github.io/reaction-integrity-lab/)**
 
 [Read the Lab Notes article](https://blog-interactive.lindgreendavid.workers.dev/posts/reaction-integrity-lab-cleaning-leakage) ·
-[View the v0.1.0 release](https://github.com/lindgreendavid/reaction-integrity-lab/releases/tag/v0.1.0) ·
+[View releases](https://github.com/lindgreendavid/reaction-integrity-lab/releases) ·
 [Read the research report](docs/research-report.md)
 
 An inspectable reproduction and data-integrity audit for reaction-condition prediction benchmarks.
@@ -12,11 +12,10 @@ exact, version-pinned reproduction, and which data decisions make the benchmark 
 
 ## Status
 
-**Research product v0.1.0 — source and released-data split audit complete; model reproduction
-pending.** The public paper, official code, Figshare identities, published cleaning logs, endpoints,
-and two released split-file checksums are frozen here. The figures currently shown in the
-interactive site are explicitly labelled as *published reference results*. They are not claimed as
-independently reproduced until the model run and its environment are archived.
+**Research product v0.2.0 — source, released-data split, and all four frequency baselines
+reproduced; neural-model reproduction pending.** The public paper, official code, Figshare
+identities, published cleaning logs, endpoints, and data checksums are frozen here. The interactive
+site distinguishes locally reproduced baseline evidence from published model results.
 
 ## Fixed primary endpoint
 
@@ -26,9 +25,14 @@ target across a 2 × 2 design:
 1. reaction roles from ORD labels versus chemically informed reaction-string assignment;
 2. rare components mapped to `other` versus reactions containing them removed.
 
-The published reference cells are 44%, 47%, 21%, and 24%, respectively. The primary replication
+The final peer-reviewed model cells are 67%, 68%, 35%, and 36%, respectively; their corresponding
+frequency baselines are 52%, 52%, 20%, and 20%. The primary replication
 criterion, frozen before training, is absolute agreement within 1.0 percentage point for every cell
 under the authors' released configuration. Wider seed variation will be reported, never hidden.
+
+An earlier project draft used 44%, 47%, 21%, and 24% from the upstream repository README. A direct
+audit found that those are not the final article's combined solvent-and-agent Table 3 cells. The
+correction and its timing are preserved in the protocol and source registry.
 
 ## What can already be reproduced
 
@@ -40,16 +44,23 @@ chemical similarity and is never presented as a complete leakage analysis.
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e '.[data,dev]'
-python scripts/fetch_orderly.py
+python scripts/fetch_orderly.py --include-supplement
 reaction-integrity \
   --train data/external/orderly_condition_train.parquet \
   --test data/external/orderly_condition_test.parquet \
   --output reports/local-split-audit.json
+python scripts/reproduce_baselines.py \
+  --data-dir data/external/paper-v3/condition_prediction_datasets
 ```
 
 The downloaded Parquet files are checksum-verified and intentionally ignored by Git. Their exact
 Figshare file IDs, byte sizes, MD5 checksums, DOI, version, and license are committed in
 [`data/provenance.json`](data/provenance.json).
+
+The deterministic four-cell baseline reproduction uses the authors' seed, shuffled 80% training
+subset, and top-three exact complete-condition rule. Local results are 51.57%, 52.22%, 19.55%, and
+20.24%; every value is within 0.46 percentage points of the paper's rounded 52%, 52%, 20%, and 20%.
+The full machine-readable result is [`reports/v0.2-baselines.json`](reports/v0.2-baselines.json).
 
 ## Evidence boundaries
 
@@ -69,6 +80,7 @@ Figshare file IDs, byte sizes, MD5 checksums, DOI, version, and license are comm
 | `docs/source-audit.md` | Primary sources, provenance, licensing, and claim boundaries |
 | `docs/research-report.md` | Living report that separates completed and pending evidence |
 | `reports/v0.1-source-audit.json` | Machine-readable published reference registry |
+| `reports/v0.2-baselines.json` | Four-cell deterministic frequency-baseline reproduction |
 | `src/reaction_integrity_lab/` | Small, tested split-audit package |
 | [`site/`](https://lindgreendavid.github.io/reaction-integrity-lab/) | Live, accessible interactive explanation of the 2 × 2 benchmark |
 
