@@ -1,0 +1,5097 @@
+{
+  "schema_version": "1.0.0",
+  "generated_utc": "2026-08-14T09:25:29.394619+00:00",
+  "study_type": "prespecified secondary representation-overlap audit",
+  "dataset_variant": "reaction-string role assignment; delete rare reactions",
+  "method": {
+    "rdkit_version": "2026.03.5",
+    "product_identity": "canonical isomeric SMILES",
+    "scaffold": "Bemis-Murcko; empty acyclic scaffolds excluded",
+    "fingerprint": "Morgan radius 2; 2048 bits",
+    "similarity": "Tanimoto",
+    "sample_seed": 20260814,
+    "sample_size_requested": 1000,
+    "thresholds": [
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ]
+  },
+  "row_counts": {
+    "train": 625697,
+    "test": 65445
+  },
+  "product_identity": {
+    "unique_valid_train": 583609,
+    "valid_test_rows": 65444,
+    "invalid_or_missing_test_rows": 1,
+    "overlapping_test_rows": 3784,
+    "overlapping_test_fraction": 0.05782042662428947
+  },
+  "product_scaffold": {
+    "unique_nonempty_train": 167251,
+    "valid_nonempty_test_rows": 63852,
+    "scaffoldless_or_invalid_test_rows": 1593,
+    "overlapping_test_rows": 51617,
+    "overlapping_test_fraction": 0.8083850153479922
+  },
+  "source_file_provenance": {
+    "unique_train_values": 489,
+    "valid_test_rows": 65445,
+    "overlapping_test_rows": 65445,
+    "overlapping_test_fraction": 1.0
+  },
+  "grant_date": {
+    "valid_train_rows": 625697,
+    "valid_test_rows": 65445,
+    "train_min_year": 1976,
+    "train_median_year": 2009,
+    "train_max_year": 2016,
+    "test_min_year": 1976,
+    "test_median_year": 2009,
+    "test_max_year": 2016,
+    "test_rows_later_than_latest_train": 0,
+    "test_fraction_later_than_latest_train": 0.0
+  },
+  "sampled_product_similarity": {
+    "valid_sample_rows": 1000,
+    "minimum": 0.275,
+    "median": 0.734375,
+    "mean": 0.7320697430709913,
+    "maximum": 1.0,
+    "threshold_results": {
+      "0.7": {
+        "successes": 605,
+        "total": 1000,
+        "proportion": 0.605,
+        "lower": 0.5743548264576065,
+        "upper": 0.634841554260427
+      },
+      "0.8": {
+        "successes": 300,
+        "total": 1000,
+        "proportion": 0.3,
+        "lower": 0.2724068424770048,
+        "upper": 0.3291238609172172
+      },
+      "0.9": {
+        "successes": 117,
+        "total": 1000,
+        "proportion": 0.117,
+        "lower": 0.09852838761922869,
+        "upper": 0.13840290938070654
+      },
+      "1.0": {
+        "successes": 84,
+        "total": 1000,
+        "proportion": 0.084,
+        "lower": 0.0683588136777643,
+        "upper": 0.10282504938221758
+      }
+    },
+    "rows": [
+      {
+        "row_position": 4,
+        "original_index": 1224535,
+        "maximum_tanimoto": 0.6363636363636364
+      },
+      {
+        "row_position": 157,
+        "original_index": 66462,
+        "maximum_tanimoto": 0.813953488372093
+      },
+      {
+        "row_position": 215,
+        "original_index": 755687,
+        "maximum_tanimoto": 0.5897435897435898
+      },
+      {
+        "row_position": 386,
+        "original_index": 1473895,
+        "maximum_tanimoto": 0.6891891891891891
+      },
+      {
+        "row_position": 398,
+        "original_index": 340031,
+        "maximum_tanimoto": 0.6440677966101694
+      },
+      {
+        "row_position": 409,
+        "original_index": 12100,
+        "maximum_tanimoto": 0.8085106382978723
+      },
+      {
+        "row_position": 413,
+        "original_index": 1442354,
+        "maximum_tanimoto": 0.5064935064935064
+      },
+      {
+        "row_position": 465,
+        "original_index": 1006794,
+        "maximum_tanimoto": 0.8125
+      },
+      {
+        "row_position": 558,
+        "original_index": 1009662,
+        "maximum_tanimoto": 0.65
+      },
+      {
+        "row_position": 578,
+        "original_index": 562770,
+        "maximum_tanimoto": 0.8115942028985508
+      },
+      {
+        "row_position": 629,
+        "original_index": 578439,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 766,
+        "original_index": 176398,
+        "maximum_tanimoto": 0.6666666666666666
+      },
+      {
+        "row_position": 792,
+        "original_index": 728071,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 810,
+        "original_index": 1199835,
+        "maximum_tanimoto": 0.6607142857142857
+      },
+      {
+        "row_position": 837,
+        "original_index": 256916,
+        "maximum_tanimoto": 0.6440677966101694
+      },
+      {
+        "row_position": 909,
+        "original_index": 1702431,
+        "maximum_tanimoto": 0.6363636363636364
+      },
+      {
+        "row_position": 917,
+        "original_index": 1521357,
+        "maximum_tanimoto": 0.6585365853658537
+      },
+      {
+        "row_position": 975,
+        "original_index": 850141,
+        "maximum_tanimoto": 0.7538461538461538
+      },
+      {
+        "row_position": 977,
+        "original_index": 1172236,
+        "maximum_tanimoto": 0.8194444444444444
+      },
+      {
+        "row_position": 1088,
+        "original_index": 1446735,
+        "maximum_tanimoto": 0.6470588235294118
+      },
+      {
+        "row_position": 1185,
+        "original_index": 359342,
+        "maximum_tanimoto": 0.8852459016393442
+      },
+      {
+        "row_position": 1223,
+        "original_index": 963389,
+        "maximum_tanimoto": 0.8227848101265823
+      },
+      {
+        "row_position": 1420,
+        "original_index": 1176331,
+        "maximum_tanimoto": 0.6666666666666666
+      },
+      {
+        "row_position": 1430,
+        "original_index": 960129,
+        "maximum_tanimoto": 0.8775510204081632
+      },
+      {
+        "row_position": 1451,
+        "original_index": 1429570,
+        "maximum_tanimoto": 0.8723404255319149
+      },
+      {
+        "row_position": 1465,
+        "original_index": 1247833,
+        "maximum_tanimoto": 0.7966101694915254
+      },
+      {
+        "row_position": 1498,
+        "original_index": 336871,
+        "maximum_tanimoto": 0.84375
+      },
+      {
+        "row_position": 1508,
+        "original_index": 311986,
+        "maximum_tanimoto": 0.37037037037037035
+      },
+      {
+        "row_position": 1520,
+        "original_index": 1712217,
+        "maximum_tanimoto": 0.8125
+      },
+      {
+        "row_position": 1768,
+        "original_index": 1243131,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 1769,
+        "original_index": 32397,
+        "maximum_tanimoto": 0.5813953488372093
+      },
+      {
+        "row_position": 1810,
+        "original_index": 858528,
+        "maximum_tanimoto": 0.734375
+      },
+      {
+        "row_position": 1865,
+        "original_index": 418927,
+        "maximum_tanimoto": 0.6078431372549019
+      },
+      {
+        "row_position": 1920,
+        "original_index": 533752,
+        "maximum_tanimoto": 0.6730769230769231
+      },
+      {
+        "row_position": 1930,
+        "original_index": 931885,
+        "maximum_tanimoto": 0.5925925925925926
+      },
+      {
+        "row_position": 1949,
+        "original_index": 462947,
+        "maximum_tanimoto": 0.9
+      },
+      {
+        "row_position": 2072,
+        "original_index": 299032,
+        "maximum_tanimoto": 0.5897435897435898
+      },
+      {
+        "row_position": 2086,
+        "original_index": 812675,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 2195,
+        "original_index": 59810,
+        "maximum_tanimoto": 0.7368421052631579
+      },
+      {
+        "row_position": 2226,
+        "original_index": 124162,
+        "maximum_tanimoto": 0.6904761904761905
+      },
+      {
+        "row_position": 2261,
+        "original_index": 665003,
+        "maximum_tanimoto": 0.8285714285714286
+      },
+      {
+        "row_position": 2301,
+        "original_index": 1348903,
+        "maximum_tanimoto": 0.825
+      },
+      {
+        "row_position": 2412,
+        "original_index": 127767,
+        "maximum_tanimoto": 0.6363636363636364
+      },
+      {
+        "row_position": 2440,
+        "original_index": 1642528,
+        "maximum_tanimoto": 0.5172413793103449
+      },
+      {
+        "row_position": 2457,
+        "original_index": 1269445,
+        "maximum_tanimoto": 0.7321428571428571
+      },
+      {
+        "row_position": 2466,
+        "original_index": 1315445,
+        "maximum_tanimoto": 0.7647058823529411
+      },
+      {
+        "row_position": 2535,
+        "original_index": 517897,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 2629,
+        "original_index": 1642267,
+        "maximum_tanimoto": 0.7454545454545455
+      },
+      {
+        "row_position": 2713,
+        "original_index": 1289378,
+        "maximum_tanimoto": 0.671875
+      },
+      {
+        "row_position": 2869,
+        "original_index": 702838,
+        "maximum_tanimoto": 0.9253731343283582
+      },
+      {
+        "row_position": 2885,
+        "original_index": 992267,
+        "maximum_tanimoto": 0.6296296296296297
+      },
+      {
+        "row_position": 2893,
+        "original_index": 124646,
+        "maximum_tanimoto": 0.6590909090909091
+      },
+      {
+        "row_position": 2933,
+        "original_index": 1277064,
+        "maximum_tanimoto": 0.7222222222222222
+      },
+      {
+        "row_position": 2981,
+        "original_index": 901878,
+        "maximum_tanimoto": 0.7868852459016393
+      },
+      {
+        "row_position": 3065,
+        "original_index": 909173,
+        "maximum_tanimoto": 0.5476190476190477
+      },
+      {
+        "row_position": 3100,
+        "original_index": 1103277,
+        "maximum_tanimoto": 0.825
+      },
+      {
+        "row_position": 3264,
+        "original_index": 212594,
+        "maximum_tanimoto": 0.6296296296296297
+      },
+      {
+        "row_position": 3467,
+        "original_index": 218274,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 3596,
+        "original_index": 1587197,
+        "maximum_tanimoto": 0.8214285714285714
+      },
+      {
+        "row_position": 3721,
+        "original_index": 889500,
+        "maximum_tanimoto": 0.5576923076923077
+      },
+      {
+        "row_position": 3865,
+        "original_index": 808166,
+        "maximum_tanimoto": 0.6666666666666666
+      },
+      {
+        "row_position": 3880,
+        "original_index": 1334878,
+        "maximum_tanimoto": 0.7837837837837838
+      },
+      {
+        "row_position": 3950,
+        "original_index": 1040689,
+        "maximum_tanimoto": 0.7288135593220338
+      },
+      {
+        "row_position": 4040,
+        "original_index": 496291,
+        "maximum_tanimoto": 0.8032786885245902
+      },
+      {
+        "row_position": 4158,
+        "original_index": 1609485,
+        "maximum_tanimoto": 0.625
+      },
+      {
+        "row_position": 4179,
+        "original_index": 1179136,
+        "maximum_tanimoto": 0.6415094339622641
+      },
+      {
+        "row_position": 4231,
+        "original_index": 1112682,
+        "maximum_tanimoto": 0.7272727272727273
+      },
+      {
+        "row_position": 4289,
+        "original_index": 669508,
+        "maximum_tanimoto": 0.8545454545454545
+      },
+      {
+        "row_position": 4397,
+        "original_index": 434846,
+        "maximum_tanimoto": 0.8
+      },
+      {
+        "row_position": 4509,
+        "original_index": 1095248,
+        "maximum_tanimoto": 0.7916666666666666
+      },
+      {
+        "row_position": 4612,
+        "original_index": 81003,
+        "maximum_tanimoto": 0.7692307692307693
+      },
+      {
+        "row_position": 4731,
+        "original_index": 1660856,
+        "maximum_tanimoto": 0.92
+      },
+      {
+        "row_position": 4755,
+        "original_index": 83409,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 4796,
+        "original_index": 192407,
+        "maximum_tanimoto": 0.6666666666666666
+      },
+      {
+        "row_position": 4831,
+        "original_index": 904307,
+        "maximum_tanimoto": 0.6666666666666666
+      },
+      {
+        "row_position": 4936,
+        "original_index": 498948,
+        "maximum_tanimoto": 0.8275862068965517
+      },
+      {
+        "row_position": 4955,
+        "original_index": 1412773,
+        "maximum_tanimoto": 0.5652173913043478
+      },
+      {
+        "row_position": 4965,
+        "original_index": 108788,
+        "maximum_tanimoto": 0.7
+      },
+      {
+        "row_position": 5037,
+        "original_index": 917390,
+        "maximum_tanimoto": 0.7575757575757576
+      },
+      {
+        "row_position": 5042,
+        "original_index": 1224304,
+        "maximum_tanimoto": 0.6136363636363636
+      },
+      {
+        "row_position": 5142,
+        "original_index": 856543,
+        "maximum_tanimoto": 0.4878048780487805
+      },
+      {
+        "row_position": 5282,
+        "original_index": 1679393,
+        "maximum_tanimoto": 0.6
+      },
+      {
+        "row_position": 5363,
+        "original_index": 1559765,
+        "maximum_tanimoto": 0.6790123456790124
+      },
+      {
+        "row_position": 5467,
+        "original_index": 983169,
+        "maximum_tanimoto": 0.7254901960784313
+      },
+      {
+        "row_position": 5538,
+        "original_index": 1400857,
+        "maximum_tanimoto": 0.7073170731707317
+      },
+      {
+        "row_position": 5683,
+        "original_index": 606610,
+        "maximum_tanimoto": 0.7741935483870968
+      },
+      {
+        "row_position": 5781,
+        "original_index": 698613,
+        "maximum_tanimoto": 0.7209302325581395
+      },
+      {
+        "row_position": 5788,
+        "original_index": 99619,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 5834,
+        "original_index": 1377945,
+        "maximum_tanimoto": 0.7313432835820896
+      },
+      {
+        "row_position": 5876,
+        "original_index": 521560,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 5952,
+        "original_index": 293751,
+        "maximum_tanimoto": 0.7258064516129032
+      },
+      {
+        "row_position": 6066,
+        "original_index": 721868,
+        "maximum_tanimoto": 0.631578947368421
+      },
+      {
+        "row_position": 6308,
+        "original_index": 528051,
+        "maximum_tanimoto": 0.5833333333333334
+      },
+      {
+        "row_position": 6346,
+        "original_index": 511650,
+        "maximum_tanimoto": 0.5142857142857142
+      },
+      {
+        "row_position": 6398,
+        "original_index": 412669,
+        "maximum_tanimoto": 0.6851851851851852
+      },
+      {
+        "row_position": 6528,
+        "original_index": 241916,
+        "maximum_tanimoto": 0.6818181818181818
+      },
+      {
+        "row_position": 6541,
+        "original_index": 435871,
+        "maximum_tanimoto": 0.6923076923076923
+      },
+      {
+        "row_position": 6542,
+        "original_index": 605451,
+        "maximum_tanimoto": 0.6521739130434783
+      },
+      {
+        "row_position": 6724,
+        "original_index": 240891,
+        "maximum_tanimoto": 0.8518518518518519
+      },
+      {
+        "row_position": 6860,
+        "original_index": 192802,
+        "maximum_tanimoto": 0.53125
+      },
+      {
+        "row_position": 6906,
+        "original_index": 676457,
+        "maximum_tanimoto": 0.6571428571428571
+      },
+      {
+        "row_position": 6938,
+        "original_index": 71061,
+        "maximum_tanimoto": 0.6590909090909091
+      },
+      {
+        "row_position": 6988,
+        "original_index": 1156992,
+        "maximum_tanimoto": 0.7115384615384616
+      },
+      {
+        "row_position": 7005,
+        "original_index": 1293784,
+        "maximum_tanimoto": 0.7017543859649122
+      },
+      {
+        "row_position": 7079,
+        "original_index": 969700,
+        "maximum_tanimoto": 0.7868852459016393
+      },
+      {
+        "row_position": 7173,
+        "original_index": 3269,
+        "maximum_tanimoto": 0.8059701492537313
+      },
+      {
+        "row_position": 7205,
+        "original_index": 1400758,
+        "maximum_tanimoto": 0.5294117647058824
+      },
+      {
+        "row_position": 7224,
+        "original_index": 1257009,
+        "maximum_tanimoto": 0.7021276595744681
+      },
+      {
+        "row_position": 7253,
+        "original_index": 820006,
+        "maximum_tanimoto": 0.4375
+      },
+      {
+        "row_position": 7315,
+        "original_index": 1592273,
+        "maximum_tanimoto": 0.6486486486486487
+      },
+      {
+        "row_position": 7431,
+        "original_index": 101836,
+        "maximum_tanimoto": 0.65625
+      },
+      {
+        "row_position": 7443,
+        "original_index": 489930,
+        "maximum_tanimoto": 0.9347826086956522
+      },
+      {
+        "row_position": 7531,
+        "original_index": 1013831,
+        "maximum_tanimoto": 0.7575757575757576
+      },
+      {
+        "row_position": 7543,
+        "original_index": 1289824,
+        "maximum_tanimoto": 0.4146341463414634
+      },
+      {
+        "row_position": 7548,
+        "original_index": 654471,
+        "maximum_tanimoto": 0.7142857142857143
+      },
+      {
+        "row_position": 7584,
+        "original_index": 1349959,
+        "maximum_tanimoto": 0.6571428571428571
+      },
+      {
+        "row_position": 7616,
+        "original_index": 167913,
+        "maximum_tanimoto": 0.75
+      },
+      {
+        "row_position": 7684,
+        "original_index": 325,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 7811,
+        "original_index": 502660,
+        "maximum_tanimoto": 0.868421052631579
+      },
+      {
+        "row_position": 7903,
+        "original_index": 512887,
+        "maximum_tanimoto": 0.6111111111111112
+      },
+      {
+        "row_position": 7906,
+        "original_index": 1509366,
+        "maximum_tanimoto": 0.9
+      },
+      {
+        "row_position": 7931,
+        "original_index": 1082136,
+        "maximum_tanimoto": 0.68
+      },
+      {
+        "row_position": 7961,
+        "original_index": 1006201,
+        "maximum_tanimoto": 0.7435897435897436
+      },
+      {
+        "row_position": 7964,
+        "original_index": 1453613,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 8005,
+        "original_index": 35226,
+        "maximum_tanimoto": 0.275
+      },
+      {
+        "row_position": 8053,
+        "original_index": 518149,
+        "maximum_tanimoto": 0.88
+      },
+      {
+        "row_position": 8057,
+        "original_index": 747500,
+        "maximum_tanimoto": 0.9523809523809523
+      },
+      {
+        "row_position": 8068,
+        "original_index": 251493,
+        "maximum_tanimoto": 0.6875
+      },
+      {
+        "row_position": 8146,
+        "original_index": 696249,
+        "maximum_tanimoto": 0.5660377358490566
+      },
+      {
+        "row_position": 8178,
+        "original_index": 65009,
+        "maximum_tanimoto": 0.46938775510204084
+      },
+      {
+        "row_position": 8222,
+        "original_index": 1517354,
+        "maximum_tanimoto": 0.7169811320754716
+      },
+      {
+        "row_position": 8350,
+        "original_index": 1612296,
+        "maximum_tanimoto": 0.7746478873239436
+      },
+      {
+        "row_position": 8356,
+        "original_index": 993198,
+        "maximum_tanimoto": 0.7375
+      },
+      {
+        "row_position": 8431,
+        "original_index": 1673744,
+        "maximum_tanimoto": 0.6585365853658537
+      },
+      {
+        "row_position": 8499,
+        "original_index": 63096,
+        "maximum_tanimoto": 0.6111111111111112
+      },
+      {
+        "row_position": 8544,
+        "original_index": 1000045,
+        "maximum_tanimoto": 0.5510204081632653
+      },
+      {
+        "row_position": 8548,
+        "original_index": 991385,
+        "maximum_tanimoto": 0.6666666666666666
+      },
+      {
+        "row_position": 8594,
+        "original_index": 211178,
+        "maximum_tanimoto": 0.48
+      },
+      {
+        "row_position": 8656,
+        "original_index": 364354,
+        "maximum_tanimoto": 0.6
+      },
+      {
+        "row_position": 8696,
+        "original_index": 188620,
+        "maximum_tanimoto": 0.7857142857142857
+      },
+      {
+        "row_position": 8708,
+        "original_index": 195959,
+        "maximum_tanimoto": 0.6938775510204082
+      },
+      {
+        "row_position": 8761,
+        "original_index": 854256,
+        "maximum_tanimoto": 0.746268656716418
+      },
+      {
+        "row_position": 8822,
+        "original_index": 1247805,
+        "maximum_tanimoto": 0.46153846153846156
+      },
+      {
+        "row_position": 9035,
+        "original_index": 1108172,
+        "maximum_tanimoto": 0.5833333333333334
+      },
+      {
+        "row_position": 9103,
+        "original_index": 1104994,
+        "maximum_tanimoto": 0.6904761904761905
+      },
+      {
+        "row_position": 9104,
+        "original_index": 43334,
+        "maximum_tanimoto": 0.5897435897435898
+      },
+      {
+        "row_position": 9191,
+        "original_index": 678044,
+        "maximum_tanimoto": 0.8524590163934426
+      },
+      {
+        "row_position": 9193,
+        "original_index": 704375,
+        "maximum_tanimoto": 0.65
+      },
+      {
+        "row_position": 9234,
+        "original_index": 1585699,
+        "maximum_tanimoto": 0.8461538461538461
+      },
+      {
+        "row_position": 9245,
+        "original_index": 1731898,
+        "maximum_tanimoto": 0.64
+      },
+      {
+        "row_position": 9260,
+        "original_index": 888677,
+        "maximum_tanimoto": 0.6229508196721312
+      },
+      {
+        "row_position": 9795,
+        "original_index": 493017,
+        "maximum_tanimoto": 0.9333333333333333
+      },
+      {
+        "row_position": 9870,
+        "original_index": 1395414,
+        "maximum_tanimoto": 0.6043956043956044
+      },
+      {
+        "row_position": 9968,
+        "original_index": 1248911,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 10052,
+        "original_index": 312391,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 10140,
+        "original_index": 239945,
+        "maximum_tanimoto": 0.4375
+      },
+      {
+        "row_position": 10144,
+        "original_index": 1106609,
+        "maximum_tanimoto": 0.8484848484848485
+      },
+      {
+        "row_position": 10262,
+        "original_index": 750832,
+        "maximum_tanimoto": 0.7358490566037735
+      },
+      {
+        "row_position": 10351,
+        "original_index": 1236409,
+        "maximum_tanimoto": 0.7297297297297297
+      },
+      {
+        "row_position": 10412,
+        "original_index": 1312173,
+        "maximum_tanimoto": 0.765625
+      },
+      {
+        "row_position": 10464,
+        "original_index": 134273,
+        "maximum_tanimoto": 0.6444444444444445
+      },
+      {
+        "row_position": 10528,
+        "original_index": 16447,
+        "maximum_tanimoto": 0.8333333333333334
+      },
+      {
+        "row_position": 10603,
+        "original_index": 195322,
+        "maximum_tanimoto": 0.6805555555555556
+      },
+      {
+        "row_position": 10691,
+        "original_index": 597996,
+        "maximum_tanimoto": 0.8679245283018868
+      },
+      {
+        "row_position": 10863,
+        "original_index": 1657860,
+        "maximum_tanimoto": 0.6666666666666666
+      },
+      {
+        "row_position": 10888,
+        "original_index": 966244,
+        "maximum_tanimoto": 0.7636363636363637
+      },
+      {
+        "row_position": 10895,
+        "original_index": 1701940,
+        "maximum_tanimoto": 0.46
+      },
+      {
+        "row_position": 11018,
+        "original_index": 1632253,
+        "maximum_tanimoto": 0.5476190476190477
+      },
+      {
+        "row_position": 11044,
+        "original_index": 1123078,
+        "maximum_tanimoto": 0.8701298701298701
+      },
+      {
+        "row_position": 11064,
+        "original_index": 1502869,
+        "maximum_tanimoto": 0.8166666666666667
+      },
+      {
+        "row_position": 11066,
+        "original_index": 93657,
+        "maximum_tanimoto": 0.676923076923077
+      },
+      {
+        "row_position": 11080,
+        "original_index": 1605498,
+        "maximum_tanimoto": 0.7878787878787878
+      },
+      {
+        "row_position": 11147,
+        "original_index": 31097,
+        "maximum_tanimoto": 0.7
+      },
+      {
+        "row_position": 11168,
+        "original_index": 779706,
+        "maximum_tanimoto": 0.6226415094339622
+      },
+      {
+        "row_position": 11197,
+        "original_index": 8822,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 11214,
+        "original_index": 1295601,
+        "maximum_tanimoto": 0.7536231884057971
+      },
+      {
+        "row_position": 11227,
+        "original_index": 589881,
+        "maximum_tanimoto": 0.8356164383561644
+      },
+      {
+        "row_position": 11409,
+        "original_index": 1099722,
+        "maximum_tanimoto": 0.6888888888888889
+      },
+      {
+        "row_position": 11498,
+        "original_index": 804795,
+        "maximum_tanimoto": 0.8245614035087719
+      },
+      {
+        "row_position": 11522,
+        "original_index": 804617,
+        "maximum_tanimoto": 0.90625
+      },
+      {
+        "row_position": 11525,
+        "original_index": 1323698,
+        "maximum_tanimoto": 0.8813559322033898
+      },
+      {
+        "row_position": 11579,
+        "original_index": 1674449,
+        "maximum_tanimoto": 0.78125
+      },
+      {
+        "row_position": 11592,
+        "original_index": 1011018,
+        "maximum_tanimoto": 0.7906976744186046
+      },
+      {
+        "row_position": 11595,
+        "original_index": 1230113,
+        "maximum_tanimoto": 0.8125
+      },
+      {
+        "row_position": 11600,
+        "original_index": 1360832,
+        "maximum_tanimoto": 0.5
+      },
+      {
+        "row_position": 11744,
+        "original_index": 1038482,
+        "maximum_tanimoto": 0.7272727272727273
+      },
+      {
+        "row_position": 11794,
+        "original_index": 1224889,
+        "maximum_tanimoto": 0.7391304347826086
+      },
+      {
+        "row_position": 11857,
+        "original_index": 156054,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 11981,
+        "original_index": 1256220,
+        "maximum_tanimoto": 0.7906976744186046
+      },
+      {
+        "row_position": 12096,
+        "original_index": 594304,
+        "maximum_tanimoto": 0.7534246575342466
+      },
+      {
+        "row_position": 12172,
+        "original_index": 1088770,
+        "maximum_tanimoto": 0.6176470588235294
+      },
+      {
+        "row_position": 12244,
+        "original_index": 334803,
+        "maximum_tanimoto": 0.5901639344262295
+      },
+      {
+        "row_position": 12396,
+        "original_index": 1468266,
+        "maximum_tanimoto": 0.5666666666666667
+      },
+      {
+        "row_position": 12413,
+        "original_index": 578878,
+        "maximum_tanimoto": 0.7125
+      },
+      {
+        "row_position": 12489,
+        "original_index": 27647,
+        "maximum_tanimoto": 0.7209302325581395
+      },
+      {
+        "row_position": 12606,
+        "original_index": 875740,
+        "maximum_tanimoto": 0.5866666666666667
+      },
+      {
+        "row_position": 12615,
+        "original_index": 1297615,
+        "maximum_tanimoto": 0.7619047619047619
+      },
+      {
+        "row_position": 12774,
+        "original_index": 1617683,
+        "maximum_tanimoto": 0.6990291262135923
+      },
+      {
+        "row_position": 12789,
+        "original_index": 717490,
+        "maximum_tanimoto": 0.6949152542372882
+      },
+      {
+        "row_position": 12934,
+        "original_index": 891505,
+        "maximum_tanimoto": 0.6216216216216216
+      },
+      {
+        "row_position": 12959,
+        "original_index": 1235950,
+        "maximum_tanimoto": 0.5921052631578947
+      },
+      {
+        "row_position": 12961,
+        "original_index": 1241741,
+        "maximum_tanimoto": 0.75
+      },
+      {
+        "row_position": 12979,
+        "original_index": 986339,
+        "maximum_tanimoto": 0.5625
+      },
+      {
+        "row_position": 13039,
+        "original_index": 44360,
+        "maximum_tanimoto": 0.6153846153846154
+      },
+      {
+        "row_position": 13083,
+        "original_index": 758825,
+        "maximum_tanimoto": 0.47619047619047616
+      },
+      {
+        "row_position": 13090,
+        "original_index": 1479982,
+        "maximum_tanimoto": 0.6923076923076923
+      },
+      {
+        "row_position": 13150,
+        "original_index": 927011,
+        "maximum_tanimoto": 0.9516129032258065
+      },
+      {
+        "row_position": 13191,
+        "original_index": 238802,
+        "maximum_tanimoto": 0.4117647058823529
+      },
+      {
+        "row_position": 13255,
+        "original_index": 1662329,
+        "maximum_tanimoto": 0.7222222222222222
+      },
+      {
+        "row_position": 13293,
+        "original_index": 1004348,
+        "maximum_tanimoto": 0.5535714285714286
+      },
+      {
+        "row_position": 13367,
+        "original_index": 1003228,
+        "maximum_tanimoto": 0.782608695652174
+      },
+      {
+        "row_position": 13495,
+        "original_index": 939751,
+        "maximum_tanimoto": 0.7027027027027027
+      },
+      {
+        "row_position": 13517,
+        "original_index": 531569,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 13534,
+        "original_index": 1393959,
+        "maximum_tanimoto": 0.6
+      },
+      {
+        "row_position": 13741,
+        "original_index": 1553361,
+        "maximum_tanimoto": 0.8305084745762712
+      },
+      {
+        "row_position": 13786,
+        "original_index": 1602647,
+        "maximum_tanimoto": 0.5373134328358209
+      },
+      {
+        "row_position": 13849,
+        "original_index": 164156,
+        "maximum_tanimoto": 0.9080459770114943
+      },
+      {
+        "row_position": 13930,
+        "original_index": 147403,
+        "maximum_tanimoto": 0.75
+      },
+      {
+        "row_position": 13954,
+        "original_index": 310414,
+        "maximum_tanimoto": 0.575
+      },
+      {
+        "row_position": 14033,
+        "original_index": 1508617,
+        "maximum_tanimoto": 0.7872340425531915
+      },
+      {
+        "row_position": 14056,
+        "original_index": 612509,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 14063,
+        "original_index": 777312,
+        "maximum_tanimoto": 0.6785714285714286
+      },
+      {
+        "row_position": 14082,
+        "original_index": 1639178,
+        "maximum_tanimoto": 0.9215686274509803
+      },
+      {
+        "row_position": 14138,
+        "original_index": 1569359,
+        "maximum_tanimoto": 0.7692307692307693
+      },
+      {
+        "row_position": 14190,
+        "original_index": 1293745,
+        "maximum_tanimoto": 0.717391304347826
+      },
+      {
+        "row_position": 14220,
+        "original_index": 281184,
+        "maximum_tanimoto": 0.6410256410256411
+      },
+      {
+        "row_position": 14230,
+        "original_index": 840858,
+        "maximum_tanimoto": 0.6756756756756757
+      },
+      {
+        "row_position": 14286,
+        "original_index": 1295916,
+        "maximum_tanimoto": 0.9436619718309859
+      },
+      {
+        "row_position": 14315,
+        "original_index": 871291,
+        "maximum_tanimoto": 0.4805194805194805
+      },
+      {
+        "row_position": 14455,
+        "original_index": 891874,
+        "maximum_tanimoto": 0.8
+      },
+      {
+        "row_position": 14476,
+        "original_index": 1255461,
+        "maximum_tanimoto": 0.5428571428571428
+      },
+      {
+        "row_position": 14559,
+        "original_index": 641029,
+        "maximum_tanimoto": 0.74
+      },
+      {
+        "row_position": 14604,
+        "original_index": 1629146,
+        "maximum_tanimoto": 0.782608695652174
+      },
+      {
+        "row_position": 15020,
+        "original_index": 239203,
+        "maximum_tanimoto": 0.6666666666666666
+      },
+      {
+        "row_position": 15069,
+        "original_index": 1670055,
+        "maximum_tanimoto": 0.7619047619047619
+      },
+      {
+        "row_position": 15077,
+        "original_index": 1632388,
+        "maximum_tanimoto": 0.7708333333333334
+      },
+      {
+        "row_position": 15116,
+        "original_index": 838260,
+        "maximum_tanimoto": 0.6097560975609756
+      },
+      {
+        "row_position": 15117,
+        "original_index": 1000717,
+        "maximum_tanimoto": 0.7586206896551724
+      },
+      {
+        "row_position": 15158,
+        "original_index": 287257,
+        "maximum_tanimoto": 0.5853658536585366
+      },
+      {
+        "row_position": 15168,
+        "original_index": 1149577,
+        "maximum_tanimoto": 0.84
+      },
+      {
+        "row_position": 15287,
+        "original_index": 594845,
+        "maximum_tanimoto": 0.8648648648648649
+      },
+      {
+        "row_position": 15303,
+        "original_index": 1672267,
+        "maximum_tanimoto": 0.7272727272727273
+      },
+      {
+        "row_position": 15408,
+        "original_index": 387183,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 15462,
+        "original_index": 1215039,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 15464,
+        "original_index": 521030,
+        "maximum_tanimoto": 0.8095238095238095
+      },
+      {
+        "row_position": 15595,
+        "original_index": 353086,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 15612,
+        "original_index": 1014095,
+        "maximum_tanimoto": 0.4807692307692308
+      },
+      {
+        "row_position": 15618,
+        "original_index": 656082,
+        "maximum_tanimoto": 0.3333333333333333
+      },
+      {
+        "row_position": 15695,
+        "original_index": 638701,
+        "maximum_tanimoto": 0.8301886792452831
+      },
+      {
+        "row_position": 15733,
+        "original_index": 167797,
+        "maximum_tanimoto": 0.6521739130434783
+      },
+      {
+        "row_position": 15765,
+        "original_index": 458123,
+        "maximum_tanimoto": 0.8269230769230769
+      },
+      {
+        "row_position": 15869,
+        "original_index": 185713,
+        "maximum_tanimoto": 0.6896551724137931
+      },
+      {
+        "row_position": 15873,
+        "original_index": 1453422,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 15878,
+        "original_index": 1723607,
+        "maximum_tanimoto": 0.7962962962962963
+      },
+      {
+        "row_position": 15881,
+        "original_index": 272801,
+        "maximum_tanimoto": 0.8305084745762712
+      },
+      {
+        "row_position": 16100,
+        "original_index": 853181,
+        "maximum_tanimoto": 0.625
+      },
+      {
+        "row_position": 16186,
+        "original_index": 1718958,
+        "maximum_tanimoto": 0.6666666666666666
+      },
+      {
+        "row_position": 16212,
+        "original_index": 1603608,
+        "maximum_tanimoto": 0.8166666666666667
+      },
+      {
+        "row_position": 16231,
+        "original_index": 775737,
+        "maximum_tanimoto": 0.796875
+      },
+      {
+        "row_position": 16284,
+        "original_index": 382602,
+        "maximum_tanimoto": 0.75
+      },
+      {
+        "row_position": 16321,
+        "original_index": 457447,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 16347,
+        "original_index": 1388067,
+        "maximum_tanimoto": 0.6481481481481481
+      },
+      {
+        "row_position": 16588,
+        "original_index": 1596739,
+        "maximum_tanimoto": 0.5576923076923077
+      },
+      {
+        "row_position": 16616,
+        "original_index": 281819,
+        "maximum_tanimoto": 0.8484848484848485
+      },
+      {
+        "row_position": 16675,
+        "original_index": 1104731,
+        "maximum_tanimoto": 0.6052631578947368
+      },
+      {
+        "row_position": 16760,
+        "original_index": 71153,
+        "maximum_tanimoto": 0.7166666666666667
+      },
+      {
+        "row_position": 16832,
+        "original_index": 852574,
+        "maximum_tanimoto": 0.59375
+      },
+      {
+        "row_position": 16854,
+        "original_index": 125053,
+        "maximum_tanimoto": 0.8666666666666667
+      },
+      {
+        "row_position": 16900,
+        "original_index": 28574,
+        "maximum_tanimoto": 0.7631578947368421
+      },
+      {
+        "row_position": 16969,
+        "original_index": 1722257,
+        "maximum_tanimoto": 0.58
+      },
+      {
+        "row_position": 17028,
+        "original_index": 795915,
+        "maximum_tanimoto": 0.6511627906976745
+      },
+      {
+        "row_position": 17069,
+        "original_index": 73341,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 17098,
+        "original_index": 220981,
+        "maximum_tanimoto": 0.5636363636363636
+      },
+      {
+        "row_position": 17211,
+        "original_index": 5803,
+        "maximum_tanimoto": 0.8214285714285714
+      },
+      {
+        "row_position": 17323,
+        "original_index": 159474,
+        "maximum_tanimoto": 0.896551724137931
+      },
+      {
+        "row_position": 17395,
+        "original_index": 262552,
+        "maximum_tanimoto": 0.6666666666666666
+      },
+      {
+        "row_position": 17420,
+        "original_index": 1100584,
+        "maximum_tanimoto": 0.64
+      },
+      {
+        "row_position": 17738,
+        "original_index": 11744,
+        "maximum_tanimoto": 0.5111111111111111
+      },
+      {
+        "row_position": 17818,
+        "original_index": 673251,
+        "maximum_tanimoto": 0.7906976744186046
+      },
+      {
+        "row_position": 17823,
+        "original_index": 377497,
+        "maximum_tanimoto": 0.5238095238095238
+      },
+      {
+        "row_position": 17905,
+        "original_index": 1439863,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 17950,
+        "original_index": 401884,
+        "maximum_tanimoto": 0.575
+      },
+      {
+        "row_position": 17980,
+        "original_index": 1548331,
+        "maximum_tanimoto": 0.7547169811320755
+      },
+      {
+        "row_position": 18127,
+        "original_index": 986555,
+        "maximum_tanimoto": 0.7464788732394366
+      },
+      {
+        "row_position": 18193,
+        "original_index": 732423,
+        "maximum_tanimoto": 0.6911764705882353
+      },
+      {
+        "row_position": 18283,
+        "original_index": 735354,
+        "maximum_tanimoto": 0.9782608695652174
+      },
+      {
+        "row_position": 18286,
+        "original_index": 375824,
+        "maximum_tanimoto": 0.6097560975609756
+      },
+      {
+        "row_position": 18325,
+        "original_index": 1627852,
+        "maximum_tanimoto": 0.6792452830188679
+      },
+      {
+        "row_position": 18393,
+        "original_index": 1464632,
+        "maximum_tanimoto": 0.7551020408163265
+      },
+      {
+        "row_position": 18405,
+        "original_index": 1078258,
+        "maximum_tanimoto": 0.819672131147541
+      },
+      {
+        "row_position": 18431,
+        "original_index": 542935,
+        "maximum_tanimoto": 0.62
+      },
+      {
+        "row_position": 18466,
+        "original_index": 1649746,
+        "maximum_tanimoto": 0.9846153846153847
+      },
+      {
+        "row_position": 18476,
+        "original_index": 727086,
+        "maximum_tanimoto": 0.6
+      },
+      {
+        "row_position": 18515,
+        "original_index": 540122,
+        "maximum_tanimoto": 0.819672131147541
+      },
+      {
+        "row_position": 18581,
+        "original_index": 1604365,
+        "maximum_tanimoto": 0.5853658536585366
+      },
+      {
+        "row_position": 18584,
+        "original_index": 341948,
+        "maximum_tanimoto": 0.71875
+      },
+      {
+        "row_position": 18603,
+        "original_index": 140441,
+        "maximum_tanimoto": 0.8333333333333334
+      },
+      {
+        "row_position": 18671,
+        "original_index": 1458277,
+        "maximum_tanimoto": 0.6153846153846154
+      },
+      {
+        "row_position": 18744,
+        "original_index": 1688083,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 18785,
+        "original_index": 542402,
+        "maximum_tanimoto": 0.7704918032786885
+      },
+      {
+        "row_position": 18872,
+        "original_index": 1551702,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 18875,
+        "original_index": 1617442,
+        "maximum_tanimoto": 0.8961038961038961
+      },
+      {
+        "row_position": 18968,
+        "original_index": 1301982,
+        "maximum_tanimoto": 0.6666666666666666
+      },
+      {
+        "row_position": 18983,
+        "original_index": 165134,
+        "maximum_tanimoto": 0.71875
+      },
+      {
+        "row_position": 19037,
+        "original_index": 1298597,
+        "maximum_tanimoto": 0.7368421052631579
+      },
+      {
+        "row_position": 19059,
+        "original_index": 1684615,
+        "maximum_tanimoto": 0.9433962264150944
+      },
+      {
+        "row_position": 19271,
+        "original_index": 1471931,
+        "maximum_tanimoto": 0.725
+      },
+      {
+        "row_position": 19278,
+        "original_index": 131699,
+        "maximum_tanimoto": 0.48
+      },
+      {
+        "row_position": 19316,
+        "original_index": 1162573,
+        "maximum_tanimoto": 0.8227848101265823
+      },
+      {
+        "row_position": 19435,
+        "original_index": 756989,
+        "maximum_tanimoto": 0.75
+      },
+      {
+        "row_position": 19477,
+        "original_index": 1006996,
+        "maximum_tanimoto": 0.5818181818181818
+      },
+      {
+        "row_position": 19479,
+        "original_index": 341149,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 19542,
+        "original_index": 35772,
+        "maximum_tanimoto": 0.7714285714285715
+      },
+      {
+        "row_position": 19603,
+        "original_index": 438991,
+        "maximum_tanimoto": 0.5333333333333333
+      },
+      {
+        "row_position": 19616,
+        "original_index": 1594191,
+        "maximum_tanimoto": 0.6438356164383562
+      },
+      {
+        "row_position": 19702,
+        "original_index": 864853,
+        "maximum_tanimoto": 0.7777777777777778
+      },
+      {
+        "row_position": 19783,
+        "original_index": 1256939,
+        "maximum_tanimoto": 0.6428571428571429
+      },
+      {
+        "row_position": 20137,
+        "original_index": 904311,
+        "maximum_tanimoto": 0.6666666666666666
+      },
+      {
+        "row_position": 20144,
+        "original_index": 1072272,
+        "maximum_tanimoto": 0.7450980392156863
+      },
+      {
+        "row_position": 20149,
+        "original_index": 94734,
+        "maximum_tanimoto": 0.6851851851851852
+      },
+      {
+        "row_position": 20259,
+        "original_index": 1135045,
+        "maximum_tanimoto": 0.98
+      },
+      {
+        "row_position": 20533,
+        "original_index": 1151497,
+        "maximum_tanimoto": 0.5151515151515151
+      },
+      {
+        "row_position": 20561,
+        "original_index": 169269,
+        "maximum_tanimoto": 0.8026315789473685
+      },
+      {
+        "row_position": 20589,
+        "original_index": 119632,
+        "maximum_tanimoto": 0.9347826086956522
+      },
+      {
+        "row_position": 20696,
+        "original_index": 490494,
+        "maximum_tanimoto": 0.7966101694915254
+      },
+      {
+        "row_position": 20769,
+        "original_index": 1760641,
+        "maximum_tanimoto": 0.7164179104477612
+      },
+      {
+        "row_position": 20848,
+        "original_index": 295884,
+        "maximum_tanimoto": 0.6382978723404256
+      },
+      {
+        "row_position": 20863,
+        "original_index": 227517,
+        "maximum_tanimoto": 0.5277777777777778
+      },
+      {
+        "row_position": 20876,
+        "original_index": 853999,
+        "maximum_tanimoto": 0.8
+      },
+      {
+        "row_position": 21035,
+        "original_index": 296698,
+        "maximum_tanimoto": 0.7916666666666666
+      },
+      {
+        "row_position": 21092,
+        "original_index": 322500,
+        "maximum_tanimoto": 0.82
+      },
+      {
+        "row_position": 21564,
+        "original_index": 752307,
+        "maximum_tanimoto": 0.5102040816326531
+      },
+      {
+        "row_position": 21606,
+        "original_index": 1516955,
+        "maximum_tanimoto": 0.8181818181818182
+      },
+      {
+        "row_position": 21631,
+        "original_index": 176803,
+        "maximum_tanimoto": 0.7142857142857143
+      },
+      {
+        "row_position": 21646,
+        "original_index": 1349555,
+        "maximum_tanimoto": 0.8873239436619719
+      },
+      {
+        "row_position": 21656,
+        "original_index": 252524,
+        "maximum_tanimoto": 0.6153846153846154
+      },
+      {
+        "row_position": 21976,
+        "original_index": 1202166,
+        "maximum_tanimoto": 0.7209302325581395
+      },
+      {
+        "row_position": 22058,
+        "original_index": 905847,
+        "maximum_tanimoto": 0.7741935483870968
+      },
+      {
+        "row_position": 22074,
+        "original_index": 1247464,
+        "maximum_tanimoto": 0.4878048780487805
+      },
+      {
+        "row_position": 22277,
+        "original_index": 19673,
+        "maximum_tanimoto": 0.7714285714285715
+      },
+      {
+        "row_position": 22419,
+        "original_index": 489407,
+        "maximum_tanimoto": 0.5757575757575758
+      },
+      {
+        "row_position": 22477,
+        "original_index": 1272298,
+        "maximum_tanimoto": 0.4603174603174603
+      },
+      {
+        "row_position": 22538,
+        "original_index": 145124,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 22545,
+        "original_index": 1165094,
+        "maximum_tanimoto": 0.8860759493670886
+      },
+      {
+        "row_position": 22567,
+        "original_index": 549681,
+        "maximum_tanimoto": 0.5121951219512195
+      },
+      {
+        "row_position": 22585,
+        "original_index": 1335128,
+        "maximum_tanimoto": 0.5
+      },
+      {
+        "row_position": 22685,
+        "original_index": 916914,
+        "maximum_tanimoto": 0.7169811320754716
+      },
+      {
+        "row_position": 22725,
+        "original_index": 1548580,
+        "maximum_tanimoto": 0.8360655737704918
+      },
+      {
+        "row_position": 22744,
+        "original_index": 1567378,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 22822,
+        "original_index": 172763,
+        "maximum_tanimoto": 0.8333333333333334
+      },
+      {
+        "row_position": 22868,
+        "original_index": 1639006,
+        "maximum_tanimoto": 0.8055555555555556
+      },
+      {
+        "row_position": 23133,
+        "original_index": 571126,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 23176,
+        "original_index": 839198,
+        "maximum_tanimoto": 0.6226415094339622
+      },
+      {
+        "row_position": 23212,
+        "original_index": 862898,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 23226,
+        "original_index": 786314,
+        "maximum_tanimoto": 0.76
+      },
+      {
+        "row_position": 23353,
+        "original_index": 828639,
+        "maximum_tanimoto": 0.7307692307692307
+      },
+      {
+        "row_position": 23360,
+        "original_index": 1559336,
+        "maximum_tanimoto": 0.7692307692307693
+      },
+      {
+        "row_position": 23457,
+        "original_index": 656835,
+        "maximum_tanimoto": 0.46296296296296297
+      },
+      {
+        "row_position": 23540,
+        "original_index": 1264140,
+        "maximum_tanimoto": 0.6101694915254238
+      },
+      {
+        "row_position": 23544,
+        "original_index": 1178585,
+        "maximum_tanimoto": 0.7843137254901961
+      },
+      {
+        "row_position": 23577,
+        "original_index": 469653,
+        "maximum_tanimoto": 0.75
+      },
+      {
+        "row_position": 23579,
+        "original_index": 1539024,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 23771,
+        "original_index": 51865,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 23865,
+        "original_index": 1463678,
+        "maximum_tanimoto": 0.6590909090909091
+      },
+      {
+        "row_position": 23925,
+        "original_index": 328591,
+        "maximum_tanimoto": 0.7837837837837838
+      },
+      {
+        "row_position": 23929,
+        "original_index": 662606,
+        "maximum_tanimoto": 0.671875
+      },
+      {
+        "row_position": 24033,
+        "original_index": 708792,
+        "maximum_tanimoto": 0.5714285714285714
+      },
+      {
+        "row_position": 24142,
+        "original_index": 399894,
+        "maximum_tanimoto": 0.6666666666666666
+      },
+      {
+        "row_position": 24190,
+        "original_index": 584655,
+        "maximum_tanimoto": 0.7962962962962963
+      },
+      {
+        "row_position": 24295,
+        "original_index": 1557724,
+        "maximum_tanimoto": 0.8444444444444444
+      },
+      {
+        "row_position": 24355,
+        "original_index": 1558212,
+        "maximum_tanimoto": 0.5777777777777777
+      },
+      {
+        "row_position": 24365,
+        "original_index": 1157735,
+        "maximum_tanimoto": 0.8275862068965517
+      },
+      {
+        "row_position": 24372,
+        "original_index": 1529202,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 24459,
+        "original_index": 1686677,
+        "maximum_tanimoto": 0.5
+      },
+      {
+        "row_position": 24483,
+        "original_index": 577771,
+        "maximum_tanimoto": 0.8181818181818182
+      },
+      {
+        "row_position": 24611,
+        "original_index": 1544501,
+        "maximum_tanimoto": 0.723404255319149
+      },
+      {
+        "row_position": 24615,
+        "original_index": 600734,
+        "maximum_tanimoto": 0.5862068965517241
+      },
+      {
+        "row_position": 24645,
+        "original_index": 1291085,
+        "maximum_tanimoto": 0.8717948717948718
+      },
+      {
+        "row_position": 24648,
+        "original_index": 1043129,
+        "maximum_tanimoto": 0.8163265306122449
+      },
+      {
+        "row_position": 24652,
+        "original_index": 1489691,
+        "maximum_tanimoto": 0.6666666666666666
+      },
+      {
+        "row_position": 24759,
+        "original_index": 992112,
+        "maximum_tanimoto": 0.7333333333333333
+      },
+      {
+        "row_position": 24870,
+        "original_index": 1255466,
+        "maximum_tanimoto": 0.7611940298507462
+      },
+      {
+        "row_position": 24882,
+        "original_index": 1453755,
+        "maximum_tanimoto": 0.7428571428571429
+      },
+      {
+        "row_position": 24959,
+        "original_index": 4317,
+        "maximum_tanimoto": 0.6304347826086957
+      },
+      {
+        "row_position": 24984,
+        "original_index": 274612,
+        "maximum_tanimoto": 0.7058823529411765
+      },
+      {
+        "row_position": 25024,
+        "original_index": 1548874,
+        "maximum_tanimoto": 0.7297297297297297
+      },
+      {
+        "row_position": 25183,
+        "original_index": 523358,
+        "maximum_tanimoto": 0.75
+      },
+      {
+        "row_position": 25211,
+        "original_index": 9969,
+        "maximum_tanimoto": 0.59375
+      },
+      {
+        "row_position": 25326,
+        "original_index": 942701,
+        "maximum_tanimoto": 0.7368421052631579
+      },
+      {
+        "row_position": 25407,
+        "original_index": 940402,
+        "maximum_tanimoto": 0.8441558441558441
+      },
+      {
+        "row_position": 25542,
+        "original_index": 1763119,
+        "maximum_tanimoto": 0.7727272727272727
+      },
+      {
+        "row_position": 25551,
+        "original_index": 664154,
+        "maximum_tanimoto": 0.7205882352941176
+      },
+      {
+        "row_position": 25553,
+        "original_index": 804533,
+        "maximum_tanimoto": 0.6206896551724138
+      },
+      {
+        "row_position": 25609,
+        "original_index": 563594,
+        "maximum_tanimoto": 0.819672131147541
+      },
+      {
+        "row_position": 25716,
+        "original_index": 226509,
+        "maximum_tanimoto": 0.7916666666666666
+      },
+      {
+        "row_position": 25726,
+        "original_index": 1398900,
+        "maximum_tanimoto": 0.6818181818181818
+      },
+      {
+        "row_position": 25751,
+        "original_index": 898843,
+        "maximum_tanimoto": 0.5531914893617021
+      },
+      {
+        "row_position": 25835,
+        "original_index": 415308,
+        "maximum_tanimoto": 0.6458333333333334
+      },
+      {
+        "row_position": 25893,
+        "original_index": 1450725,
+        "maximum_tanimoto": 0.65625
+      },
+      {
+        "row_position": 26068,
+        "original_index": 987176,
+        "maximum_tanimoto": 0.5866666666666667
+      },
+      {
+        "row_position": 26109,
+        "original_index": 1683646,
+        "maximum_tanimoto": 0.7647058823529411
+      },
+      {
+        "row_position": 26214,
+        "original_index": 1222924,
+        "maximum_tanimoto": 0.7222222222222222
+      },
+      {
+        "row_position": 26216,
+        "original_index": 315964,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 26410,
+        "original_index": 352644,
+        "maximum_tanimoto": 0.7746478873239436
+      },
+      {
+        "row_position": 26413,
+        "original_index": 1348729,
+        "maximum_tanimoto": 0.8076923076923077
+      },
+      {
+        "row_position": 26441,
+        "original_index": 156928,
+        "maximum_tanimoto": 0.6538461538461539
+      },
+      {
+        "row_position": 26563,
+        "original_index": 620262,
+        "maximum_tanimoto": 0.7560975609756098
+      },
+      {
+        "row_position": 26588,
+        "original_index": 1401870,
+        "maximum_tanimoto": 0.7878787878787878
+      },
+      {
+        "row_position": 26688,
+        "original_index": 287425,
+        "maximum_tanimoto": 0.7857142857142857
+      },
+      {
+        "row_position": 26698,
+        "original_index": 992674,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 26752,
+        "original_index": 1562391,
+        "maximum_tanimoto": 0.5070422535211268
+      },
+      {
+        "row_position": 26788,
+        "original_index": 524667,
+        "maximum_tanimoto": 0.6666666666666666
+      },
+      {
+        "row_position": 26977,
+        "original_index": 1170107,
+        "maximum_tanimoto": 0.7833333333333333
+      },
+      {
+        "row_position": 27071,
+        "original_index": 235933,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 27207,
+        "original_index": 1169848,
+        "maximum_tanimoto": 0.7777777777777778
+      },
+      {
+        "row_position": 27260,
+        "original_index": 1139115,
+        "maximum_tanimoto": 0.972972972972973
+      },
+      {
+        "row_position": 27297,
+        "original_index": 308673,
+        "maximum_tanimoto": 0.88
+      },
+      {
+        "row_position": 27386,
+        "original_index": 1378080,
+        "maximum_tanimoto": 0.5735294117647058
+      },
+      {
+        "row_position": 27444,
+        "original_index": 73990,
+        "maximum_tanimoto": 0.6521739130434783
+      },
+      {
+        "row_position": 27553,
+        "original_index": 1094591,
+        "maximum_tanimoto": 0.8591549295774648
+      },
+      {
+        "row_position": 27577,
+        "original_index": 1333419,
+        "maximum_tanimoto": 0.7066666666666667
+      },
+      {
+        "row_position": 27637,
+        "original_index": 1019757,
+        "maximum_tanimoto": 0.8315789473684211
+      },
+      {
+        "row_position": 27654,
+        "original_index": 989735,
+        "maximum_tanimoto": 0.7272727272727273
+      },
+      {
+        "row_position": 27679,
+        "original_index": 1363666,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 27706,
+        "original_index": 863701,
+        "maximum_tanimoto": 0.7931034482758621
+      },
+      {
+        "row_position": 27779,
+        "original_index": 1411232,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 28004,
+        "original_index": 319938,
+        "maximum_tanimoto": 0.6153846153846154
+      },
+      {
+        "row_position": 28120,
+        "original_index": 327870,
+        "maximum_tanimoto": 0.6170212765957447
+      },
+      {
+        "row_position": 28213,
+        "original_index": 1299572,
+        "maximum_tanimoto": 0.5428571428571428
+      },
+      {
+        "row_position": 28231,
+        "original_index": 167360,
+        "maximum_tanimoto": 0.6666666666666666
+      },
+      {
+        "row_position": 28248,
+        "original_index": 1324047,
+        "maximum_tanimoto": 0.5581395348837209
+      },
+      {
+        "row_position": 28348,
+        "original_index": 272026,
+        "maximum_tanimoto": 0.6578947368421053
+      },
+      {
+        "row_position": 28353,
+        "original_index": 181841,
+        "maximum_tanimoto": 0.7105263157894737
+      },
+      {
+        "row_position": 28365,
+        "original_index": 646179,
+        "maximum_tanimoto": 0.4107142857142857
+      },
+      {
+        "row_position": 28401,
+        "original_index": 1576374,
+        "maximum_tanimoto": 0.847457627118644
+      },
+      {
+        "row_position": 28424,
+        "original_index": 268987,
+        "maximum_tanimoto": 0.7258064516129032
+      },
+      {
+        "row_position": 28457,
+        "original_index": 1347381,
+        "maximum_tanimoto": 0.8714285714285714
+      },
+      {
+        "row_position": 28550,
+        "original_index": 2295,
+        "maximum_tanimoto": 0.6153846153846154
+      },
+      {
+        "row_position": 28619,
+        "original_index": 1752933,
+        "maximum_tanimoto": 0.7647058823529411
+      },
+      {
+        "row_position": 28658,
+        "original_index": 634045,
+        "maximum_tanimoto": 0.7530864197530864
+      },
+      {
+        "row_position": 28701,
+        "original_index": 859441,
+        "maximum_tanimoto": 0.6875
+      },
+      {
+        "row_position": 28754,
+        "original_index": 1074983,
+        "maximum_tanimoto": 0.8461538461538461
+      },
+      {
+        "row_position": 29008,
+        "original_index": 777259,
+        "maximum_tanimoto": 0.7560975609756098
+      },
+      {
+        "row_position": 29251,
+        "original_index": 801611,
+        "maximum_tanimoto": 0.58
+      },
+      {
+        "row_position": 29317,
+        "original_index": 1721170,
+        "maximum_tanimoto": 0.7058823529411765
+      },
+      {
+        "row_position": 29382,
+        "original_index": 973084,
+        "maximum_tanimoto": 0.9285714285714286
+      },
+      {
+        "row_position": 29400,
+        "original_index": 998165,
+        "maximum_tanimoto": 0.85
+      },
+      {
+        "row_position": 29491,
+        "original_index": 672953,
+        "maximum_tanimoto": 0.7962962962962963
+      },
+      {
+        "row_position": 29517,
+        "original_index": 991807,
+        "maximum_tanimoto": 0.7297297297297297
+      },
+      {
+        "row_position": 29583,
+        "original_index": 1136686,
+        "maximum_tanimoto": 0.5714285714285714
+      },
+      {
+        "row_position": 29689,
+        "original_index": 1194108,
+        "maximum_tanimoto": 0.8955223880597015
+      },
+      {
+        "row_position": 29751,
+        "original_index": 515942,
+        "maximum_tanimoto": 0.660377358490566
+      },
+      {
+        "row_position": 29900,
+        "original_index": 1029887,
+        "maximum_tanimoto": 0.7636363636363637
+      },
+      {
+        "row_position": 29946,
+        "original_index": 70963,
+        "maximum_tanimoto": 0.6268656716417911
+      },
+      {
+        "row_position": 30329,
+        "original_index": 1427645,
+        "maximum_tanimoto": 0.746268656716418
+      },
+      {
+        "row_position": 30342,
+        "original_index": 633922,
+        "maximum_tanimoto": 0.7910447761194029
+      },
+      {
+        "row_position": 30503,
+        "original_index": 464231,
+        "maximum_tanimoto": 0.6290322580645161
+      },
+      {
+        "row_position": 30570,
+        "original_index": 1732850,
+        "maximum_tanimoto": 0.64
+      },
+      {
+        "row_position": 30641,
+        "original_index": 465766,
+        "maximum_tanimoto": 0.6
+      },
+      {
+        "row_position": 30664,
+        "original_index": 1043964,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 30805,
+        "original_index": 541129,
+        "maximum_tanimoto": 0.5588235294117647
+      },
+      {
+        "row_position": 30855,
+        "original_index": 1246133,
+        "maximum_tanimoto": 0.6052631578947368
+      },
+      {
+        "row_position": 30957,
+        "original_index": 1749748,
+        "maximum_tanimoto": 0.6944444444444444
+      },
+      {
+        "row_position": 31076,
+        "original_index": 551751,
+        "maximum_tanimoto": 0.4583333333333333
+      },
+      {
+        "row_position": 31208,
+        "original_index": 394495,
+        "maximum_tanimoto": 0.8913043478260869
+      },
+      {
+        "row_position": 31252,
+        "original_index": 1250638,
+        "maximum_tanimoto": 0.7333333333333333
+      },
+      {
+        "row_position": 31333,
+        "original_index": 367274,
+        "maximum_tanimoto": 0.7333333333333333
+      },
+      {
+        "row_position": 31421,
+        "original_index": 792673,
+        "maximum_tanimoto": 0.7407407407407407
+      },
+      {
+        "row_position": 31428,
+        "original_index": 486848,
+        "maximum_tanimoto": 0.6909090909090909
+      },
+      {
+        "row_position": 31580,
+        "original_index": 727608,
+        "maximum_tanimoto": 0.75
+      },
+      {
+        "row_position": 31596,
+        "original_index": 1208862,
+        "maximum_tanimoto": 0.9130434782608695
+      },
+      {
+        "row_position": 31634,
+        "original_index": 132061,
+        "maximum_tanimoto": 0.6415094339622641
+      },
+      {
+        "row_position": 31650,
+        "original_index": 94181,
+        "maximum_tanimoto": 0.6451612903225806
+      },
+      {
+        "row_position": 31705,
+        "original_index": 520905,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 31862,
+        "original_index": 404322,
+        "maximum_tanimoto": 0.5757575757575758
+      },
+      {
+        "row_position": 31877,
+        "original_index": 70208,
+        "maximum_tanimoto": 0.5714285714285714
+      },
+      {
+        "row_position": 31945,
+        "original_index": 1036263,
+        "maximum_tanimoto": 0.8852459016393442
+      },
+      {
+        "row_position": 31988,
+        "original_index": 756047,
+        "maximum_tanimoto": 0.59375
+      },
+      {
+        "row_position": 32084,
+        "original_index": 1666602,
+        "maximum_tanimoto": 0.8235294117647058
+      },
+      {
+        "row_position": 32089,
+        "original_index": 1046152,
+        "maximum_tanimoto": 0.7368421052631579
+      },
+      {
+        "row_position": 32117,
+        "original_index": 744914,
+        "maximum_tanimoto": 0.546875
+      },
+      {
+        "row_position": 32184,
+        "original_index": 1706767,
+        "maximum_tanimoto": 0.8243243243243243
+      },
+      {
+        "row_position": 32248,
+        "original_index": 1526975,
+        "maximum_tanimoto": 0.8135593220338984
+      },
+      {
+        "row_position": 32249,
+        "original_index": 262673,
+        "maximum_tanimoto": 0.8387096774193549
+      },
+      {
+        "row_position": 32320,
+        "original_index": 725053,
+        "maximum_tanimoto": 0.6470588235294118
+      },
+      {
+        "row_position": 32452,
+        "original_index": 460248,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 32505,
+        "original_index": 783877,
+        "maximum_tanimoto": 0.8
+      },
+      {
+        "row_position": 32655,
+        "original_index": 468809,
+        "maximum_tanimoto": 0.8775510204081632
+      },
+      {
+        "row_position": 32699,
+        "original_index": 1548231,
+        "maximum_tanimoto": 0.5671641791044776
+      },
+      {
+        "row_position": 32881,
+        "original_index": 72007,
+        "maximum_tanimoto": 0.5217391304347826
+      },
+      {
+        "row_position": 32885,
+        "original_index": 1048405,
+        "maximum_tanimoto": 0.7333333333333333
+      },
+      {
+        "row_position": 32922,
+        "original_index": 1592464,
+        "maximum_tanimoto": 0.5681818181818182
+      },
+      {
+        "row_position": 32964,
+        "original_index": 1120801,
+        "maximum_tanimoto": 0.8301886792452831
+      },
+      {
+        "row_position": 32972,
+        "original_index": 728625,
+        "maximum_tanimoto": 0.8363636363636363
+      },
+      {
+        "row_position": 33042,
+        "original_index": 743640,
+        "maximum_tanimoto": 0.7037037037037037
+      },
+      {
+        "row_position": 33243,
+        "original_index": 1059403,
+        "maximum_tanimoto": 0.7959183673469388
+      },
+      {
+        "row_position": 33274,
+        "original_index": 760352,
+        "maximum_tanimoto": 0.676923076923077
+      },
+      {
+        "row_position": 33318,
+        "original_index": 1474995,
+        "maximum_tanimoto": 0.828125
+      },
+      {
+        "row_position": 33377,
+        "original_index": 162173,
+        "maximum_tanimoto": 0.7073170731707317
+      },
+      {
+        "row_position": 33413,
+        "original_index": 1133633,
+        "maximum_tanimoto": 0.7924528301886793
+      },
+      {
+        "row_position": 33496,
+        "original_index": 704067,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 33521,
+        "original_index": 677453,
+        "maximum_tanimoto": 0.7313432835820896
+      },
+      {
+        "row_position": 33558,
+        "original_index": 21742,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 33661,
+        "original_index": 1301568,
+        "maximum_tanimoto": 0.7627118644067796
+      },
+      {
+        "row_position": 33663,
+        "original_index": 614517,
+        "maximum_tanimoto": 0.5416666666666666
+      },
+      {
+        "row_position": 33848,
+        "original_index": 168098,
+        "maximum_tanimoto": 0.425531914893617
+      },
+      {
+        "row_position": 33865,
+        "original_index": 1036994,
+        "maximum_tanimoto": 0.5555555555555556
+      },
+      {
+        "row_position": 33939,
+        "original_index": 95222,
+        "maximum_tanimoto": 0.46296296296296297
+      },
+      {
+        "row_position": 33961,
+        "original_index": 1228842,
+        "maximum_tanimoto": 0.7682926829268293
+      },
+      {
+        "row_position": 33977,
+        "original_index": 848708,
+        "maximum_tanimoto": 0.3673469387755102
+      },
+      {
+        "row_position": 33982,
+        "original_index": 1152957,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 34089,
+        "original_index": 758829,
+        "maximum_tanimoto": 0.6923076923076923
+      },
+      {
+        "row_position": 34119,
+        "original_index": 1681813,
+        "maximum_tanimoto": 0.8269230769230769
+      },
+      {
+        "row_position": 34122,
+        "original_index": 1569592,
+        "maximum_tanimoto": 0.8333333333333334
+      },
+      {
+        "row_position": 34185,
+        "original_index": 183501,
+        "maximum_tanimoto": 0.47058823529411764
+      },
+      {
+        "row_position": 34477,
+        "original_index": 1707710,
+        "maximum_tanimoto": 0.875
+      },
+      {
+        "row_position": 34524,
+        "original_index": 1462473,
+        "maximum_tanimoto": 0.8888888888888888
+      },
+      {
+        "row_position": 34530,
+        "original_index": 743085,
+        "maximum_tanimoto": 0.56
+      },
+      {
+        "row_position": 34555,
+        "original_index": 999852,
+        "maximum_tanimoto": 0.821917808219178
+      },
+      {
+        "row_position": 34605,
+        "original_index": 142677,
+        "maximum_tanimoto": 0.8428571428571429
+      },
+      {
+        "row_position": 34822,
+        "original_index": 455381,
+        "maximum_tanimoto": 0.6
+      },
+      {
+        "row_position": 34842,
+        "original_index": 684131,
+        "maximum_tanimoto": 0.6923076923076923
+      },
+      {
+        "row_position": 34963,
+        "original_index": 237750,
+        "maximum_tanimoto": 0.5769230769230769
+      },
+      {
+        "row_position": 35042,
+        "original_index": 1167830,
+        "maximum_tanimoto": 0.873015873015873
+      },
+      {
+        "row_position": 35295,
+        "original_index": 841272,
+        "maximum_tanimoto": 0.7333333333333333
+      },
+      {
+        "row_position": 35378,
+        "original_index": 1337363,
+        "maximum_tanimoto": 0.6875
+      },
+      {
+        "row_position": 35499,
+        "original_index": 1686630,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 35525,
+        "original_index": 1434440,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 35603,
+        "original_index": 1537265,
+        "maximum_tanimoto": 0.7659574468085106
+      },
+      {
+        "row_position": 35699,
+        "original_index": 1512976,
+        "maximum_tanimoto": 0.6388888888888888
+      },
+      {
+        "row_position": 35709,
+        "original_index": 1215324,
+        "maximum_tanimoto": 0.8571428571428571
+      },
+      {
+        "row_position": 35732,
+        "original_index": 299300,
+        "maximum_tanimoto": 0.7727272727272727
+      },
+      {
+        "row_position": 35754,
+        "original_index": 1523927,
+        "maximum_tanimoto": 0.8918918918918919
+      },
+      {
+        "row_position": 35815,
+        "original_index": 1206275,
+        "maximum_tanimoto": 0.5652173913043478
+      },
+      {
+        "row_position": 35876,
+        "original_index": 1032814,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 35896,
+        "original_index": 812245,
+        "maximum_tanimoto": 0.631578947368421
+      },
+      {
+        "row_position": 35938,
+        "original_index": 851939,
+        "maximum_tanimoto": 0.7608695652173914
+      },
+      {
+        "row_position": 35975,
+        "original_index": 1411655,
+        "maximum_tanimoto": 0.66
+      },
+      {
+        "row_position": 36089,
+        "original_index": 277339,
+        "maximum_tanimoto": 0.45652173913043476
+      },
+      {
+        "row_position": 36128,
+        "original_index": 605543,
+        "maximum_tanimoto": 0.8166666666666667
+      },
+      {
+        "row_position": 36172,
+        "original_index": 101879,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 36273,
+        "original_index": 367737,
+        "maximum_tanimoto": 0.8076923076923077
+      },
+      {
+        "row_position": 36310,
+        "original_index": 1389209,
+        "maximum_tanimoto": 0.7058823529411765
+      },
+      {
+        "row_position": 36405,
+        "original_index": 161486,
+        "maximum_tanimoto": 0.9696969696969697
+      },
+      {
+        "row_position": 36552,
+        "original_index": 1483630,
+        "maximum_tanimoto": 0.6086956521739131
+      },
+      {
+        "row_position": 36613,
+        "original_index": 914816,
+        "maximum_tanimoto": 0.7777777777777778
+      },
+      {
+        "row_position": 36627,
+        "original_index": 1313614,
+        "maximum_tanimoto": 0.5636363636363636
+      },
+      {
+        "row_position": 36667,
+        "original_index": 164254,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 36733,
+        "original_index": 1364252,
+        "maximum_tanimoto": 0.5263157894736842
+      },
+      {
+        "row_position": 36736,
+        "original_index": 188443,
+        "maximum_tanimoto": 0.7708333333333334
+      },
+      {
+        "row_position": 36802,
+        "original_index": 326727,
+        "maximum_tanimoto": 0.75
+      },
+      {
+        "row_position": 36830,
+        "original_index": 156632,
+        "maximum_tanimoto": 0.8260869565217391
+      },
+      {
+        "row_position": 36907,
+        "original_index": 968005,
+        "maximum_tanimoto": 0.711864406779661
+      },
+      {
+        "row_position": 37054,
+        "original_index": 528403,
+        "maximum_tanimoto": 0.7708333333333334
+      },
+      {
+        "row_position": 37106,
+        "original_index": 1126492,
+        "maximum_tanimoto": 0.7377049180327869
+      },
+      {
+        "row_position": 37172,
+        "original_index": 833602,
+        "maximum_tanimoto": 0.7777777777777778
+      },
+      {
+        "row_position": 37195,
+        "original_index": 1518690,
+        "maximum_tanimoto": 0.6829268292682927
+      },
+      {
+        "row_position": 37338,
+        "original_index": 931169,
+        "maximum_tanimoto": 0.8103448275862069
+      },
+      {
+        "row_position": 37360,
+        "original_index": 668804,
+        "maximum_tanimoto": 0.6721311475409836
+      },
+      {
+        "row_position": 37361,
+        "original_index": 180944,
+        "maximum_tanimoto": 0.7058823529411765
+      },
+      {
+        "row_position": 37362,
+        "original_index": 663466,
+        "maximum_tanimoto": 0.7027027027027027
+      },
+      {
+        "row_position": 37381,
+        "original_index": 16810,
+        "maximum_tanimoto": 0.75
+      },
+      {
+        "row_position": 37555,
+        "original_index": 510077,
+        "maximum_tanimoto": 0.6363636363636364
+      },
+      {
+        "row_position": 37557,
+        "original_index": 1727698,
+        "maximum_tanimoto": 0.7241379310344828
+      },
+      {
+        "row_position": 37581,
+        "original_index": 1630896,
+        "maximum_tanimoto": 0.5757575757575758
+      },
+      {
+        "row_position": 37593,
+        "original_index": 1127823,
+        "maximum_tanimoto": 0.5490196078431373
+      },
+      {
+        "row_position": 37658,
+        "original_index": 325507,
+        "maximum_tanimoto": 0.6
+      },
+      {
+        "row_position": 37683,
+        "original_index": 680509,
+        "maximum_tanimoto": 0.8507462686567164
+      },
+      {
+        "row_position": 37722,
+        "original_index": 356750,
+        "maximum_tanimoto": 0.5957446808510638
+      },
+      {
+        "row_position": 37769,
+        "original_index": 991749,
+        "maximum_tanimoto": 0.6304347826086957
+      },
+      {
+        "row_position": 37771,
+        "original_index": 213746,
+        "maximum_tanimoto": 0.723404255319149
+      },
+      {
+        "row_position": 37810,
+        "original_index": 1621342,
+        "maximum_tanimoto": 0.8163265306122449
+      },
+      {
+        "row_position": 38016,
+        "original_index": 745866,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 38104,
+        "original_index": 1013820,
+        "maximum_tanimoto": 0.7241379310344828
+      },
+      {
+        "row_position": 38238,
+        "original_index": 1502204,
+        "maximum_tanimoto": 0.5645161290322581
+      },
+      {
+        "row_position": 38241,
+        "original_index": 978934,
+        "maximum_tanimoto": 0.5961538461538461
+      },
+      {
+        "row_position": 38266,
+        "original_index": 949315,
+        "maximum_tanimoto": 0.5294117647058824
+      },
+      {
+        "row_position": 38270,
+        "original_index": 1268873,
+        "maximum_tanimoto": 0.7714285714285715
+      },
+      {
+        "row_position": 38328,
+        "original_index": 1681543,
+        "maximum_tanimoto": 0.7441860465116279
+      },
+      {
+        "row_position": 38428,
+        "original_index": 1478469,
+        "maximum_tanimoto": 0.696969696969697
+      },
+      {
+        "row_position": 38492,
+        "original_index": 883718,
+        "maximum_tanimoto": 0.825
+      },
+      {
+        "row_position": 38571,
+        "original_index": 1619536,
+        "maximum_tanimoto": 0.75
+      },
+      {
+        "row_position": 38582,
+        "original_index": 429428,
+        "maximum_tanimoto": 0.7777777777777778
+      },
+      {
+        "row_position": 38703,
+        "original_index": 1081925,
+        "maximum_tanimoto": 0.7916666666666666
+      },
+      {
+        "row_position": 38833,
+        "original_index": 525922,
+        "maximum_tanimoto": 0.7142857142857143
+      },
+      {
+        "row_position": 38888,
+        "original_index": 1762510,
+        "maximum_tanimoto": 0.7692307692307693
+      },
+      {
+        "row_position": 38947,
+        "original_index": 148031,
+        "maximum_tanimoto": 0.7631578947368421
+      },
+      {
+        "row_position": 39050,
+        "original_index": 1522759,
+        "maximum_tanimoto": 0.847457627118644
+      },
+      {
+        "row_position": 39102,
+        "original_index": 203819,
+        "maximum_tanimoto": 0.6829268292682927
+      },
+      {
+        "row_position": 39429,
+        "original_index": 406307,
+        "maximum_tanimoto": 0.7837837837837838
+      },
+      {
+        "row_position": 39470,
+        "original_index": 217617,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 39519,
+        "original_index": 1040914,
+        "maximum_tanimoto": 0.5428571428571428
+      },
+      {
+        "row_position": 39525,
+        "original_index": 1011125,
+        "maximum_tanimoto": 0.7671232876712328
+      },
+      {
+        "row_position": 39534,
+        "original_index": 1476117,
+        "maximum_tanimoto": 0.9102564102564102
+      },
+      {
+        "row_position": 39545,
+        "original_index": 1290615,
+        "maximum_tanimoto": 0.6363636363636364
+      },
+      {
+        "row_position": 39646,
+        "original_index": 921343,
+        "maximum_tanimoto": 0.7407407407407407
+      },
+      {
+        "row_position": 39662,
+        "original_index": 1304060,
+        "maximum_tanimoto": 0.8076923076923077
+      },
+      {
+        "row_position": 39739,
+        "original_index": 724150,
+        "maximum_tanimoto": 0.6031746031746031
+      },
+      {
+        "row_position": 39811,
+        "original_index": 169241,
+        "maximum_tanimoto": 0.7105263157894737
+      },
+      {
+        "row_position": 39984,
+        "original_index": 259696,
+        "maximum_tanimoto": 0.6527777777777778
+      },
+      {
+        "row_position": 39997,
+        "original_index": 185883,
+        "maximum_tanimoto": 0.7169811320754716
+      },
+      {
+        "row_position": 40001,
+        "original_index": 696699,
+        "maximum_tanimoto": 0.7297297297297297
+      },
+      {
+        "row_position": 40109,
+        "original_index": 400333,
+        "maximum_tanimoto": 0.5428571428571428
+      },
+      {
+        "row_position": 40219,
+        "original_index": 915701,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 40352,
+        "original_index": 1278337,
+        "maximum_tanimoto": 0.6774193548387096
+      },
+      {
+        "row_position": 40448,
+        "original_index": 483520,
+        "maximum_tanimoto": 0.6730769230769231
+      },
+      {
+        "row_position": 40533,
+        "original_index": 1736821,
+        "maximum_tanimoto": 0.8333333333333334
+      },
+      {
+        "row_position": 40567,
+        "original_index": 133935,
+        "maximum_tanimoto": 0.9024390243902439
+      },
+      {
+        "row_position": 40623,
+        "original_index": 413204,
+        "maximum_tanimoto": 0.7796610169491526
+      },
+      {
+        "row_position": 40631,
+        "original_index": 737156,
+        "maximum_tanimoto": 0.631578947368421
+      },
+      {
+        "row_position": 40710,
+        "original_index": 294787,
+        "maximum_tanimoto": 0.7407407407407407
+      },
+      {
+        "row_position": 40737,
+        "original_index": 47135,
+        "maximum_tanimoto": 0.7317073170731707
+      },
+      {
+        "row_position": 40741,
+        "original_index": 1020773,
+        "maximum_tanimoto": 0.7631578947368421
+      },
+      {
+        "row_position": 40786,
+        "original_index": 303705,
+        "maximum_tanimoto": 0.68
+      },
+      {
+        "row_position": 40816,
+        "original_index": 689131,
+        "maximum_tanimoto": 0.8235294117647058
+      },
+      {
+        "row_position": 40856,
+        "original_index": 148452,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 40905,
+        "original_index": 93071,
+        "maximum_tanimoto": 0.5
+      },
+      {
+        "row_position": 40975,
+        "original_index": 952231,
+        "maximum_tanimoto": 0.5866666666666667
+      },
+      {
+        "row_position": 41025,
+        "original_index": 990865,
+        "maximum_tanimoto": 0.8653846153846154
+      },
+      {
+        "row_position": 41046,
+        "original_index": 1344030,
+        "maximum_tanimoto": 0.42857142857142855
+      },
+      {
+        "row_position": 41154,
+        "original_index": 1286319,
+        "maximum_tanimoto": 0.8513513513513513
+      },
+      {
+        "row_position": 41179,
+        "original_index": 460270,
+        "maximum_tanimoto": 0.8615384615384616
+      },
+      {
+        "row_position": 41238,
+        "original_index": 399006,
+        "maximum_tanimoto": 0.5227272727272727
+      },
+      {
+        "row_position": 41358,
+        "original_index": 1464701,
+        "maximum_tanimoto": 0.5833333333333334
+      },
+      {
+        "row_position": 41375,
+        "original_index": 1029096,
+        "maximum_tanimoto": 0.6756756756756757
+      },
+      {
+        "row_position": 41416,
+        "original_index": 1353905,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 41418,
+        "original_index": 680464,
+        "maximum_tanimoto": 0.5510204081632653
+      },
+      {
+        "row_position": 41502,
+        "original_index": 1714110,
+        "maximum_tanimoto": 0.5428571428571428
+      },
+      {
+        "row_position": 41564,
+        "original_index": 817757,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 41591,
+        "original_index": 1262410,
+        "maximum_tanimoto": 0.8055555555555556
+      },
+      {
+        "row_position": 41627,
+        "original_index": 1537845,
+        "maximum_tanimoto": 0.7910447761194029
+      },
+      {
+        "row_position": 41648,
+        "original_index": 1656989,
+        "maximum_tanimoto": 0.7454545454545455
+      },
+      {
+        "row_position": 41783,
+        "original_index": 496645,
+        "maximum_tanimoto": 0.8307692307692308
+      },
+      {
+        "row_position": 41827,
+        "original_index": 646688,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 41829,
+        "original_index": 1467009,
+        "maximum_tanimoto": 0.9032258064516129
+      },
+      {
+        "row_position": 41932,
+        "original_index": 1641138,
+        "maximum_tanimoto": 0.8169014084507042
+      },
+      {
+        "row_position": 41971,
+        "original_index": 1597189,
+        "maximum_tanimoto": 0.9322033898305084
+      },
+      {
+        "row_position": 42003,
+        "original_index": 972122,
+        "maximum_tanimoto": 0.8125
+      },
+      {
+        "row_position": 42086,
+        "original_index": 139103,
+        "maximum_tanimoto": 0.8571428571428571
+      },
+      {
+        "row_position": 42246,
+        "original_index": 1178670,
+        "maximum_tanimoto": 0.6222222222222222
+      },
+      {
+        "row_position": 42278,
+        "original_index": 1433512,
+        "maximum_tanimoto": 0.8169014084507042
+      },
+      {
+        "row_position": 42298,
+        "original_index": 1760717,
+        "maximum_tanimoto": 0.7368421052631579
+      },
+      {
+        "row_position": 42333,
+        "original_index": 1027632,
+        "maximum_tanimoto": 0.8541666666666666
+      },
+      {
+        "row_position": 42339,
+        "original_index": 1386200,
+        "maximum_tanimoto": 0.8795180722891566
+      },
+      {
+        "row_position": 42394,
+        "original_index": 487670,
+        "maximum_tanimoto": 0.7254901960784313
+      },
+      {
+        "row_position": 42422,
+        "original_index": 424635,
+        "maximum_tanimoto": 0.68
+      },
+      {
+        "row_position": 42459,
+        "original_index": 1576797,
+        "maximum_tanimoto": 0.7906976744186046
+      },
+      {
+        "row_position": 42475,
+        "original_index": 180023,
+        "maximum_tanimoto": 0.625
+      },
+      {
+        "row_position": 42476,
+        "original_index": 530267,
+        "maximum_tanimoto": 0.6875
+      },
+      {
+        "row_position": 42545,
+        "original_index": 778782,
+        "maximum_tanimoto": 0.7931034482758621
+      },
+      {
+        "row_position": 42633,
+        "original_index": 1675794,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 42661,
+        "original_index": 136325,
+        "maximum_tanimoto": 0.7162162162162162
+      },
+      {
+        "row_position": 42770,
+        "original_index": 1489293,
+        "maximum_tanimoto": 0.7959183673469388
+      },
+      {
+        "row_position": 42817,
+        "original_index": 275971,
+        "maximum_tanimoto": 0.847457627118644
+      },
+      {
+        "row_position": 42824,
+        "original_index": 467986,
+        "maximum_tanimoto": 0.6486486486486487
+      },
+      {
+        "row_position": 42910,
+        "original_index": 732919,
+        "maximum_tanimoto": 0.863013698630137
+      },
+      {
+        "row_position": 43148,
+        "original_index": 1626129,
+        "maximum_tanimoto": 0.7866666666666666
+      },
+      {
+        "row_position": 43169,
+        "original_index": 1738176,
+        "maximum_tanimoto": 0.6081081081081081
+      },
+      {
+        "row_position": 43177,
+        "original_index": 958893,
+        "maximum_tanimoto": 0.828125
+      },
+      {
+        "row_position": 43341,
+        "original_index": 143072,
+        "maximum_tanimoto": 0.8409090909090909
+      },
+      {
+        "row_position": 43358,
+        "original_index": 1729885,
+        "maximum_tanimoto": 0.6904761904761905
+      },
+      {
+        "row_position": 43522,
+        "original_index": 240922,
+        "maximum_tanimoto": 0.9122807017543859
+      },
+      {
+        "row_position": 43573,
+        "original_index": 1473335,
+        "maximum_tanimoto": 0.6451612903225806
+      },
+      {
+        "row_position": 43594,
+        "original_index": 1244926,
+        "maximum_tanimoto": 0.6833333333333333
+      },
+      {
+        "row_position": 43657,
+        "original_index": 201948,
+        "maximum_tanimoto": 0.7777777777777778
+      },
+      {
+        "row_position": 43822,
+        "original_index": 757756,
+        "maximum_tanimoto": 0.8484848484848485
+      },
+      {
+        "row_position": 43917,
+        "original_index": 902500,
+        "maximum_tanimoto": 0.6764705882352942
+      },
+      {
+        "row_position": 43918,
+        "original_index": 190484,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 43942,
+        "original_index": 1432491,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 43948,
+        "original_index": 524165,
+        "maximum_tanimoto": 0.8679245283018868
+      },
+      {
+        "row_position": 44027,
+        "original_index": 1317012,
+        "maximum_tanimoto": 0.7636363636363637
+      },
+      {
+        "row_position": 44037,
+        "original_index": 1125122,
+        "maximum_tanimoto": 0.7321428571428571
+      },
+      {
+        "row_position": 44049,
+        "original_index": 1177152,
+        "maximum_tanimoto": 0.8
+      },
+      {
+        "row_position": 44091,
+        "original_index": 1640790,
+        "maximum_tanimoto": 0.7021276595744681
+      },
+      {
+        "row_position": 44094,
+        "original_index": 847719,
+        "maximum_tanimoto": 0.68
+      },
+      {
+        "row_position": 44212,
+        "original_index": 1683500,
+        "maximum_tanimoto": 0.7073170731707317
+      },
+      {
+        "row_position": 44241,
+        "original_index": 1183738,
+        "maximum_tanimoto": 0.6226415094339622
+      },
+      {
+        "row_position": 44277,
+        "original_index": 570931,
+        "maximum_tanimoto": 0.5172413793103449
+      },
+      {
+        "row_position": 44376,
+        "original_index": 788979,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 44399,
+        "original_index": 441711,
+        "maximum_tanimoto": 0.7183098591549296
+      },
+      {
+        "row_position": 44462,
+        "original_index": 79415,
+        "maximum_tanimoto": 0.4444444444444444
+      },
+      {
+        "row_position": 44589,
+        "original_index": 1537670,
+        "maximum_tanimoto": 0.8602150537634409
+      },
+      {
+        "row_position": 44646,
+        "original_index": 517389,
+        "maximum_tanimoto": 0.4722222222222222
+      },
+      {
+        "row_position": 44648,
+        "original_index": 653052,
+        "maximum_tanimoto": 0.7073170731707317
+      },
+      {
+        "row_position": 44669,
+        "original_index": 345073,
+        "maximum_tanimoto": 0.6382978723404256
+      },
+      {
+        "row_position": 44856,
+        "original_index": 942478,
+        "maximum_tanimoto": 0.7894736842105263
+      },
+      {
+        "row_position": 44860,
+        "original_index": 613357,
+        "maximum_tanimoto": 0.6923076923076923
+      },
+      {
+        "row_position": 45081,
+        "original_index": 544655,
+        "maximum_tanimoto": 0.5384615384615384
+      },
+      {
+        "row_position": 45162,
+        "original_index": 1588159,
+        "maximum_tanimoto": 0.5098039215686274
+      },
+      {
+        "row_position": 45228,
+        "original_index": 1447687,
+        "maximum_tanimoto": 0.76
+      },
+      {
+        "row_position": 45243,
+        "original_index": 720014,
+        "maximum_tanimoto": 0.7272727272727273
+      },
+      {
+        "row_position": 45252,
+        "original_index": 133430,
+        "maximum_tanimoto": 0.8285714285714286
+      },
+      {
+        "row_position": 45660,
+        "original_index": 1450307,
+        "maximum_tanimoto": 0.8793103448275862
+      },
+      {
+        "row_position": 45678,
+        "original_index": 95483,
+        "maximum_tanimoto": 0.8235294117647058
+      },
+      {
+        "row_position": 45785,
+        "original_index": 1111082,
+        "maximum_tanimoto": 0.8615384615384616
+      },
+      {
+        "row_position": 45907,
+        "original_index": 29301,
+        "maximum_tanimoto": 0.7441860465116279
+      },
+      {
+        "row_position": 46083,
+        "original_index": 195106,
+        "maximum_tanimoto": 0.5636363636363636
+      },
+      {
+        "row_position": 46117,
+        "original_index": 780506,
+        "maximum_tanimoto": 0.975
+      },
+      {
+        "row_position": 46156,
+        "original_index": 1393353,
+        "maximum_tanimoto": 0.3939393939393939
+      },
+      {
+        "row_position": 46199,
+        "original_index": 661690,
+        "maximum_tanimoto": 0.703125
+      },
+      {
+        "row_position": 46242,
+        "original_index": 456413,
+        "maximum_tanimoto": 0.6578947368421053
+      },
+      {
+        "row_position": 46368,
+        "original_index": 828145,
+        "maximum_tanimoto": 0.7674418604651163
+      },
+      {
+        "row_position": 46464,
+        "original_index": 1313638,
+        "maximum_tanimoto": 0.7878787878787878
+      },
+      {
+        "row_position": 46479,
+        "original_index": 761475,
+        "maximum_tanimoto": 0.75
+      },
+      {
+        "row_position": 46550,
+        "original_index": 798899,
+        "maximum_tanimoto": 0.7428571428571429
+      },
+      {
+        "row_position": 46610,
+        "original_index": 1003393,
+        "maximum_tanimoto": 0.7547169811320755
+      },
+      {
+        "row_position": 46638,
+        "original_index": 657022,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 46691,
+        "original_index": 813503,
+        "maximum_tanimoto": 0.4883720930232558
+      },
+      {
+        "row_position": 46727,
+        "original_index": 909138,
+        "maximum_tanimoto": 0.8297872340425532
+      },
+      {
+        "row_position": 46745,
+        "original_index": 1211167,
+        "maximum_tanimoto": 0.676923076923077
+      },
+      {
+        "row_position": 46777,
+        "original_index": 1608574,
+        "maximum_tanimoto": 0.5194805194805194
+      },
+      {
+        "row_position": 46802,
+        "original_index": 1072627,
+        "maximum_tanimoto": 0.68
+      },
+      {
+        "row_position": 46901,
+        "original_index": 441013,
+        "maximum_tanimoto": 0.7843137254901961
+      },
+      {
+        "row_position": 46913,
+        "original_index": 685283,
+        "maximum_tanimoto": 0.74
+      },
+      {
+        "row_position": 46940,
+        "original_index": 1155700,
+        "maximum_tanimoto": 0.8333333333333334
+      },
+      {
+        "row_position": 46993,
+        "original_index": 1705495,
+        "maximum_tanimoto": 0.725
+      },
+      {
+        "row_position": 47086,
+        "original_index": 53650,
+        "maximum_tanimoto": 0.5853658536585366
+      },
+      {
+        "row_position": 47262,
+        "original_index": 609189,
+        "maximum_tanimoto": 0.8461538461538461
+      },
+      {
+        "row_position": 47306,
+        "original_index": 956600,
+        "maximum_tanimoto": 0.8405797101449275
+      },
+      {
+        "row_position": 47453,
+        "original_index": 1435987,
+        "maximum_tanimoto": 0.6571428571428571
+      },
+      {
+        "row_position": 47517,
+        "original_index": 567600,
+        "maximum_tanimoto": 0.46511627906976744
+      },
+      {
+        "row_position": 47588,
+        "original_index": 968585,
+        "maximum_tanimoto": 0.6615384615384615
+      },
+      {
+        "row_position": 47668,
+        "original_index": 1372189,
+        "maximum_tanimoto": 0.7912087912087912
+      },
+      {
+        "row_position": 47719,
+        "original_index": 474110,
+        "maximum_tanimoto": 0.7205882352941176
+      },
+      {
+        "row_position": 47742,
+        "original_index": 874001,
+        "maximum_tanimoto": 0.85
+      },
+      {
+        "row_position": 47773,
+        "original_index": 578383,
+        "maximum_tanimoto": 0.7272727272727273
+      },
+      {
+        "row_position": 47972,
+        "original_index": 840545,
+        "maximum_tanimoto": 0.35
+      },
+      {
+        "row_position": 48092,
+        "original_index": 757233,
+        "maximum_tanimoto": 0.7692307692307693
+      },
+      {
+        "row_position": 48164,
+        "original_index": 1437417,
+        "maximum_tanimoto": 0.59375
+      },
+      {
+        "row_position": 48179,
+        "original_index": 801649,
+        "maximum_tanimoto": 0.7162162162162162
+      },
+      {
+        "row_position": 48215,
+        "original_index": 961214,
+        "maximum_tanimoto": 0.8059701492537313
+      },
+      {
+        "row_position": 48335,
+        "original_index": 1440135,
+        "maximum_tanimoto": 0.43103448275862066
+      },
+      {
+        "row_position": 48424,
+        "original_index": 1498488,
+        "maximum_tanimoto": 0.6363636363636364
+      },
+      {
+        "row_position": 48465,
+        "original_index": 1644280,
+        "maximum_tanimoto": 0.8253968253968254
+      },
+      {
+        "row_position": 48514,
+        "original_index": 737646,
+        "maximum_tanimoto": 0.7446808510638298
+      },
+      {
+        "row_position": 48521,
+        "original_index": 1009037,
+        "maximum_tanimoto": 0.7333333333333333
+      },
+      {
+        "row_position": 48532,
+        "original_index": 328204,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 48539,
+        "original_index": 1413053,
+        "maximum_tanimoto": 0.7368421052631579
+      },
+      {
+        "row_position": 48544,
+        "original_index": 1440380,
+        "maximum_tanimoto": 0.8085106382978723
+      },
+      {
+        "row_position": 48606,
+        "original_index": 1444974,
+        "maximum_tanimoto": 0.6527777777777778
+      },
+      {
+        "row_position": 48676,
+        "original_index": 488163,
+        "maximum_tanimoto": 0.896551724137931
+      },
+      {
+        "row_position": 48818,
+        "original_index": 980640,
+        "maximum_tanimoto": 0.7758620689655172
+      },
+      {
+        "row_position": 48832,
+        "original_index": 1184877,
+        "maximum_tanimoto": 0.8450704225352113
+      },
+      {
+        "row_position": 48890,
+        "original_index": 1051425,
+        "maximum_tanimoto": 0.7090909090909091
+      },
+      {
+        "row_position": 48908,
+        "original_index": 866168,
+        "maximum_tanimoto": 0.8636363636363636
+      },
+      {
+        "row_position": 48917,
+        "original_index": 144466,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 48941,
+        "original_index": 1050966,
+        "maximum_tanimoto": 0.7096774193548387
+      },
+      {
+        "row_position": 49022,
+        "original_index": 468816,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 49058,
+        "original_index": 1377901,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 49121,
+        "original_index": 686635,
+        "maximum_tanimoto": 0.8113207547169812
+      },
+      {
+        "row_position": 49175,
+        "original_index": 590329,
+        "maximum_tanimoto": 0.8260869565217391
+      },
+      {
+        "row_position": 49244,
+        "original_index": 765356,
+        "maximum_tanimoto": 0.6
+      },
+      {
+        "row_position": 49264,
+        "original_index": 1301534,
+        "maximum_tanimoto": 0.7142857142857143
+      },
+      {
+        "row_position": 49459,
+        "original_index": 203104,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 49516,
+        "original_index": 802841,
+        "maximum_tanimoto": 0.6730769230769231
+      },
+      {
+        "row_position": 49594,
+        "original_index": 1339447,
+        "maximum_tanimoto": 0.8392857142857143
+      },
+      {
+        "row_position": 49620,
+        "original_index": 1072354,
+        "maximum_tanimoto": 0.46153846153846156
+      },
+      {
+        "row_position": 49775,
+        "original_index": 771632,
+        "maximum_tanimoto": 0.7954545454545454
+      },
+      {
+        "row_position": 49801,
+        "original_index": 1447756,
+        "maximum_tanimoto": 0.9767441860465116
+      },
+      {
+        "row_position": 49803,
+        "original_index": 654187,
+        "maximum_tanimoto": 0.6461538461538462
+      },
+      {
+        "row_position": 49846,
+        "original_index": 1362124,
+        "maximum_tanimoto": 0.5555555555555556
+      },
+      {
+        "row_position": 49860,
+        "original_index": 377224,
+        "maximum_tanimoto": 0.696969696969697
+      },
+      {
+        "row_position": 49906,
+        "original_index": 1064233,
+        "maximum_tanimoto": 0.8529411764705882
+      },
+      {
+        "row_position": 49942,
+        "original_index": 1552553,
+        "maximum_tanimoto": 0.7692307692307693
+      },
+      {
+        "row_position": 50045,
+        "original_index": 101451,
+        "maximum_tanimoto": 0.5384615384615384
+      },
+      {
+        "row_position": 50114,
+        "original_index": 1581515,
+        "maximum_tanimoto": 0.6530612244897959
+      },
+      {
+        "row_position": 50121,
+        "original_index": 795476,
+        "maximum_tanimoto": 0.7083333333333334
+      },
+      {
+        "row_position": 50293,
+        "original_index": 1197425,
+        "maximum_tanimoto": 0.6444444444444445
+      },
+      {
+        "row_position": 50337,
+        "original_index": 925855,
+        "maximum_tanimoto": 0.5862068965517241
+      },
+      {
+        "row_position": 50347,
+        "original_index": 359185,
+        "maximum_tanimoto": 0.75
+      },
+      {
+        "row_position": 50377,
+        "original_index": 774739,
+        "maximum_tanimoto": 0.7111111111111111
+      },
+      {
+        "row_position": 50534,
+        "original_index": 1029817,
+        "maximum_tanimoto": 0.6216216216216216
+      },
+      {
+        "row_position": 50558,
+        "original_index": 1183737,
+        "maximum_tanimoto": 0.6140350877192983
+      },
+      {
+        "row_position": 50606,
+        "original_index": 1602033,
+        "maximum_tanimoto": 0.7027027027027027
+      },
+      {
+        "row_position": 50611,
+        "original_index": 1303757,
+        "maximum_tanimoto": 0.6857142857142857
+      },
+      {
+        "row_position": 50732,
+        "original_index": 1292360,
+        "maximum_tanimoto": 0.6825396825396826
+      },
+      {
+        "row_position": 50997,
+        "original_index": 1323814,
+        "maximum_tanimoto": 0.7887323943661971
+      },
+      {
+        "row_position": 51046,
+        "original_index": 940630,
+        "maximum_tanimoto": 0.7796610169491526
+      },
+      {
+        "row_position": 51065,
+        "original_index": 333009,
+        "maximum_tanimoto": 0.4745762711864407
+      },
+      {
+        "row_position": 51067,
+        "original_index": 1384774,
+        "maximum_tanimoto": 0.7796610169491526
+      },
+      {
+        "row_position": 51233,
+        "original_index": 300900,
+        "maximum_tanimoto": 0.859375
+      },
+      {
+        "row_position": 51299,
+        "original_index": 1551746,
+        "maximum_tanimoto": 0.7666666666666667
+      },
+      {
+        "row_position": 51310,
+        "original_index": 122913,
+        "maximum_tanimoto": 0.5714285714285714
+      },
+      {
+        "row_position": 51338,
+        "original_index": 158336,
+        "maximum_tanimoto": 0.4090909090909091
+      },
+      {
+        "row_position": 51439,
+        "original_index": 830093,
+        "maximum_tanimoto": 0.75
+      },
+      {
+        "row_position": 51490,
+        "original_index": 1158869,
+        "maximum_tanimoto": 0.631578947368421
+      },
+      {
+        "row_position": 51510,
+        "original_index": 849044,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 51671,
+        "original_index": 1609810,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 51685,
+        "original_index": 1696635,
+        "maximum_tanimoto": 0.59375
+      },
+      {
+        "row_position": 51812,
+        "original_index": 1078451,
+        "maximum_tanimoto": 0.6086956521739131
+      },
+      {
+        "row_position": 51888,
+        "original_index": 1436881,
+        "maximum_tanimoto": 0.8135593220338984
+      },
+      {
+        "row_position": 51925,
+        "original_index": 928288,
+        "maximum_tanimoto": 0.6956521739130435
+      },
+      {
+        "row_position": 52099,
+        "original_index": 620253,
+        "maximum_tanimoto": 0.6
+      },
+      {
+        "row_position": 52107,
+        "original_index": 840841,
+        "maximum_tanimoto": 0.7818181818181819
+      },
+      {
+        "row_position": 52118,
+        "original_index": 281273,
+        "maximum_tanimoto": 0.6792452830188679
+      },
+      {
+        "row_position": 52142,
+        "original_index": 242432,
+        "maximum_tanimoto": 0.7906976744186046
+      },
+      {
+        "row_position": 52200,
+        "original_index": 1476105,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 52237,
+        "original_index": 1215079,
+        "maximum_tanimoto": 0.8620689655172413
+      },
+      {
+        "row_position": 52240,
+        "original_index": 704073,
+        "maximum_tanimoto": 0.7435897435897436
+      },
+      {
+        "row_position": 52357,
+        "original_index": 842969,
+        "maximum_tanimoto": 0.5636363636363636
+      },
+      {
+        "row_position": 52389,
+        "original_index": 1443847,
+        "maximum_tanimoto": 0.4883720930232558
+      },
+      {
+        "row_position": 52512,
+        "original_index": 1026517,
+        "maximum_tanimoto": 0.515625
+      },
+      {
+        "row_position": 52661,
+        "original_index": 1015389,
+        "maximum_tanimoto": 0.7924528301886793
+      },
+      {
+        "row_position": 52720,
+        "original_index": 741790,
+        "maximum_tanimoto": 0.7272727272727273
+      },
+      {
+        "row_position": 52749,
+        "original_index": 275109,
+        "maximum_tanimoto": 0.8
+      },
+      {
+        "row_position": 52755,
+        "original_index": 1419157,
+        "maximum_tanimoto": 0.6346153846153846
+      },
+      {
+        "row_position": 52774,
+        "original_index": 161300,
+        "maximum_tanimoto": 0.6153846153846154
+      },
+      {
+        "row_position": 52853,
+        "original_index": 1470551,
+        "maximum_tanimoto": 0.8513513513513513
+      },
+      {
+        "row_position": 52894,
+        "original_index": 1457414,
+        "maximum_tanimoto": 0.639344262295082
+      },
+      {
+        "row_position": 52968,
+        "original_index": 865068,
+        "maximum_tanimoto": 0.7564102564102564
+      },
+      {
+        "row_position": 52995,
+        "original_index": 1611426,
+        "maximum_tanimoto": 0.675
+      },
+      {
+        "row_position": 53003,
+        "original_index": 535274,
+        "maximum_tanimoto": 0.7959183673469388
+      },
+      {
+        "row_position": 53073,
+        "original_index": 363272,
+        "maximum_tanimoto": 0.6833333333333333
+      },
+      {
+        "row_position": 53126,
+        "original_index": 696421,
+        "maximum_tanimoto": 0.7213114754098361
+      },
+      {
+        "row_position": 53271,
+        "original_index": 817834,
+        "maximum_tanimoto": 0.9230769230769231
+      },
+      {
+        "row_position": 53324,
+        "original_index": 150396,
+        "maximum_tanimoto": 0.7547169811320755
+      },
+      {
+        "row_position": 53397,
+        "original_index": 1130610,
+        "maximum_tanimoto": 0.46511627906976744
+      },
+      {
+        "row_position": 53438,
+        "original_index": 1607778,
+        "maximum_tanimoto": 0.7792207792207793
+      },
+      {
+        "row_position": 53528,
+        "original_index": 689843,
+        "maximum_tanimoto": 0.625
+      },
+      {
+        "row_position": 53563,
+        "original_index": 432074,
+        "maximum_tanimoto": 0.803921568627451
+      },
+      {
+        "row_position": 53705,
+        "original_index": 399960,
+        "maximum_tanimoto": 0.6363636363636364
+      },
+      {
+        "row_position": 53921,
+        "original_index": 147615,
+        "maximum_tanimoto": 0.7428571428571429
+      },
+      {
+        "row_position": 53940,
+        "original_index": 252791,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 54088,
+        "original_index": 1475660,
+        "maximum_tanimoto": 0.65
+      },
+      {
+        "row_position": 54278,
+        "original_index": 789995,
+        "maximum_tanimoto": 0.8387096774193549
+      },
+      {
+        "row_position": 54280,
+        "original_index": 1605798,
+        "maximum_tanimoto": 0.8333333333333334
+      },
+      {
+        "row_position": 54439,
+        "original_index": 336282,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 54455,
+        "original_index": 1760470,
+        "maximum_tanimoto": 0.7222222222222222
+      },
+      {
+        "row_position": 54469,
+        "original_index": 1471995,
+        "maximum_tanimoto": 0.75
+      },
+      {
+        "row_position": 54504,
+        "original_index": 21624,
+        "maximum_tanimoto": 0.7441860465116279
+      },
+      {
+        "row_position": 54546,
+        "original_index": 1692806,
+        "maximum_tanimoto": 0.875
+      },
+      {
+        "row_position": 54594,
+        "original_index": 1200649,
+        "maximum_tanimoto": 0.5344827586206896
+      },
+      {
+        "row_position": 54715,
+        "original_index": 182837,
+        "maximum_tanimoto": 0.3783783783783784
+      },
+      {
+        "row_position": 55009,
+        "original_index": 125708,
+        "maximum_tanimoto": 0.41304347826086957
+      },
+      {
+        "row_position": 55078,
+        "original_index": 43697,
+        "maximum_tanimoto": 0.7222222222222222
+      },
+      {
+        "row_position": 55143,
+        "original_index": 534199,
+        "maximum_tanimoto": 0.7666666666666667
+      },
+      {
+        "row_position": 55170,
+        "original_index": 1652187,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 55216,
+        "original_index": 564925,
+        "maximum_tanimoto": 0.8163265306122449
+      },
+      {
+        "row_position": 55373,
+        "original_index": 1501912,
+        "maximum_tanimoto": 0.8
+      },
+      {
+        "row_position": 55413,
+        "original_index": 1325651,
+        "maximum_tanimoto": 0.819672131147541
+      },
+      {
+        "row_position": 55476,
+        "original_index": 1076835,
+        "maximum_tanimoto": 0.7567567567567568
+      },
+      {
+        "row_position": 55511,
+        "original_index": 1561180,
+        "maximum_tanimoto": 0.6
+      },
+      {
+        "row_position": 55514,
+        "original_index": 639466,
+        "maximum_tanimoto": 0.6538461538461539
+      },
+      {
+        "row_position": 55530,
+        "original_index": 694696,
+        "maximum_tanimoto": 0.7540983606557377
+      },
+      {
+        "row_position": 55610,
+        "original_index": 930260,
+        "maximum_tanimoto": 0.8085106382978723
+      },
+      {
+        "row_position": 55617,
+        "original_index": 845067,
+        "maximum_tanimoto": 0.8135593220338984
+      },
+      {
+        "row_position": 55679,
+        "original_index": 1241793,
+        "maximum_tanimoto": 0.5454545454545454
+      },
+      {
+        "row_position": 55713,
+        "original_index": 542431,
+        "maximum_tanimoto": 0.8333333333333334
+      },
+      {
+        "row_position": 55863,
+        "original_index": 676759,
+        "maximum_tanimoto": 0.7241379310344828
+      },
+      {
+        "row_position": 55898,
+        "original_index": 940769,
+        "maximum_tanimoto": 0.7246376811594203
+      },
+      {
+        "row_position": 55979,
+        "original_index": 357671,
+        "maximum_tanimoto": 0.7719298245614035
+      },
+      {
+        "row_position": 55986,
+        "original_index": 606751,
+        "maximum_tanimoto": 0.7619047619047619
+      },
+      {
+        "row_position": 56000,
+        "original_index": 1496750,
+        "maximum_tanimoto": 0.7761194029850746
+      },
+      {
+        "row_position": 56054,
+        "original_index": 1732938,
+        "maximum_tanimoto": 0.5476190476190477
+      },
+      {
+        "row_position": 56105,
+        "original_index": 1676106,
+        "maximum_tanimoto": 0.5098039215686274
+      },
+      {
+        "row_position": 56172,
+        "original_index": 560610,
+        "maximum_tanimoto": 0.6176470588235294
+      },
+      {
+        "row_position": 56184,
+        "original_index": 285734,
+        "maximum_tanimoto": 0.7931034482758621
+      },
+      {
+        "row_position": 56262,
+        "original_index": 1186160,
+        "maximum_tanimoto": 0.7540983606557377
+      },
+      {
+        "row_position": 56269,
+        "original_index": 1686191,
+        "maximum_tanimoto": 0.8253968253968254
+      },
+      {
+        "row_position": 56285,
+        "original_index": 1254967,
+        "maximum_tanimoto": 0.711864406779661
+      },
+      {
+        "row_position": 56472,
+        "original_index": 749594,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 56679,
+        "original_index": 1249822,
+        "maximum_tanimoto": 0.8846153846153846
+      },
+      {
+        "row_position": 56728,
+        "original_index": 1713850,
+        "maximum_tanimoto": 0.8214285714285714
+      },
+      {
+        "row_position": 56743,
+        "original_index": 639793,
+        "maximum_tanimoto": 0.5333333333333333
+      },
+      {
+        "row_position": 56748,
+        "original_index": 1039307,
+        "maximum_tanimoto": 0.8095238095238095
+      },
+      {
+        "row_position": 56768,
+        "original_index": 857031,
+        "maximum_tanimoto": 0.7307692307692307
+      },
+      {
+        "row_position": 56846,
+        "original_index": 1520994,
+        "maximum_tanimoto": 0.6739130434782609
+      },
+      {
+        "row_position": 57121,
+        "original_index": 25960,
+        "maximum_tanimoto": 0.525
+      },
+      {
+        "row_position": 57123,
+        "original_index": 742175,
+        "maximum_tanimoto": 0.7619047619047619
+      },
+      {
+        "row_position": 57406,
+        "original_index": 1684745,
+        "maximum_tanimoto": 0.7321428571428571
+      },
+      {
+        "row_position": 57469,
+        "original_index": 927503,
+        "maximum_tanimoto": 0.6610169491525424
+      },
+      {
+        "row_position": 57522,
+        "original_index": 878726,
+        "maximum_tanimoto": 0.5681818181818182
+      },
+      {
+        "row_position": 57619,
+        "original_index": 709151,
+        "maximum_tanimoto": 0.7671232876712328
+      },
+      {
+        "row_position": 57642,
+        "original_index": 410452,
+        "maximum_tanimoto": 0.7254901960784313
+      },
+      {
+        "row_position": 57705,
+        "original_index": 32190,
+        "maximum_tanimoto": 0.6382978723404256
+      },
+      {
+        "row_position": 57769,
+        "original_index": 1263333,
+        "maximum_tanimoto": 0.7681159420289855
+      },
+      {
+        "row_position": 58153,
+        "original_index": 887097,
+        "maximum_tanimoto": 0.8026315789473685
+      },
+      {
+        "row_position": 58204,
+        "original_index": 51996,
+        "maximum_tanimoto": 0.7804878048780488
+      },
+      {
+        "row_position": 58245,
+        "original_index": 1043511,
+        "maximum_tanimoto": 0.7368421052631579
+      },
+      {
+        "row_position": 58268,
+        "original_index": 650507,
+        "maximum_tanimoto": 0.5
+      },
+      {
+        "row_position": 58273,
+        "original_index": 242216,
+        "maximum_tanimoto": 0.6363636363636364
+      },
+      {
+        "row_position": 58280,
+        "original_index": 1143959,
+        "maximum_tanimoto": 0.8666666666666667
+      },
+      {
+        "row_position": 58281,
+        "original_index": 514883,
+        "maximum_tanimoto": 0.38095238095238093
+      },
+      {
+        "row_position": 58391,
+        "original_index": 1271656,
+        "maximum_tanimoto": 0.7901234567901234
+      },
+      {
+        "row_position": 58496,
+        "original_index": 857419,
+        "maximum_tanimoto": 0.7321428571428571
+      },
+      {
+        "row_position": 58564,
+        "original_index": 1477450,
+        "maximum_tanimoto": 0.625
+      },
+      {
+        "row_position": 58565,
+        "original_index": 1004270,
+        "maximum_tanimoto": 0.84
+      },
+      {
+        "row_position": 58614,
+        "original_index": 158509,
+        "maximum_tanimoto": 0.6774193548387096
+      },
+      {
+        "row_position": 58824,
+        "original_index": 667768,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 58825,
+        "original_index": 341124,
+        "maximum_tanimoto": 0.7878787878787878
+      },
+      {
+        "row_position": 58851,
+        "original_index": 1262996,
+        "maximum_tanimoto": 0.9016393442622951
+      },
+      {
+        "row_position": 58896,
+        "original_index": 505021,
+        "maximum_tanimoto": 0.8769230769230769
+      },
+      {
+        "row_position": 58979,
+        "original_index": 18082,
+        "maximum_tanimoto": 0.5135135135135135
+      },
+      {
+        "row_position": 58995,
+        "original_index": 408422,
+        "maximum_tanimoto": 0.7407407407407407
+      },
+      {
+        "row_position": 59117,
+        "original_index": 1094435,
+        "maximum_tanimoto": 0.9272727272727272
+      },
+      {
+        "row_position": 59182,
+        "original_index": 162382,
+        "maximum_tanimoto": 0.7719298245614035
+      },
+      {
+        "row_position": 59315,
+        "original_index": 1373691,
+        "maximum_tanimoto": 0.7777777777777778
+      },
+      {
+        "row_position": 59400,
+        "original_index": 193450,
+        "maximum_tanimoto": 0.7796610169491526
+      },
+      {
+        "row_position": 59414,
+        "original_index": 1728509,
+        "maximum_tanimoto": 0.639344262295082
+      },
+      {
+        "row_position": 59479,
+        "original_index": 1053368,
+        "maximum_tanimoto": 0.75
+      },
+      {
+        "row_position": 59486,
+        "original_index": 1189396,
+        "maximum_tanimoto": 0.6923076923076923
+      },
+      {
+        "row_position": 59504,
+        "original_index": 1322878,
+        "maximum_tanimoto": 0.7457627118644068
+      },
+      {
+        "row_position": 59506,
+        "original_index": 1368385,
+        "maximum_tanimoto": 0.7424242424242424
+      },
+      {
+        "row_position": 59514,
+        "original_index": 1555304,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 59538,
+        "original_index": 263373,
+        "maximum_tanimoto": 0.796875
+      },
+      {
+        "row_position": 59550,
+        "original_index": 82115,
+        "maximum_tanimoto": 0.6666666666666666
+      },
+      {
+        "row_position": 59618,
+        "original_index": 777815,
+        "maximum_tanimoto": 0.8
+      },
+      {
+        "row_position": 59653,
+        "original_index": 820688,
+        "maximum_tanimoto": 0.4230769230769231
+      },
+      {
+        "row_position": 59897,
+        "original_index": 1264447,
+        "maximum_tanimoto": 0.6153846153846154
+      },
+      {
+        "row_position": 60061,
+        "original_index": 333274,
+        "maximum_tanimoto": 0.6
+      },
+      {
+        "row_position": 60069,
+        "original_index": 109774,
+        "maximum_tanimoto": 0.7441860465116279
+      },
+      {
+        "row_position": 60215,
+        "original_index": 182449,
+        "maximum_tanimoto": 0.7692307692307693
+      },
+      {
+        "row_position": 60226,
+        "original_index": 288535,
+        "maximum_tanimoto": 0.5740740740740741
+      },
+      {
+        "row_position": 60228,
+        "original_index": 1550816,
+        "maximum_tanimoto": 0.7471264367816092
+      },
+      {
+        "row_position": 60238,
+        "original_index": 542679,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 60243,
+        "original_index": 653705,
+        "maximum_tanimoto": 0.5151515151515151
+      },
+      {
+        "row_position": 60244,
+        "original_index": 582232,
+        "maximum_tanimoto": 0.6938775510204082
+      },
+      {
+        "row_position": 60274,
+        "original_index": 223178,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 60276,
+        "original_index": 858041,
+        "maximum_tanimoto": 0.7368421052631579
+      },
+      {
+        "row_position": 60349,
+        "original_index": 234468,
+        "maximum_tanimoto": 0.4186046511627907
+      },
+      {
+        "row_position": 60530,
+        "original_index": 1725802,
+        "maximum_tanimoto": 0.43902439024390244
+      },
+      {
+        "row_position": 60552,
+        "original_index": 125644,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 60599,
+        "original_index": 1742807,
+        "maximum_tanimoto": 0.8513513513513513
+      },
+      {
+        "row_position": 60810,
+        "original_index": 165132,
+        "maximum_tanimoto": 0.45098039215686275
+      },
+      {
+        "row_position": 60821,
+        "original_index": 1283037,
+        "maximum_tanimoto": 0.48484848484848486
+      },
+      {
+        "row_position": 60826,
+        "original_index": 498002,
+        "maximum_tanimoto": 0.8333333333333334
+      },
+      {
+        "row_position": 60842,
+        "original_index": 402938,
+        "maximum_tanimoto": 0.7945205479452054
+      },
+      {
+        "row_position": 60875,
+        "original_index": 1733939,
+        "maximum_tanimoto": 0.6363636363636364
+      },
+      {
+        "row_position": 60960,
+        "original_index": 763923,
+        "maximum_tanimoto": 0.9846153846153847
+      },
+      {
+        "row_position": 61085,
+        "original_index": 187184,
+        "maximum_tanimoto": 0.696969696969697
+      },
+      {
+        "row_position": 61086,
+        "original_index": 511712,
+        "maximum_tanimoto": 0.6470588235294118
+      },
+      {
+        "row_position": 61119,
+        "original_index": 388243,
+        "maximum_tanimoto": 0.3888888888888889
+      },
+      {
+        "row_position": 61189,
+        "original_index": 217332,
+        "maximum_tanimoto": 0.8615384615384616
+      },
+      {
+        "row_position": 61243,
+        "original_index": 1549113,
+        "maximum_tanimoto": 0.44
+      },
+      {
+        "row_position": 61282,
+        "original_index": 963106,
+        "maximum_tanimoto": 0.631578947368421
+      },
+      {
+        "row_position": 61292,
+        "original_index": 1708967,
+        "maximum_tanimoto": 0.7894736842105263
+      },
+      {
+        "row_position": 61313,
+        "original_index": 95217,
+        "maximum_tanimoto": 0.5625
+      },
+      {
+        "row_position": 61460,
+        "original_index": 400577,
+        "maximum_tanimoto": 0.7777777777777778
+      },
+      {
+        "row_position": 61507,
+        "original_index": 1622671,
+        "maximum_tanimoto": 0.6307692307692307
+      },
+      {
+        "row_position": 61556,
+        "original_index": 250462,
+        "maximum_tanimoto": 0.7777777777777778
+      },
+      {
+        "row_position": 61671,
+        "original_index": 858275,
+        "maximum_tanimoto": 0.8275862068965517
+      },
+      {
+        "row_position": 61681,
+        "original_index": 1435658,
+        "maximum_tanimoto": 0.6904761904761905
+      },
+      {
+        "row_position": 61736,
+        "original_index": 497693,
+        "maximum_tanimoto": 0.6774193548387096
+      },
+      {
+        "row_position": 61762,
+        "original_index": 1116219,
+        "maximum_tanimoto": 0.6744186046511628
+      },
+      {
+        "row_position": 61840,
+        "original_index": 647654,
+        "maximum_tanimoto": 0.5833333333333334
+      },
+      {
+        "row_position": 61860,
+        "original_index": 476952,
+        "maximum_tanimoto": 0.8695652173913043
+      },
+      {
+        "row_position": 62138,
+        "original_index": 1589137,
+        "maximum_tanimoto": 0.45161290322580644
+      },
+      {
+        "row_position": 62149,
+        "original_index": 1762101,
+        "maximum_tanimoto": 0.49056603773584906
+      },
+      {
+        "row_position": 62259,
+        "original_index": 711291,
+        "maximum_tanimoto": 0.5238095238095238
+      },
+      {
+        "row_position": 62268,
+        "original_index": 1158102,
+        "maximum_tanimoto": 0.7111111111111111
+      },
+      {
+        "row_position": 62331,
+        "original_index": 1478548,
+        "maximum_tanimoto": 0.6730769230769231
+      },
+      {
+        "row_position": 62373,
+        "original_index": 1331666,
+        "maximum_tanimoto": 0.5324675324675324
+      },
+      {
+        "row_position": 62427,
+        "original_index": 1179549,
+        "maximum_tanimoto": 0.9726027397260274
+      },
+      {
+        "row_position": 62562,
+        "original_index": 87195,
+        "maximum_tanimoto": 0.4722222222222222
+      },
+      {
+        "row_position": 62699,
+        "original_index": 734121,
+        "maximum_tanimoto": 0.7083333333333334
+      },
+      {
+        "row_position": 62824,
+        "original_index": 1724543,
+        "maximum_tanimoto": 0.7804878048780488
+      },
+      {
+        "row_position": 62885,
+        "original_index": 751402,
+        "maximum_tanimoto": 0.7058823529411765
+      },
+      {
+        "row_position": 62968,
+        "original_index": 37225,
+        "maximum_tanimoto": 0.6341463414634146
+      },
+      {
+        "row_position": 63042,
+        "original_index": 1287259,
+        "maximum_tanimoto": 0.8160919540229885
+      },
+      {
+        "row_position": 63073,
+        "original_index": 919135,
+        "maximum_tanimoto": 0.7843137254901961
+      },
+      {
+        "row_position": 63099,
+        "original_index": 378831,
+        "maximum_tanimoto": 0.8235294117647058
+      },
+      {
+        "row_position": 63172,
+        "original_index": 437667,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 63200,
+        "original_index": 106041,
+        "maximum_tanimoto": 0.6507936507936508
+      },
+      {
+        "row_position": 63296,
+        "original_index": 1762968,
+        "maximum_tanimoto": 0.734375
+      },
+      {
+        "row_position": 63299,
+        "original_index": 639701,
+        "maximum_tanimoto": 0.6851851851851852
+      },
+      {
+        "row_position": 63322,
+        "original_index": 527664,
+        "maximum_tanimoto": 0.8805970149253731
+      },
+      {
+        "row_position": 63424,
+        "original_index": 1715892,
+        "maximum_tanimoto": 0.847457627118644
+      },
+      {
+        "row_position": 63456,
+        "original_index": 805032,
+        "maximum_tanimoto": 0.6947368421052632
+      },
+      {
+        "row_position": 63512,
+        "original_index": 1011090,
+        "maximum_tanimoto": 0.76
+      },
+      {
+        "row_position": 63624,
+        "original_index": 1631728,
+        "maximum_tanimoto": 0.7272727272727273
+      },
+      {
+        "row_position": 63633,
+        "original_index": 1363803,
+        "maximum_tanimoto": 0.6
+      },
+      {
+        "row_position": 63672,
+        "original_index": 1347688,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 63783,
+        "original_index": 732773,
+        "maximum_tanimoto": 0.6904761904761905
+      },
+      {
+        "row_position": 63801,
+        "original_index": 1001889,
+        "maximum_tanimoto": 0.8611111111111112
+      },
+      {
+        "row_position": 63809,
+        "original_index": 1245911,
+        "maximum_tanimoto": 0.7916666666666666
+      },
+      {
+        "row_position": 63843,
+        "original_index": 896933,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 63873,
+        "original_index": 983951,
+        "maximum_tanimoto": 0.6
+      },
+      {
+        "row_position": 63897,
+        "original_index": 239184,
+        "maximum_tanimoto": 0.717948717948718
+      },
+      {
+        "row_position": 63946,
+        "original_index": 928116,
+        "maximum_tanimoto": 0.8490566037735849
+      },
+      {
+        "row_position": 63957,
+        "original_index": 1638211,
+        "maximum_tanimoto": 0.7083333333333334
+      },
+      {
+        "row_position": 64096,
+        "original_index": 1180934,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 64141,
+        "original_index": 560686,
+        "maximum_tanimoto": 0.7692307692307693
+      },
+      {
+        "row_position": 64174,
+        "original_index": 1638582,
+        "maximum_tanimoto": 0.8518518518518519
+      },
+      {
+        "row_position": 64365,
+        "original_index": 478854,
+        "maximum_tanimoto": 0.6
+      },
+      {
+        "row_position": 64505,
+        "original_index": 933431,
+        "maximum_tanimoto": 0.7142857142857143
+      },
+      {
+        "row_position": 64564,
+        "original_index": 921910,
+        "maximum_tanimoto": 0.803030303030303
+      },
+      {
+        "row_position": 64582,
+        "original_index": 413879,
+        "maximum_tanimoto": 0.7205882352941176
+      },
+      {
+        "row_position": 64585,
+        "original_index": 1626640,
+        "maximum_tanimoto": 0.782608695652174
+      },
+      {
+        "row_position": 64721,
+        "original_index": 438714,
+        "maximum_tanimoto": 0.75
+      },
+      {
+        "row_position": 64744,
+        "original_index": 1555710,
+        "maximum_tanimoto": 0.6923076923076923
+      },
+      {
+        "row_position": 64799,
+        "original_index": 337272,
+        "maximum_tanimoto": 1.0
+      },
+      {
+        "row_position": 64813,
+        "original_index": 429566,
+        "maximum_tanimoto": 0.5882352941176471
+      },
+      {
+        "row_position": 64818,
+        "original_index": 883866,
+        "maximum_tanimoto": 0.6727272727272727
+      },
+      {
+        "row_position": 64839,
+        "original_index": 1602382,
+        "maximum_tanimoto": 0.5641025641025641
+      },
+      {
+        "row_position": 64840,
+        "original_index": 183741,
+        "maximum_tanimoto": 0.6363636363636364
+      },
+      {
+        "row_position": 64964,
+        "original_index": 182676,
+        "maximum_tanimoto": 0.7804878048780488
+      },
+      {
+        "row_position": 65187,
+        "original_index": 629397,
+        "maximum_tanimoto": 0.7872340425531915
+      },
+      {
+        "row_position": 65216,
+        "original_index": 622896,
+        "maximum_tanimoto": 0.7037037037037037
+      },
+      {
+        "row_position": 65217,
+        "original_index": 1161585,
+        "maximum_tanimoto": 0.5789473684210527
+      },
+      {
+        "row_position": 65241,
+        "original_index": 1497335,
+        "maximum_tanimoto": 0.7647058823529411
+      }
+    ]
+  },
+  "interpretation_boundary": "Measures product representation, scaffold, source-file, and grant-date overlap. It does not establish patent-family leakage, mechanistic equivalence, causation, or prospective model performance. Fingerprint results estimate a sampled test-row proportion rather than a full-population nearest-neighbor census."
+}

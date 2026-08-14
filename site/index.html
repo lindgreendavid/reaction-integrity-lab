@@ -19,6 +19,7 @@
       </a>
       <nav aria-label="Primary">
         <a href="#microscope">Accuracy microscope</a>
+        <a href="#similarity">Similarity audit</a>
         <a href="#pipeline">Cleaning pipeline</a>
         <a href="#boundaries">Limits</a>
         <a href="https://github.com/lindgreendavid/reaction-integrity-lab">GitHub</a>
@@ -42,7 +43,7 @@
           <dl class="hero__facts">
             <div><dt>Source reactions</dt><dd>1,771,032</dd></div>
             <div><dt>Published score range</dt><dd>35–68%</dd></div>
-            <div><dt>Current evidence</dt><dd>Data + baseline audit</dd></div>
+            <div><dt>Current evidence</dt><dd>Stable v1 audit</dd></div>
           </dl>
         </div>
 
@@ -64,13 +65,13 @@
       </section>
 
       <section class="status-note" aria-labelledby="status-title">
-        <p class="eyebrow">Evidence status · research product v0.2.0</p>
-        <h2 id="status-title">All four frequency baselines reproduce.</h2>
+        <p class="eyebrow">Evidence status · research product v1.0.0</p>
+        <h2 id="status-title">Baselines reproduce. Similarity limits are measured.</h2>
         <p>
           The checksum-pinned four-variant archive reproduces every peer-reviewed baseline within
-          0.46 percentage points. The released split also has zero exact train/test input collisions
-          and zero exact cross-split records. Model scores remain published references; independent
-          model training is still pending.
+          0.46 percentage points. Exact reaction keys do not cross the split, but 5.78% of test
+          products and 80.84% of nonempty test scaffolds occur in training. Model scores remain
+          published references because exact checkpoint and prediction bundles are not archived.
         </p>
       </section>
 
@@ -143,6 +144,41 @@
         </div>
       </section>
 
+      <section class="similarity" id="similarity" aria-labelledby="similarity-title">
+        <div class="section-heading">
+          <p class="eyebrow">Prespecified v1 secondary audit</p>
+          <h2 id="similarity-title">Exact separation is not chemical novelty.</h2>
+          <p>The full split and a frozen 1,000-row similarity sample expose what the identity check cannot see.</p>
+        </div>
+
+        <div class="similarity-facts">
+          <article><span>Product identity</span><strong>5.78%</strong><p>3,784 of 65,444 valid test products also occur canonically in training.</p></article>
+          <article><span>Product scaffold</span><strong>80.84%</strong><p>51,617 of 63,852 nonempty test scaffolds occur in training.</p></article>
+          <article><span>Source-file category</span><strong>100%</strong><p>Every test row's source-file category is represented in training; this is not a patent-family identifier.</p></article>
+        </div>
+
+        <div class="similarity-explorer">
+          <div class="threshold-controls" aria-label="Maximum product similarity threshold">
+            <p>Select a frozen Morgan/Tanimoto threshold</p>
+            <button type="button" data-threshold="0.70" aria-pressed="true">≥ 0.70</button>
+            <button type="button" data-threshold="0.80" aria-pressed="false">≥ 0.80</button>
+            <button type="button" data-threshold="0.90" aria-pressed="false">≥ 0.90</button>
+            <button type="button" data-threshold="1.00" aria-pressed="false">1.00</button>
+          </div>
+          <article aria-live="polite">
+            <div class="score-panel__status"><span>Maximum product similarity</span><b id="similarity-threshold">≥ 0.70</b></div>
+            <strong id="similarity-proportion">60.5%</strong>
+            <div class="similarity-bar" aria-hidden="true"><span id="similarity-bar"></span></div>
+            <dl class="score-meta">
+              <div><dt>Sample count</dt><dd id="similarity-count">605 / 1,000</dd></div>
+              <div><dt>Wilson 95% interval</dt><dd id="similarity-interval">57.44–63.48%</dd></div>
+              <div><dt>Fingerprint</dt><dd>Morgan r=2 · 2,048 bit</dd></div>
+            </dl>
+            <p id="similarity-interpretation">A majority of the prespecified sample has a moderately similar training product. This describes product representation overlap, not reaction equivalence.</p>
+          </article>
+        </div>
+      </section>
+
       <section class="pipeline" id="pipeline" aria-labelledby="pipeline-title">
         <div class="section-heading">
           <p class="eyebrow">Official cleaning log · reaction-string / delete-rare variant</p>
@@ -188,8 +224,8 @@
           <h2 id="boundaries-title">What this study can—and cannot—say.</h2>
         </div>
         <div class="boundary-grid">
-          <article class="supports"><h3>Supported now</h3><ul><li>The complete four-variant archive matches its official checksum.</li><li>All four frequency baselines reproduce within 0.46 percentage points.</li><li>No exact declared input key or exact full record crosses from training into test.</li><li>The authors report a large model-performance change across role assignments.</li></ul></article>
-          <article><h3>Not supported yet</h3><ul><li>That the four model cells reproduce locally.</li><li>That every train/test similarity pathway is eliminated.</li><li>That any score represents prospective wet-lab success.</li><li>That observed benchmark ease implies research misconduct.</li></ul></article>
+          <article class="supports"><h3>Supported now</h3><ul><li>The complete four-variant archive matches its official checksum.</li><li>All four frequency baselines reproduce within 0.46 percentage points.</li><li>No exact declared reaction input key crosses from training into test.</li><li>Product identity, scaffold, source-file, date, and sampled similarity overlap are quantified.</li></ul></article>
+          <article><h3>Not supported</h3><ul><li>That the four neural-model cells reproduce locally.</li><li>That source-file overlap is patent-family leakage.</li><li>That any score represents prospective wet-lab success.</li><li>That observed benchmark ease implies research misconduct.</li></ul></article>
         </div>
       </section>
 

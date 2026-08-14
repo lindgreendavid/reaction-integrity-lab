@@ -15,6 +15,12 @@ def main() -> int:
         (ROOT / "reports" / "v0.1-split-audit.json").read_text(encoding="utf-8")
     )
     baselines = json.loads((ROOT / "reports" / "v0.2-baselines.json").read_text(encoding="utf-8"))
+    similarity = json.loads(
+        (ROOT / "reports" / "v1-similarity-audit.json").read_text(encoding="utf-8")
+    )
+    model_audit = json.loads(
+        (ROOT / "reports" / "v1-model-reproducibility.json").read_text(encoding="utf-8")
+    )
     assert provenance["doi"] == "10.6084/m9.figshare.23298467.v4"
     assert sum(file["size_bytes"] for file in provenance["files"]) == 394_497_018
     assert all(len(file["md5"]) == 32 for file in provenance["files"])
@@ -42,6 +48,13 @@ def main() -> int:
         result["absolute_deviation_percentage_points"] <= 1.0
         for result in baselines["results"].values()
     )
+    assert similarity["method"]["sample_seed"] == 20_260_814
+    assert similarity["sampled_product_similarity"]["valid_sample_rows"] == 1_000
+    assert similarity["product_identity"]["valid_test_rows"] == 65_444
+    assert similarity["product_scaffold"]["valid_nonempty_test_rows"] == 63_852
+    assert similarity["source_file_provenance"]["overlapping_test_fraction"] == 1.0
+    assert model_audit["status"] == "not independently reproduced"
+    assert model_audit["artifact_audit"]["model_weights_in_git_repository"] is False
     return 0
 
 

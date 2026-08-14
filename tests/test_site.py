@@ -9,9 +9,9 @@ def test_site_exposes_interaction_evidence_status_and_boundaries():
     styles = (ROOT / "site" / "styles.css").read_text(encoding="utf-8")
 
     assert "The accuracy inflation microscope" in html
-    assert "All four frequency baselines reproduce" in html
-    assert "model training is still pending" in html
-    assert "zero exact train/test input collisions" in html
+    assert "Baselines reproduce. Similarity limits are measured" in html
+    assert "80.84%" in html and "60.5%" in html
+    assert "No exact declared reaction input key crosses" in html
     assert "What this study can—and cannot—say" in html
     assert 'aria-live="polite"' in html
     assert 'aria-pressed="true"' in html
@@ -19,6 +19,7 @@ def test_site_exposes_interaction_evidence_status_and_boundaries():
     assert "Reproduced baseline · published model" in html
     assert "renderCell" in script
     assert "renderStage" in script
+    assert "renderSimilarity" in script
     assert "prefers-reduced-motion" in styles
     assert "forced-colors: active" in styles
     assert "min-height: 44px" in styles
