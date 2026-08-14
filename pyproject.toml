@@ -26,8 +26,8 @@ Documentation = "https://github.com/lindgreendavid/reaction-integrity-lab/blob/m
 "Lab Notes" = "https://blog-interactive.lindgreendavid.workers.dev/posts/reaction-integrity-lab-cleaning-leakage"
 
 [project.optional-dependencies]
-data = ["numpy>=1.24,<2", "pyarrow>=17,<24"]
-chem = ["numpy>=1.24,<2", "pyarrow>=17,<24", "rdkit==2026.3.5"]
+data = ["numpy>=1.24,<3", "pyarrow>=17,<24"]
+chem = ["numpy>=1.24,<3", "pyarrow>=17,<24", "rdkit==2026.3.5"]
 dev = [
   "build>=1.2",
   "hatchling>=1.27",
