@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this audit or interactive explanation, please cite it as below."
+title: "Reaction Integrity Lab"
+type: software
+authors:
+  - family-names: Lindgreen
+    given-names: David
+version: 0.1.0
+date-released: 2026-08-14
+license: MIT
+repository-code: "https://github.com/lindgreendavid/reaction-integrity-lab"
+keywords:
+  - reaction prediction
+  - data leakage
+  - reproducibility
+  - cheminformatics
+references:
+  - type: article
+    title: "ORDerly: Data Sets and Benchmarks for Chemical Reaction Data"
+    doi: "10.1021/acs.jcim.4c00292"
+

@@ -1,0 +1,14 @@
+{
+  "cross_split_duplicate_records": 0,
+  "missing_input_cells": 170226,
+  "missing_output_cells": 1912629,
+  "most_common_train_output_count": 100627,
+  "most_common_train_output_fraction": 0.16082384924332385,
+  "overlapping_test_input_fraction": 0.0,
+  "overlapping_test_inputs": 0,
+  "test_rows": 65445,
+  "train_rows": 625697,
+  "unique_test_inputs": 65350,
+  "unique_train_inputs": 611065,
+  "unique_train_output_combinations": 50029
+}

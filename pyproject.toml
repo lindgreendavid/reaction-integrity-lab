@@ -1,0 +1,65 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "reaction-integrity-lab"
+version = "0.1.0"
+description = "A reproducible audit of cleaning, leakage, and apparent accuracy in reaction-condition prediction"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "David Lindgreen" }]
+keywords = ["cheminformatics", "reaction-prediction", "data-leakage", "reproducible-research"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Chemistry",
+]
+dependencies = []
+
+[project.optional-dependencies]
+data = ["pyarrow>=17,<24"]
+dev = [
+  "build>=1.2",
+  "hatchling>=1.27",
+  "mypy>=1.13,<3",
+  "pytest>=8.3",
+  "pytest-cov>=6.0",
+  "ruff>=0.8",
+]
+
+[project.scripts]
+reaction-integrity = "reaction_integrity_lab.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/reaction_integrity_lab"]
+
+[tool.pytest.ini_options]
+addopts = "--strict-markers --strict-config --cov=reaction_integrity_lab --cov-report=term-missing --cov-fail-under=95"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+exclude_also = ["if __name__ == .__main__.:"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+packages = ["reaction_integrity_lab"]
+
+[[tool.mypy.overrides]]
+module = "pyarrow.*"
+ignore_missing_imports = true

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="An interactive, reproducible audit of cleaning and apparent accuracy in chemical reaction prediction." />
+    <meta name="theme-color" content="#10211c" />
+    <title>Reaction Integrity Lab</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Reaction Integrity Lab home">
+        <span class="brand__mark" aria-hidden="true">R→</span>
+        <span>Reaction Integrity Lab</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#microscope">Accuracy microscope</a>
+        <a href="#pipeline">Cleaning pipeline</a>
+        <a href="#boundaries">Limits</a>
+        <a href="https://github.com/lindgreendavid/reaction-integrity-lab">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow">Computational chemistry · transparent reproduction</p>
+          <h1 id="hero-title">When cleaning the data changes the answer.</h1>
+          <p class="hero__lead">
+            Reaction prediction can look more accurate when the dataset quietly makes the task
+            easier. This lab separates role assignment, rare-component policy, duplication, and
+            split overlap—then shows exactly which conclusion each decision supports.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#microscope">Open the microscope</a>
+            <a class="button" href="https://github.com/lindgreendavid/reaction-integrity-lab/blob/main/docs/protocol.md">Read the frozen protocol</a>
+          </div>
+          <dl class="hero__facts">
+            <div><dt>Source reactions</dt><dd>1,771,032</dd></div>
+            <div><dt>Published score range</dt><dd>21–47%</dd></div>
+            <div><dt>Current evidence</dt><dd>Data audit</dd></div>
+          </dl>
+        </div>
+
+        <div class="reaction-stage" aria-label="Animated reaction data flow">
+          <div class="reaction-stage__label"><span>INPUT REPRESENTATION</span><span>OUTPUT LABELS</span></div>
+          <div class="molecule molecule--left" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="reaction-arrow" aria-hidden="true">
+            <span class="reaction-arrow__agent">labels?</span>
+            <b>→</b>
+            <span class="reaction-arrow__solvent">clean?</span>
+          </div>
+          <div class="molecule molecule--right" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <p>Same model family. Different definition of the task.</p>
+        </div>
+      </section>
+
+      <section class="status-note" aria-labelledby="status-title">
+        <p class="eyebrow">Evidence status · protocol v0.1.0</p>
+        <h2 id="status-title">The released split passes its exact-identity audit.</h2>
+        <p>
+          Both checksum-pinned files reproduce the official final count of 691,142 reactions, with
+          zero exact train/test input collisions and zero exact cross-split records. The four model
+          scores below still come from Wigh et al.; independent model training remains pending.
+        </p>
+      </section>
+
+      <section class="microscope" id="microscope" aria-labelledby="microscope-title">
+        <div class="section-heading">
+          <p class="eyebrow">Interactive 2 × 2 audit</p>
+          <h2 id="microscope-title">The accuracy inflation microscope</h2>
+          <p>Change one decision at a time. The dataset—not the neural architecture—changes.</p>
+        </div>
+
+        <div class="microscope__body">
+          <div class="controls">
+            <fieldset>
+              <legend>How are reaction roles assigned?</legend>
+              <button type="button" data-role="labels" aria-pressed="true">
+                Trust ORD labels
+                <small>Uses the stored component roles</small>
+              </button>
+              <button type="button" data-role="reaction-string" aria-pressed="false">
+                Parse reaction string
+                <small>Applies chemically informed role logic</small>
+              </button>
+            </fieldset>
+            <fieldset>
+              <legend>What happens to rare components?</legend>
+              <button type="button" data-rare="other" aria-pressed="true">
+                Map to “other”
+                <small>Keeps the reaction, coarsens the label</small>
+              </button>
+              <button type="button" data-rare="delete" aria-pressed="false">
+                Delete the reaction
+                <small>Removes components occurring &lt;100 times</small>
+              </button>
+            </fieldset>
+          </div>
+
+          <article class="score-panel" aria-live="polite">
+            <div class="score-panel__status"><span>Published reference result</span><b id="cell-label">A</b></div>
+            <div class="score-comparison">
+              <div>
+                <span>Frequency baseline</span>
+                <strong id="baseline-score">31%</strong>
+              </div>
+              <div class="score-comparison__model">
+                <span>Model top-3 exact match</span>
+                <strong id="model-score">44%</strong>
+              </div>
+            </div>
+            <div class="score-bar" aria-hidden="true">
+              <span id="baseline-bar" class="score-bar__baseline"></span>
+              <span id="model-bar" class="score-bar__model"></span>
+            </div>
+            <dl class="score-meta">
+              <div><dt>Gain over baseline</dt><dd id="gain-score">+13 pp</dd></div>
+              <div><dt>Normalized improvement</dt><dd id="aib-score">19%</dd></div>
+              <div><dt>Evidence owner</dt><dd>Wigh et al. (2024)</dd></div>
+            </dl>
+            <p id="interpretation">
+              Trusting stored labels produces a comparatively easy combined condition target. The
+              score cannot be read as prospective laboratory performance.
+            </p>
+          </article>
+        </div>
+
+        <div class="four-cell" aria-label="All four published reference cells">
+          <button type="button" data-cell="labels-other"><span>A</span><strong>44%</strong><small>labels · other</small></button>
+          <button type="button" data-cell="labels-delete"><span>B</span><strong>47%</strong><small>labels · delete</small></button>
+          <button type="button" data-cell="reaction-string-other"><span>C</span><strong>21%</strong><small>string · other</small></button>
+          <button type="button" data-cell="reaction-string-delete"><span>D</span><strong>24%</strong><small>string · delete</small></button>
+        </div>
+      </section>
+
+      <section class="pipeline" id="pipeline" aria-labelledby="pipeline-title">
+        <div class="section-heading">
+          <p class="eyebrow">Official cleaning log · reaction-string / delete-rare variant</p>
+          <h2 id="pipeline-title">Cleaning is a sequence of estimand changes.</h2>
+          <p>Select a stage to inspect what was removed and what that operation does not prove.</p>
+        </div>
+
+        <div class="pipeline__grid">
+          <ol class="pipeline__steps">
+            <li><button type="button" data-stage="source" aria-current="step"><span>01</span><b>Source extraction</b><em>1,771,032</em></button></li>
+            <li><button type="button" data-stage="shape"><span>02</span><b>Component limits</b><em>1,279,207</em></button></li>
+            <li><button type="button" data-stage="required"><span>03</span><b>Required inputs</b><em>1,261,701</em></button></li>
+            <li><button type="button" data-stage="duplicates"><span>04</span><b>Exact duplicates</b><em>753,338</em></button></li>
+            <li><button type="button" data-stage="rare"><span>05</span><b>Rare components</b><em>691,142</em></button></li>
+            <li><button type="button" data-stage="split"><span>06</span><b>Split collisions</b><em>3,541 moved</em></button></li>
+          </ol>
+          <article class="pipeline__detail" aria-live="polite">
+            <p class="eyebrow" id="stage-number">Stage 01</p>
+            <h3 id="stage-title">Source extraction</h3>
+            <strong id="stage-count">1,771,032 reactions enter</strong>
+            <p id="stage-description">The official USPTO-derived ORD extraction before the condition-benchmark filters.</p>
+            <div class="retention"><span id="retention-bar"></span></div>
+            <p class="boundary"><b>Boundary:</b> <span id="stage-boundary">A large source count says nothing about independence, coverage, or label quality.</span></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="definitions" aria-labelledby="definitions-title">
+        <div class="section-heading">
+          <p class="eyebrow">Read the metric correctly</p>
+          <h2 id="definitions-title">Three numbers. Three different questions.</h2>
+        </div>
+        <div class="definition-grid">
+          <article><span>01</span><h3>Exact match</h3><p>Did the predicted set exactly match the recorded solvents and agents? Partial chemical usefulness is not measured.</p></article>
+          <article><span>02</span><h3>Top-3</h3><p>Was the exact recorded combination among the model's three highest-ranked combinations? It is not top-1 accuracy.</p></article>
+          <article><span>03</span><h3>Baseline</h3><p>How well does a frequency-informed guess perform? A high model score matters less if the task is already predictable from prevalence.</p></article>
+        </div>
+      </section>
+
+      <section class="boundaries" id="boundaries" aria-labelledby="boundaries-title">
+        <div class="section-heading">
+          <p class="eyebrow">Stop at the evidence boundary</p>
+          <h2 id="boundaries-title">What this study can—and cannot—say.</h2>
+        </div>
+        <div class="boundary-grid">
+          <article class="supports"><h3>Supported now</h3><ul><li>The two released files match their official checksums and contain 691,142 reactions.</li><li>No exact declared input key or exact full record crosses from training into test.</li><li>The authors report a large performance change across role assignments.</li></ul></article>
+          <article><h3>Not supported yet</h3><ul><li>That the four model cells reproduce locally.</li><li>That every train/test similarity pathway is eliminated.</li><li>That any score represents prospective wet-lab success.</li><li>That observed benchmark ease implies research misconduct.</li></ul></article>
+        </div>
+      </section>
+
+      <section class="sources" aria-labelledby="sources-title">
+        <div class="section-heading">
+          <p class="eyebrow">Primary evidence</p>
+          <h2 id="sources-title">Follow every number to its source.</h2>
+        </div>
+        <ul>
+          <li><a href="https://doi.org/10.1021/acs.jcim.4c00292"><span>Paper</span><strong>ORDerly · Wigh et al. (2024)</strong><b>↗</b></a></li>
+          <li><a href="https://doi.org/10.6084/m9.figshare.23298467.v4"><span>Data</span><strong>Benchmark v4 · CC BY 4.0</strong><b>↗</b></a></li>
+          <li><a href="https://doi.org/10.6084/m9.figshare.23502372.v3"><span>Supplement</span><strong>Four-variant data and cleaning logs</strong><b>↗</b></a></li>
+          <li><a href="https://github.com/sustainable-processes/ORDerly"><span>Code</span><strong>Official ORDerly implementation</strong><b>↗</b></a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="brand"><span class="brand__mark" aria-hidden="true">R→</span><span>Reaction Integrity Lab</span></div>
+      <p>Open methods · explicit limits · no result relabelled</p>
+      <a href="https://github.com/lindgreendavid">David Lindgreen on GitHub</a>
+    </footer>
+  </body>
+</html>

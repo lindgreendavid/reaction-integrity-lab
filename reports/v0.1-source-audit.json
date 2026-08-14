@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "status": "source-and-protocol audit; model reproduction not yet run",
+  "source": {
+    "paper_doi": "10.1021/acs.jcim.4c00292",
+    "benchmark_doi": "10.6084/m9.figshare.23298467.v4",
+    "supplement_doi": "10.6084/m9.figshare.23502372.v3"
+  },
+  "published_reference_results_percent": {
+    "measure": "top-3 exact-match accuracy for the combined solvents-and-agents target",
+    "trusted_labels_rare_to_other": 44,
+    "trusted_labels_delete_rare_reaction": 47,
+    "reaction_string_rare_to_other": 21,
+    "reaction_string_delete_rare_reaction": 24,
+    "provenance": "Wigh et al. (2024), ORDerly paper and official repository README",
+    "independently_reproduced_here": false
+  },
+  "published_pipeline_audit": {
+    "initial_reactions": 1771032,
+    "reaction_string_after_component_limits": 1279207,
+    "reaction_string_after_required_inputs_outputs": 1261701,
+    "reaction_string_after_duplicate_removal": 753338,
+    "reaction_string_after_rare_deletion": 691142,
+    "test_rows_moved_to_train": 3541,
+    "fraction_of_initial_test_moved_to_train": 0.05310067424834332,
+    "independently_reproduced_here": false,
+    "source": "Official v3 supplementary cleaning log, orderly_no_trust_no_map_clean.log"
+  },
+  "local_released_data_audit": {
+    "artifact": "reports/v0.1-split-audit.json",
+    "checksums_verified": true,
+    "train_rows": 625697,
+    "test_rows": 65445,
+    "total_rows": 691142,
+    "exact_train_test_input_collisions": 0,
+    "exact_cross_split_full_record_duplicates": 0,
+    "interpretation": "Confirms exact declared-key separation only; chemical similarity, patent-family overlap, and temporal separation remain untested."
+  },
+  "interpretation_boundary": "A lower score after chemical role reassignment is evidence that the earlier benchmark task was easier under those labels; it is not by itself proof of deliberate leakage, model uselessness, or general failure of reaction prediction."
+}
