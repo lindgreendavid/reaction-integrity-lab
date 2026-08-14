@@ -80,7 +80,7 @@ h1 { max-width: 900px; margin: 0; font-size: clamp(54px, 8vw, 120px); line-heigh
 .section-heading h2 { margin: 0; font-size: clamp(38px, 6vw, 76px); line-height: .95; letter-spacing: -.055em; }
 .section-heading > p:last-child { margin: 20px 0 0; color: var(--muted); font-size: 18px; line-height: 1.55; }
 
-.microscope, .pipeline, .definitions, .boundaries, .sources { padding: clamp(72px, 10vw, 140px) var(--page); border-bottom: 1px solid var(--ink); }
+.microscope, .similarity, .pipeline, .definitions, .boundaries, .sources { padding: clamp(72px, 10vw, 140px) var(--page); border-bottom: 1px solid var(--ink); }
 .microscope__body { display: grid; grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr); border: 1px solid var(--ink); }
 .controls { border-right: 1px solid var(--ink); background: var(--wash); }
 .controls fieldset { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0; padding: 22px; border: 0; }
@@ -113,6 +113,24 @@ h1 { max-width: 900px; margin: 0; font-size: clamp(54px, 8vw, 120px); line-heigh
 .four-cell button[data-selected] { background: var(--acid); }
 .four-cell span, .four-cell small { display: block; font: 10px var(--mono); text-transform: uppercase; }
 .four-cell strong { display: block; margin: 5px 0; font-size: 31px; }
+
+.similarity { background: var(--white); }
+.similarity-facts { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--ink); }
+.similarity-facts article { min-height: 230px; padding: 28px; border-right: 1px solid var(--ink); }
+.similarity-facts article:last-child { border-right: 0; }
+.similarity-facts span { color: var(--copper); font: 700 11px var(--mono); text-transform: uppercase; }
+.similarity-facts strong { display: block; margin-top: 40px; font-size: clamp(44px, 6vw, 76px); letter-spacing: -.06em; }
+.similarity-facts p { color: var(--muted); line-height: 1.5; }
+.similarity-explorer { display: grid; grid-template-columns: minmax(240px, .55fr) minmax(0, 1.45fr); border: 1px solid var(--ink); border-top: 0; }
+.threshold-controls { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; align-content: start; padding: 24px; border-right: 1px solid var(--ink); background: var(--wash); }
+.threshold-controls p { grid-column: 1 / -1; margin: 0 0 10px; font: 700 11px/1.5 var(--mono); text-transform: uppercase; }
+.threshold-controls button { min-height: 64px; border: 1px solid var(--ink); background: var(--white); color: var(--ink); cursor: pointer; font-weight: 850; }
+.threshold-controls button[aria-pressed="true"] { background: var(--ink); color: var(--acid); }
+.similarity-explorer > article { padding: clamp(28px, 5vw, 64px); }
+.similarity-explorer > article > strong { display: block; margin-top: 24px; font-size: clamp(60px, 9vw, 110px); letter-spacing: -.07em; }
+.similarity-explorer > article > p { margin-top: 28px; color: var(--muted); line-height: 1.6; }
+.similarity-bar { height: 20px; margin-top: 22px; border: 1px solid var(--ink); background: var(--paper); }
+.similarity-bar span { display: block; height: 100%; background: var(--copper); transition: width .25s ease; }
 
 .pipeline { background: var(--ink); color: var(--white); }
 .pipeline .section-heading > p:last-child { color: #b8c7c0; }
@@ -162,9 +180,13 @@ footer p, footer a { font-size: 12px; }
   .topbar nav a:not(:last-child) { display: none; }
   .hero { grid-template-columns: 1fr; }
   .reaction-stage { min-height: 430px; border-top: 1px solid var(--ink); border-left: 0; }
-  .microscope__body, .pipeline__grid { grid-template-columns: 1fr; }
+  .microscope__body, .similarity-explorer, .pipeline__grid { grid-template-columns: 1fr; }
   .controls, .pipeline__steps { border-right: 0; border-bottom: 1px solid var(--ink); }
   .definition-grid { grid-template-columns: 1fr; }
+  .similarity-facts { grid-template-columns: 1fr; }
+  .similarity-facts article { min-height: auto; border-right: 0; border-bottom: 1px solid var(--ink); }
+  .similarity-facts article:last-child { border-bottom: 0; }
+  .threshold-controls { border-right: 0; border-bottom: 1px solid var(--ink); }
   .definition-grid article { min-height: auto; border-right: 0; border-bottom: 1px solid var(--ink); }
   .definition-grid article:last-child { border-bottom: 0; }
   .definition-grid h3 { margin-top: 24px; }
@@ -197,4 +219,3 @@ footer p, footer a { font-size: 12px; }
 @media (forced-colors: active) {
   .button, button, .score-bar, .retention { border: 1px solid CanvasText; }
 }
-

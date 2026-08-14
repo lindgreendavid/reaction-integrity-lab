@@ -12,10 +12,11 @@ exact, version-pinned reproduction, and which data decisions make the benchmark 
 
 ## Status
 
-**Research product v0.2.0 — source, released-data split, and all four frequency baselines
-reproduced; neural-model reproduction pending.** The public paper, official code, Figshare
-identities, published cleaning logs, endpoints, and data checksums are frozen here. The interactive
-site distinguishes locally reproduced baseline evidence from published model results.
+**Research product v1.0.0 — stable source, four-cell baseline, exact split, and prespecified
+similarity/provenance audit.** The public paper, official code, Figshare identities, published
+cleaning logs, endpoints, and data checksums are frozen here. The interactive site distinguishes
+locally reproduced evidence from the neural-model cells that remain published references because
+their exact checkpoint/prediction bundles are not in the versioned public release.
 
 ## Fixed primary endpoint
 
@@ -62,6 +63,13 @@ subset, and top-three exact complete-condition rule. Local results are 51.57%, 5
 20.24%; every value is within 0.46 percentage points of the paper's rounded 52%, 52%, 20%, and 20%.
 The full machine-readable result is [`reports/v0.2-baselines.json`](reports/v0.2-baselines.json).
 
+The v1 secondary audit additionally finds 5.78% canonical product-identity overlap and 80.84%
+nonempty Bemis-Murcko scaffold overlap in the full test set. In a prespecified 1,000-row sample,
+60.5% of products have a maximum training-product Morgan/Tanimoto similarity of at least 0.70
+(Wilson 95% interval 57.44-63.48%). These are representation-overlap results, not proof of
+patent-family leakage or prospective model failure. See
+[`reports/v1-similarity-audit.json`](reports/v1-similarity-audit.json).
+
 ## Evidence boundaries
 
 - The paper result is known, so this is a transparent reproduction—not a blinded preregistration.
@@ -71,6 +79,8 @@ The full machine-readable result is [`reports/v0.2-baselines.json`](reports/v0.2
   scaffold, reaction-family, patent-family, or temporal similarity.
 - The released v4 condition benchmark contains only the chemically informed variants. The full
   trusted-label contrast depends on the v3 supplementary data and the authors' pinned code.
+- Exact neural checkpoints and prediction bundles for all four final cells are not contained in the
+  versioned Git/Figshare release; fresh training from inferred defaults would be new evidence.
 
 ## Repository map
 
@@ -79,8 +89,11 @@ The full machine-readable result is [`reports/v0.2-baselines.json`](reports/v0.2
 | `docs/protocol.md` | Frozen hypotheses, endpoints, tolerances, and analysis order |
 | `docs/source-audit.md` | Primary sources, provenance, licensing, and claim boundaries |
 | `docs/research-report.md` | Living report that separates completed and pending evidence |
+| `docs/v1-release-audit.md` | v1 evidence gate, artifact decision, and remaining research |
 | `reports/v0.1-source-audit.json` | Machine-readable published reference registry |
 | `reports/v0.2-baselines.json` | Four-cell deterministic frequency-baseline reproduction |
+| `reports/v1-similarity-audit.json` | Prespecified identity, scaffold, provenance, date, and similarity audit |
+| `reports/v1-model-reproducibility.json` | Machine-readable neural-artifact availability decision |
 | `src/reaction_integrity_lab/` | Small, tested split-audit package |
 | [`site/`](https://lindgreendavid.github.io/reaction-integrity-lab/) | Live, accessible interactive explanation of the 2 × 2 benchmark |
 

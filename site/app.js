@@ -26,6 +26,13 @@ const stages = {
   split: { number: "06", title: "Split collisions", count: "3,541 test rows moved", retained: 94.69, description: "Rows whose reactant/product input key appeared in training were moved out of the initial test allocation.", boundary: "Identity separation is not chemical-similarity, temporal, or patent-family separation." },
 };
 
+const similarityThresholds = {
+  "0.70": { proportion: 60.5, interval: "57.44–63.48%", count: 605, interpretation: "A majority of the prespecified sample has a moderately similar training product. This describes product representation overlap, not reaction equivalence." },
+  "0.80": { proportion: 30.0, interval: "27.24–32.91%", count: 300, interpretation: "Three in ten sampled test products have a high-similarity training product under the frozen fingerprint." },
+  "0.90": { proportion: 11.7, interval: "9.85–13.84%", count: 117, interpretation: "A smaller but non-trivial share has a very highly similar training product. Model behavior was not stratified by this threshold." },
+  "1.00": { proportion: 8.4, interval: "6.84–10.28%", count: 84, interpretation: "Fingerprint similarity 1.0 is not canonical identity: finite fingerprints can collide or omit chemical distinctions." },
+};
+
 let selectedRole = "labels";
 let selectedRare = "other";
 
@@ -77,5 +84,19 @@ function renderStage(stageName) {
 
 document.querySelectorAll("[data-stage]").forEach((button) => button.addEventListener("click", () => renderStage(button.dataset.stage)));
 
+function renderSimilarity(threshold) {
+  const value = similarityThresholds[threshold];
+  document.querySelector("#similarity-threshold").textContent = `≥ ${threshold}`;
+  document.querySelector("#similarity-proportion").textContent = `${value.proportion.toFixed(1)}%`;
+  document.querySelector("#similarity-count").textContent = `${value.count} / 1,000`;
+  document.querySelector("#similarity-interval").textContent = value.interval;
+  document.querySelector("#similarity-bar").style.width = `${value.proportion}%`;
+  document.querySelector("#similarity-interpretation").textContent = value.interpretation;
+  document.querySelectorAll("[data-threshold]").forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.threshold === threshold)));
+}
+
+document.querySelectorAll("[data-threshold]").forEach((button) => button.addEventListener("click", () => renderSimilarity(button.dataset.threshold)));
+
 renderCell();
 renderStage("source");
+renderSimilarity("0.70");

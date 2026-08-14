@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "audit_date": "2026-08-14",
+  "upstream_commit": "77d0d900e369f3b512a44d47c740bd4bcb98fcb6",
+  "status": "not independently reproduced",
+  "published_model_results_percent": {
+    "trusted_labels_rare_to_other": 67,
+    "trusted_labels_delete_rare": 68,
+    "reaction_string_rare_to_other": 35,
+    "reaction_string_delete_rare": 36
+  },
+  "recoverable_public_method": {
+    "python_constraint": ">=3.10,<3.12",
+    "tensorflow": "2.12.0",
+    "wandb": "0.15.x",
+    "selection_record": "notebooks/plot_model_performance_wandb.ipynb",
+    "selection_filters": {
+      "state": "finished",
+      "random_seed": 12345,
+      "train_fraction": 1.0,
+      "train_mode": 0,
+      "dataset_version": "v6"
+    }
+  },
+  "artifact_audit": {
+    "model_weights_in_git_repository": false,
+    "prediction_files_in_git_repository": false,
+    "model_weights_in_figshare_condition_archive": false,
+    "prediction_files_in_figshare_condition_archive": false,
+    "notebook_model_paths": "/teamspace/studios/this_studio/ORDerly/models",
+    "wandb_project_named_by_authors": "ceb-sre/orderly",
+    "wandb_api_access_without_api_key": false,
+    "exact_selected_run_ids_recorded_for_all_four_final_cells": false
+  },
+  "decision": "The public release is sufficient to reproduce all four frequency baselines and to reimplement model training, but it does not provide a fully archived, authentication-free model run bundle that fixes all four final checkpoints, predictions, and run identities. Training a fresh model from inferred defaults would be a new run, not verification of the exact published artifacts.",
+  "v1_boundary": "Product v1.0.0 stabilizes the audit software, data identities, four baseline reproductions, split audit, and prespecified similarity/provenance evidence. It does not relabel the four published neural-model cells as independently reproduced."
+}

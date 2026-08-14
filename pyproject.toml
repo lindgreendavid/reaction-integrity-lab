@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "reaction-integrity-lab"
-version = "0.2.0"
+version = "1.0.0"
 description = "A reproducible audit of cleaning, leakage, and apparent accuracy in reaction-condition prediction"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -12,7 +12,7 @@ license = { file = "LICENSE" }
 authors = [{ name = "David Lindgreen" }]
 keywords = ["cheminformatics", "reaction-prediction", "data-leakage", "reproducible-research"]
 classifiers = [
-  "Development Status :: 3 - Alpha",
+  "Development Status :: 5 - Production/Stable",
   "Intended Audience :: Science/Research",
   "Programming Language :: Python :: 3",
   "Topic :: Scientific/Engineering :: Chemistry",
@@ -27,6 +27,7 @@ Documentation = "https://github.com/lindgreendavid/reaction-integrity-lab/blob/m
 
 [project.optional-dependencies]
 data = ["numpy>=1.24,<2", "pyarrow>=17,<24"]
+chem = ["numpy>=1.24,<2", "pyarrow>=17,<24", "rdkit==2026.3.5"]
 dev = [
   "build>=1.2",
   "hatchling>=1.27",

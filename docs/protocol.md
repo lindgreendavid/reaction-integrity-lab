@@ -70,3 +70,29 @@ degrees of freedom. No similarity threshold will be selected after viewing model
 - “Chemical logic is always better” outside the tested ORD/USPTO construction.
 - “The model does not work” based solely on a harder benchmark score.
 - performance claims about prospective laboratory reactions.
+
+## Prespecified v1 secondary-audit amendment
+
+Frozen: 2026-08-14, before inspecting any chemical-similarity or provenance-overlap result.
+
+The v1 secondary audit uses the released reaction-string/delete-rare split and reports:
+
+1. the full-test fraction whose canonical product identity occurs in training;
+2. the full-test fraction whose Bemis–Murcko product scaffold occurs in training;
+3. the full-test fraction whose `extracted_from_file` value occurs in training, described strictly
+   as source-file provenance overlap rather than patent-family overlap;
+4. grant-date availability, range, median year, and the fraction of test rows later than the latest
+   training grant date;
+5. maximum product-fingerprint similarity for a deterministic simple random sample of 1,000 test
+   rows against every unique valid training product.
+
+Molecules are parsed with RDKit 2026.03.5. Product identity is canonical isomeric SMILES. Scaffolds
+use RDKit's Bemis–Murcko implementation. Similarity uses a 2,048-bit Morgan fingerprint with radius
+2 and Tanimoto similarity. The sample seed is 20260814. Fractions at maximum similarity thresholds
+0.70, 0.80, 0.90, and 1.00 receive Wilson 95% intervals. Invalid or missing structures are counted
+and excluded only from the metric that requires a valid structure. No threshold will be changed
+after results are inspected.
+
+These metrics characterize representation overlap. They do not establish patent-family leakage,
+mechanistic equivalence, causation, or prospective model performance. The sampled Tanimoto result
+estimates a test-row proportion; it is not a full-population nearest-neighbor census.
