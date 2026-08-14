@@ -18,6 +18,14 @@ cleaning logs, endpoints, and data checksums are frozen here. The interactive si
 locally reproduced evidence from the neural-model cells that remain published references because
 their exact checkpoint/prediction bundles are not in the versioned public release.
 
+## What this contributes
+
+This project contributes a version-pinned, independently executable audit of a published reaction-
+condition benchmark: corrected final-paper targets, four reproduced frequency baselines, complete
+split checks, and prespecified product-identity, scaffold, provenance, date, and sampled-similarity
+measurements. It does **not** reproduce the unavailable neural prediction artifacts or interpret
+representation overlap as patent-family leakage, causation, or prospective wet-lab performance.
+
 ## Fixed primary endpoint
 
 The reproduction target is the paper's top-3 exact-match accuracy for the combined solvent-and-agent
