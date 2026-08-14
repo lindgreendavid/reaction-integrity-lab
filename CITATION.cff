@@ -9,6 +9,7 @@ version: 0.1.0
 date-released: 2026-08-14
 license: MIT
 repository-code: "https://github.com/lindgreendavid/reaction-integrity-lab"
+url: "https://lindgreendavid.github.io/reaction-integrity-lab/"
 keywords:
   - reaction prediction
   - data leakage
@@ -18,4 +19,3 @@ references:
   - type: article
     title: "ORDerly: Data Sets and Benchmarks for Chemical Reaction Data"
     doi: "10.1021/acs.jcim.4c00292"
-
