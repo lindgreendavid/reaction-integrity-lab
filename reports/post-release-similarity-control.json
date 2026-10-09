@@ -1,0 +1,51 @@
+{
+  "label": "POST-HOC (not preregistered): within-training control for the similarity audit",
+  "product_identity": {
+    "overlapping_fraction": 0.08715108799015495,
+    "overlapping_rows": 54530,
+    "valid_rows": 625695
+  },
+  "product_scaffold": {
+    "overlapping_fraction": 0.8163081849319562,
+    "overlapping_rows": 497628,
+    "valid_rows": 609608
+  },
+  "rows": 625697,
+  "sampled_product_similarity": {
+    "mean": 0.7376178241692292,
+    "median": 0.7289901129943502,
+    "threshold_results": {
+      "0.7": {
+        "lower": 0.5713271941320692,
+        "proportion": 0.602,
+        "successes": 602,
+        "total": 1000,
+        "upper": 0.6318921471368775
+      },
+      "0.8": {
+        "lower": 0.2898795107350345,
+        "proportion": 0.318,
+        "successes": 318,
+        "total": 1000,
+        "upper": 0.34751342935370755
+      },
+      "0.9": {
+        "lower": 0.11986857462597704,
+        "proportion": 0.14,
+        "successes": 140,
+        "total": 1000,
+        "upper": 0.1628866914836227
+      },
+      "1.0": {
+        "lower": 0.09668343178743777,
+        "proportion": 0.115,
+        "successes": 115,
+        "total": 1000,
+        "upper": 0.1362631722464397
+      }
+    },
+    "valid_sample_rows": 1000
+  },
+  "schema_version": 1,
+  "seed": 20261009
+}

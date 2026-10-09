@@ -1,0 +1,117 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue!50!black,urlcolor=blue!50!black,citecolor=blue!50!black}
+
+\title{How Novel Is a ``Held-Out'' Reaction?\\
+A Within-Training Control for Similarity Audits\\
+of the ORDerly Condition-Prediction Benchmark}
+\author{David Lindgreen}
+\date{October 9, 2026 \\[2pt] \small Version 0.1.0 \quad Preprint, not peer reviewed}
+
+\emergencystretch=3em
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Reaction-condition benchmarks are usually split so that no test reaction shares its exact inputs with training, which is taken to
+mean the test set is novel. ORDerly~\cite{wigh2024} follows this practice. We audited its ``reaction string, delete rare'' split
+(625{,}697 training and 65{,}445 test reactions) and found that 5.78\% of test products, and 80.84\% of test product scaffolds,
+also occur in training, and that 60.5\% of a 1{,}000-row test sample has a training product at Morgan--Tanimoto similarity
+$\ge 0.70$. Such numbers are uninterpretable without a reference: how much overlap would any hold-out of this data show? We supply one
+by applying the identical measurements to the training set itself, holding out one reaction at a time against rows with a different
+input key. The control gives 8.72\% identity overlap, 81.63\% scaffold overlap and 60.2\% at $\ge0.70$. The test split's
+similarity to training is therefore what a random hold-out of this redundant corpus produces: the redundancy belongs to the dataset,
+not to the released split. The frozen audit and four frequency baselines reproduce exactly. Neural-model results could not be
+reproduced because the final checkpoints are not public.
+\end{abstract}
+
+\section{Question}
+A benchmark's difficulty depends on how different test examples are from training examples. Exact-key separation is necessary but weak:
+chemically near-identical products can sit on both sides. The repository asks whether ORDerly's large reported accuracy change
+survives an exact reproduction and which data decisions make the benchmark easier. The earlier audit measured test-to-training
+overlap but gave no baseline for it. This paper adds that baseline.
+
+\section{Frozen reproduction}
+Inputs are the pinned ORDerly benchmark and supplement (checksums committed; the 1.46\,GB archive matched its recorded MD5). The four
+top-3 frequency baselines were recomputed from the official reference function and agree with the published figures:
+20.24\% and 19.55\% for the reaction-string variants (published about 20\%) and 52.22\% and 51.57\% for the trusted-label
+variants (published about 52\%). Re-running the prespecified similarity audit reproduced the committed result with no differences.
+\begin{table}[h]
+\centering\small
+\begin{tabular}{lc}
+\toprule
+Test-to-training measurement (frozen audit) & Value\\
+\midrule
+Product identity occurs in training & 5.78\% (3{,}784 of 65{,}444)\\
+Product scaffold occurs in training & 80.84\% (51{,}617 of 63{,}852)\\
+Sampled max Tanimoto, median / mean & 0.734 / 0.732\\
+Sample at Tanimoto $\ge0.70$ & 60.5\% (57.4--63.5)\\
+Sample at Tanimoto $\ge0.80$ & 30.0\%\\
+Sample at Tanimoto $\ge0.90$ & 11.7\%\\
+Sample at Tanimoto $=1.00$ & 8.4\%\\
+\bottomrule
+\end{tabular}
+\caption{Frozen similarity audit; intervals are Wilson 95\%.}
+\end{table}
+
+\section{Post-hoc: a within-training control}
+For every training reaction we asked the same questions as for a test reaction, using as references only the other training rows whose
+exact input key (two reactants and the product string) differs from its own. This mirrors the split's defining property that no test
+key appears in training. Canonicalisation, Bemis--Murcko scaffolds and 2{,}048-bit radius-2 Morgan fingerprints are identical to the
+frozen audit. The similarity measurement uses a seeded random sample of 1{,}000 training rows. This analysis was not preregistered
+and all of it is reported.
+\begin{table}[h]
+\centering\small
+\begin{tabular}{lcc}
+\toprule
+Measurement & Test vs training & Training vs other training\\
+\midrule
+Product identity overlap & 5.78\% & 8.72\% (54{,}530 of 625{,}695)\\
+Scaffold overlap & 80.84\% & 81.63\%\\
+Max Tanimoto, median & 0.734 & 0.729\\
+Max Tanimoto, mean & 0.732 & 0.738\\
+$\ge0.70$ & 60.5\% & 60.2\% (57.1--63.2)\\
+$\ge0.80$ & 30.0\% & 31.8\%\\
+$\ge0.90$ & 11.7\% & 14.0\% (12.0--16.3)\\
+$=1.00$ & 8.4\% & 11.5\% (9.7--13.6)\\
+\bottomrule
+\end{tabular}
+\caption{Same measurements on the released test split and on the training set held out row by row.}
+\end{table}
+At the scaffold level and across the similarity distribution up to 0.80 the two columns are indistinguishable. The control is
+\emph{higher} than the test split for exact product identity (8.72\% against 5.78\%) and for near-identical similarity
+($\ge0.90$ and $=1.00$), so the released split is, if anything, somewhat less redundant with training than an in-sample hold-out. The
+mechanism is not determined here; the sampling intervals for the similarity rows are wide enough that only the identity-level
+difference is clear.
+
+\section{Discussion}
+A high overlap figure does not by itself indict a split. For this corpus, which contains many near-analogue reactions from patents, an
+honest random hold-out already has most test scaffolds and about 60\% of products with a close neighbour in training. The finding is
+therefore about the \emph{dataset}: accuracy on any split of it partly measures recall of nearby chemistry. That is a statement about
+what the benchmark can establish, not a claim that ORDerly leaked information. A split that is substantially more novel than this
+control (by scaffold or similarity-based clustering) would be a different and harder benchmark, and the control gives a concrete target
+for what ``more novel'' must exceed.
+
+\section{Limitations}
+Fingerprint similarity of 1.0 is not molecular identity. The similarity comparison rests on 1{,}000-row samples. Exact-key separation
+in the control follows the audit's key definition, not patent family, which is unavailable. Only the ``reaction string, delete
+rare'' variant was audited for similarity. The neural-model accuracies could not be reproduced (checkpoints and prediction files are
+not public), so nothing here bears on them; no claim is made about prospective performance or wet-lab outcomes.
+
+\section*{Reproducibility and AI assistance}
+Code, frozen audits, the control and tests:\\
+\url{https://github.com/lindgreendavid/reaction-integrity-lab}\\
+Interactive laboratory:\\
+\url{https://lindgreendavid.github.io/reaction-integrity-lab/}\\
+The analysis code, tests and drafts of this text were produced with substantial assistance from an AI system (Claude, Anthropic);
+the author is responsible for the content.
+
+\begin{thebibliography}{9}
+\bibitem{wigh2024} D.~S. Wigh, J.~Arrowsmith, A.~Pomberger, K.~C. Felton, A.~A. Lapkin, ORDerly: Data sets and benchmarks for
+chemical reaction data, \emph{J. Chem. Inf. Model.} \textbf{64}(9), 3790--3798 (2024), doi:10.1021/acs.jcim.4c00292.
+\end{thebibliography}
+\end{document}

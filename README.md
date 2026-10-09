@@ -18,6 +18,8 @@ cleaning logs, endpoints, and data checksums are frozen here. The interactive si
 locally reproduced evidence from the neural-model cells that remain published references because
 their exact checkpoint/prediction bundles are not in the versioned public release.
 
+**Paper:** [How Novel Is a Held-Out Reaction? A Within-Training Control for Similarity Audits of the ORDerly Condition-Prediction Benchmark (PDF)](paper/paper.pdf) · [citation and status](paper/README.md) · [version history](history.md)
+
 ## What this contributes
 
 This project contributes a version-pinned, independently executable audit of a published reaction-

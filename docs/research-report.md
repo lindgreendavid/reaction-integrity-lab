@@ -103,3 +103,16 @@ an authenticated W&B project and a local Teamspace model path without recording 
 all four final cells. Training from inferred defaults would be a new run, not exact verification of
 the published artifacts. Product v1.0.0 therefore stabilizes the completed audit without claiming
 model reproduction. Full details are in [`v1-release-audit.md`](v1-release-audit.md).
+
+## Post-release amendment (2026-10-09): within-training control
+
+**POST-HOC, not preregistered.** The v1 similarity audit reports test-to-training overlap but gives no
+reference for how much overlap any hold-out of this corpus would show. `reports/post-release-similarity-control.json`
+applies the same canonicalisation, Bemis-Murcko and Morgan/Tanimoto definitions to the training set held out one
+row at a time against training rows with a different exact input key (seed 20261009, 1,000-row similarity sample).
+Result: product identity 8.72% (test 5.78%), scaffold 81.63% (80.84%), sampled max Tanimoto >=0.70 60.2% (60.5%),
+>=0.90 14.0% (11.7%), =1.00 11.5% (8.4%). The overlap measured in the v1 audit is therefore not specific to the
+released split; it is a property of the dataset. The v1 audit reproduced exactly (0 differences) on re-run. The
+exact-identity gap (control higher) has no mechanism determined here. The v1 audit's conclusions about
+exact-key separation not guaranteeing novelty stand; interpretation of the overlap as split-specific is withdrawn.
+See `paper/paper.pdf`.
