@@ -20,6 +20,7 @@ from collections.abc import Sequence
 
 import numpy as np
 from rdkit import DataStructs
+from rdkit.DataStructs.cDataStructs import ExplicitBitVect
 
 from reaction_integrity_lab.similarity import (
     canonical_smiles,
@@ -68,7 +69,7 @@ def held_out_similarity_sample(
 
     table = _distinct_keys(products, keys)
     unique = sorted(table)
-    fingerprints = []
+    fingerprints: list[ExplicitBitVect] = []
     index_of: dict[str, int] = {}
     for product in unique:
         fingerprint = morgan_fingerprint(product)
