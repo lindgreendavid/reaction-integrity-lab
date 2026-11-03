@@ -1,8 +1,8 @@
 # Reaction Integrity Lab
 
-**[Open the interactive laboratory →](https://lindgreendavid.github.io/reaction-integrity-lab/)**
+**[Open the interactive laboratory →](https://lindgreendavid.com/reaction-integrity-lab/)**
 
-[Read the Lab Notes article](https://blog-interactive.lindgreendavid.workers.dev/posts/reaction-integrity-lab-cleaning-leakage) ·
+[Read the Lab Notes article](https://notes.lindgreendavid.com/posts/reaction-integrity-lab-cleaning-leakage) ·
 [View releases](https://github.com/lindgreendavid/reaction-integrity-lab/releases) ·
 [Read the research report](docs/research-report.md)
 
@@ -105,7 +105,7 @@ patent-family leakage or prospective model failure. See
 | `reports/v1-similarity-audit.json` | Prespecified identity, scaffold, provenance, date, and similarity audit |
 | `reports/v1-model-reproducibility.json` | Machine-readable neural-artifact availability decision |
 | `src/reaction_integrity_lab/` | Small, tested split-audit package |
-| [`site/`](https://lindgreendavid.github.io/reaction-integrity-lab/) | Live, accessible interactive explanation of the 2 × 2 benchmark |
+| [`site/`](https://lindgreendavid.com/reaction-integrity-lab/) | Live, accessible interactive explanation of the 2 × 2 benchmark |
 
 ## Primary sources
 
